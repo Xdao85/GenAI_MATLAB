@@ -1,0 +1,23 @@
+--- raw primary block
++++ code_eval/claude/Q12_r3.m
+@@ -32,15 +32,15 @@
+ 
+ % ---- 1. Inputs (edit these values) --------------------------------------
+ % Charge magnitudes in Coulombs (sign matters: + positive, - negative)
+-q1 =  2e-6;                 % Charge 1:  +2 microcoulombs
+-q2 = -3e-6;                 % Charge 2:  -3 microcoulombs
++q1 =  2e-9;                 % Charge 1:  +2 microcoulombs
++q2 = -2e-9;                 % Charge 2:  -3 microcoulombs
+ 
+ % Charge positions [x y z] in metres
+-r1 = [ 1,  0,  0];          % Position of charge 1
+-r2 = [-1,  0,  0];          % Position of charge 2
++r1 = [-1, 0, 0];          % Position of charge 1
++r2 = [1, 0, 0];          % Position of charge 2
+ 
+ % Field point P = (Px, Py, Pz) in metres
+-Px = 0;  Py = 1;  Pz = 1;
++Px = 0;  Py = 1;  Pz = 2;
+ P  = [Px, Py, Pz];
+ 
+ % ---- 2. Compute the total electric field at P ---------------------------

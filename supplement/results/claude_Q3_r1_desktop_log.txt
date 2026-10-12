@@ -1,0 +1,8 @@
+[Warning: Error in state of SceneNode.
+String scalar or character vector must have valid interpreter syntax:
+$\\Delta\\mathbf{x}=(H^{T}H)^{-1}H^{T}\\Delta\\boldsymbol{\\rho},\\ \\ \\hat{\\mathbf{x}}_{k+1}=\\hat{\\mathbf{x}}_k+\\Delta\\mathbf{x},\\ \\ \\mathbf{x}=[x,y,z,b]^T,\\
+b=c\\,\\delta t$
+] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('defaulterrorcallback', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\graphics\graphics\objectsystem\defaulterrorcallback.m', 12)" style="font-weight:bold">defaulterrorcallback</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\graphics\graphics\objectsystem\defaulterrorcallback.m',12,0)">line 12</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_gui_reviews', '[LOCAL_ROOT]\checks\run_gui_reviews.m', 26)" style="font-weight:bold">run_gui_reviews</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_gui_reviews.m',26,0)">line 26</a>)] 
+[Warning: UI components will not be included in the output.] 

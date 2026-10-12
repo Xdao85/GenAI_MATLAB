@@ -1,0 +1,40 @@
+--- raw primary block
++++ code_eval/gemini/Q11_r2.m
+@@ -8,14 +8,14 @@
+ % --- Configuration ---
+ % Point Charge 1: Magnitude (Coulombs) and Position [x, y, z] (meters)
+ q1 = 2e-9;              % +2 nC
+-r1 = [-1.0, -0.5, 0.0];
++r1 = [-1, 0, 0];
+ 
+ % Point Charge 2: Magnitude (Coulombs) and Position [x, y, z] (meters)
+ q2 = -2e-9;             % -2 nC
+-r2 = [1.0, 0.5, 0.0];
++r2 = [1, 0, 0];
+ 
+ % Observation Point P [Px, Py, Pz] (meters)
+-rP = [0.2, 1.2, 0.8];
++rP = [0, 1, 2];
+ 
+ % --- Vector Calculations ---
+ % Displacement vectors from charges to point P
+@@ -44,14 +44,14 @@
+ k = 8.98755e9; % Coulomb's constant (N*m^2/C^2)
+ 
+ % Define point charges (in Coulombs) and their positions [x, y, z] (in meters)
+-q1 = 2e-6;                 % Charge 1 (+2 microCoulombs)
+-q1_pos = [-2, 1, 0];       % Position of q1 [x1, y1, z1]
++q1 = 2e-9;                 % Charge 1 (+2 microCoulombs)
++q1_pos = [-1, 0, 0];       % Position of q1 [x1, y1, z1]
+ 
+-q2 = -3e-6;                % Charge 2 (-3 microCoulombs)
+-q2_pos = [3, -1, 1];       % Position of q2 [x2, y2, z2]
++q2 = -2e-9;                % Charge 2 (-3 microCoulombs)
++q2_pos = [1, 0, 0];       % Position of q2 [x2, y2, z2]
+ 
+ % Target evaluation point P(Px, Py, Pz)
+-P = [1, 2, 3];             % Point P [Px, Py, Pz]
++P = [0, 1, 2];             % Point P [Px, Py, Pz]
+ 
+ % 2. Calculate Electric Field Vectors
+ R1 = P - q1_pos;           % Position vector from q1 to P

@@ -1,0 +1,23 @@
+--- raw primary block
++++ code_eval/deepseek/Q11_r1.m
+@@ -3,16 +3,16 @@
+ 
+ %% ---------------- USER INPUTS ----------------
+ % Point P where E is evaluated
+-Px = 1.0;  Py = 1.0;  Pz = 1.0;
++Px = 0;  Py = 1;  Pz = 2;
+ P  = [Px, Py, Pz];
+ 
+ % Charge 1: value (C) and position (m)
+ q1 =  2e-9;            % charge value
+-r1 = [-1.0,  0.0,  0.0];   % position of q1
++r1 = [-1, 0, 0];   % position of q1
+ 
+ % Charge 2: value (C) and position (m)
+-q2 = -1.5e-9;
+-r2 = [ 1.0,  1.0,  0.5];   % position of q2
++q2 = -2e-9;
++r2 = [1, 0, 0];   % position of q2
+ 
+ % Physical constant
+ k = 8.9875517923e9;   % Coulomb's constant (N·m²/C²)

@@ -1,0 +1,12 @@
+Error while evaluating TimerFcn for timer 'timer-1'
+
+The name 'XData' is not an accessible property for an instance of class 'matlab.graphics.GraphicsPlaceholder'.
+Error while evaluating TimerFcn for timer 'timer-1'
+
+The name 'XData' is not an accessible property for an instance of class 'matlab.graphics.GraphicsPlaceholder'.
+Error while evaluating TimerFcn for timer 'timer-1'
+
+The name 'XData' is not an accessible property for an instance of class 'matlab.graphics.GraphicsPlaceholder'.
+Error while evaluating TimerFcn for timer 'timer-1'
+
+The name 'XData' is not an accessible property for an instance of class 'matlab.graphics.GraphicsPlaceholder'.

@@ -1,0 +1,16 @@
+--- raw primary block
++++ code_eval/claude/Q21_r1.m
+@@ -3,10 +3,10 @@
+ 
+ %% ---------------- INPUTS ----------------
+ mu0 = 4*pi*1e-7;          % permeability of free space [H/m]
+-I   = 10;                 % current [A] (+z direction)
++I   = 1;                 % current [A] (+z direction)
+ l   = 2;                  % conductor length [m]
+-A   = [0.0, 0.0, 0.0];    % wire start point A(Ax,Ay,Az) [m]
+-P   = [0.5, 0.3, 1.0];    % field point P(Px,Py,Pz) [m]
++A   = [0.25, 0.5, 0];    % wire start point A(Ax,Ay,Az) [m]
++P   = [1, 1, 0];    % field point P(Px,Py,Pz) [m]
+ 
+ %% ---------------- WIRE ENDS ----------------
+ z1 = A(3);                % lower end

@@ -1,0 +1,164 @@
+[
+  {
+    "assistant": "chatgpt",
+    "prompt_id": "S2",
+    "rep": 1,
+    "file": "code_eval/chatgpt/S2_r1.m",
+    "selection": "first multiline primary code block; invocation snippets and alternatives remain raw",
+    "changes": [],
+    "sha256": "3948f2e7fc00acb914744c6ffa13545f51ea5e08814869f53a627cf14ebbcefa"
+  },
+  {
+    "assistant": "chatgpt",
+    "prompt_id": "S2",
+    "rep": 2,
+    "file": "code_eval/chatgpt/S2_r2.m",
+    "selection": "first multiline primary code block; invocation snippets and alternatives remain raw",
+    "changes": [],
+    "sha256": "3998d201eb39f1257e035cf1a89f076329fef85de7339169a87ee8ed41020a30"
+  },
+  {
+    "assistant": "chatgpt",
+    "prompt_id": "S2",
+    "rep": 3,
+    "file": "code_eval/chatgpt/S2_r3.m",
+    "selection": "first multiline primary code block; invocation snippets and alternatives remain raw",
+    "changes": [],
+    "sha256": "0c2d76ff457148305c548cbefc306d7b09d1d3b9d2ee3d6f26a149f88e291eb5"
+  },
+  {
+    "assistant": "chatgpt",
+    "prompt_id": "Q3",
+    "rep": 1,
+    "file": "code_eval/chatgpt/Q3_r1/GPS_Dynamics_GUI.m",
+    "selection": "first multiline primary code block; invocation snippets and alternatives remain raw",
+    "changes": [],
+    "sha256": "1628c0c7aa53fc82bd353aeefb7f53cf54b919602d3f5a976c7c80e1ddd99042"
+  },
+  {
+    "assistant": "chatgpt",
+    "prompt_id": "Q3",
+    "rep": 2,
+    "file": "code_eval/chatgpt/Q3_r2/gpsDynamicsGUI.m",
+    "selection": "first multiline primary code block; invocation snippets and alternatives remain raw",
+    "changes": [],
+    "sha256": "27740a992c5934a2a22310755f05ef1502bb1a545fbed8f2ce20eac596530ee6"
+  },
+  {
+    "assistant": "chatgpt",
+    "prompt_id": "Q3",
+    "rep": 3,
+    "file": "code_eval/chatgpt/Q3_r3/GPS_Dynamics_GUI.m",
+    "selection": "first multiline primary code block; invocation snippets and alternatives remain raw",
+    "changes": [],
+    "sha256": "882f8e6bcd0986a533c0900e75c905e7878bde6677fb6380178e567592399b83"
+  },
+  {
+    "assistant": "claude",
+    "prompt_id": "S2",
+    "rep": 1,
+    "file": "code_eval/claude/S2_r1.m",
+    "selection": "first multiline primary code block; invocation snippets and alternatives remain raw",
+    "changes": [],
+    "sha256": "1cd5d2baf2556723604fd365197e2f3ad4936cea940df3e40781588c167edc77"
+  },
+  {
+    "assistant": "claude",
+    "prompt_id": "S2",
+    "rep": 2,
+    "file": "code_eval/claude/S2_r2.m",
+    "selection": "first multiline primary code block; invocation snippets and alternatives remain raw",
+    "changes": [],
+    "sha256": "5b12f524f6ff9c4e36c6db0ea47c9561485c47f9260378585f401d2833637c30"
+  },
+  {
+    "assistant": "claude",
+    "prompt_id": "S2",
+    "rep": 3,
+    "file": "code_eval/claude/S2_r3.m",
+    "selection": "first multiline primary code block; invocation snippets and alternatives remain raw",
+    "changes": [],
+    "sha256": "114cc8662aad19906e4959c7e9e3954a516f28359db4ec53fff679d23a25bbe6"
+  },
+  {
+    "assistant": "claude",
+    "prompt_id": "Q3",
+    "rep": 1,
+    "file": "code_eval/claude/Q3_r1/gps_simulator.m",
+    "selection": "first multiline primary code block; invocation snippets and alternatives remain raw",
+    "changes": [],
+    "sha256": "93f21e3b4adb9c54bbb5e40c54530ed83364059ed3b5b1a99302eb73e940b56e"
+  },
+  {
+    "assistant": "claude",
+    "prompt_id": "Q3",
+    "rep": 2,
+    "file": "code_eval/claude/Q3_r2/gps_simulator_gui.m",
+    "selection": "first multiline primary code block; invocation snippets and alternatives remain raw",
+    "changes": [],
+    "sha256": "3e67327544fb53b3aa4949e52f6bbdf56c231ac8d4bde222d736fa9172f4a0df"
+  },
+  {
+    "assistant": "claude",
+    "prompt_id": "Q3",
+    "rep": 3,
+    "file": "code_eval/claude/Q3_r3/gps_gui_simulator.m",
+    "selection": "first multiline primary code block; invocation snippets and alternatives remain raw",
+    "changes": [],
+    "sha256": "8785d563bedb9e88d8fe66568ece70383908fa2d80e1f8ba074f22f2e0933048"
+  },
+  {
+    "assistant": "deepseek",
+    "prompt_id": "S2",
+    "rep": 1,
+    "file": "code_eval/deepseek/S2_r1.m",
+    "selection": "first multiline primary code block; invocation snippets and alternatives remain raw",
+    "changes": [],
+    "sha256": "bddba0b9a41a9b07b3894ecbcd5c113594dc5dbb468aad6ed0c35020e860783d"
+  },
+  {
+    "assistant": "deepseek",
+    "prompt_id": "S2",
+    "rep": 2,
+    "file": "code_eval/deepseek/S2_r2.m",
+    "selection": "first multiline primary code block; invocation snippets and alternatives remain raw",
+    "changes": [],
+    "sha256": "9692f147043cafc22eb4939cee3d5afab31f48cf8b6b5b3bedce92bcafc73365"
+  },
+  {
+    "assistant": "deepseek",
+    "prompt_id": "S2",
+    "rep": 3,
+    "file": "code_eval/deepseek/S2_r3.m",
+    "selection": "first multiline primary code block; invocation snippets and alternatives remain raw",
+    "changes": [],
+    "sha256": "bc676d448c5e5a4887386e10fe606ed924ec9fdfc09c69bcfb3c5970bf69d9c9"
+  },
+  {
+    "assistant": "deepseek",
+    "prompt_id": "Q3",
+    "rep": 1,
+    "file": "code_eval/deepseek/Q3_r1/GPS_GUI.m",
+    "selection": "first multiline primary code block; invocation snippets and alternatives remain raw",
+    "changes": [],
+    "sha256": "8806233a29a93948524aa33c08670b67447bc56f92232c6a280d6e45fadbac37"
+  },
+  {
+    "assistant": "deepseek",
+    "prompt_id": "Q3",
+    "rep": 2,
+    "file": "code_eval/deepseek/Q3_r2/GPS_GUI.m",
+    "selection": "first multiline primary code block; invocation snippets and alternatives remain raw",
+    "changes": [],
+    "sha256": "b45551cbb200d8f0d09839eab1cc4fda51b5cc1b6e41739f6a572a7754d1c91d"
+  },
+  {
+    "assistant": "deepseek",
+    "prompt_id": "Q3",
+    "rep": 3,
+    "file": "code_eval/deepseek/Q3_r3/GPS_Simulation.m",
+    "selection": "first multiline primary code block; invocation snippets and alternatives remain raw",
+    "changes": [],
+    "sha256": "0d1a7219aec7e4a2d412aa0ad7502db970c87c009eddb8ded8debb1c4ac4b9c3"
+  }
+]

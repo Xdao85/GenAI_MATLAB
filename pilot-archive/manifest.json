@@ -1,0 +1,232 @@
+[
+  {
+    "source": "code/generated/ChatGPT/electricFieldPointCharge.m",
+    "distributed": "pilot-archive/code/generated/ChatGPT/electricFieldPointCharge.m",
+    "sha256": "a57d3950798ab8503f6270ae17f72ec17ea2367cba8fbb64622fe9a2155b3c1e"
+  },
+  {
+    "source": "code/generated/ChatGPT/GPS_Dynamics_GUI_v1.m",
+    "distributed": "pilot-archive/code/generated/ChatGPT/GPS_Dynamics_GUI_v1.m",
+    "sha256": "e673e5c5459c9f8404da2d8066ef9a1ed2782df4cdc2381ade2c3b35fbd08f97"
+  },
+  {
+    "source": "code/generated/ChatGPT/GPS_Dynamics_GUI_v2.m",
+    "distributed": "pilot-archive/code/generated/ChatGPT/GPS_Dynamics_GUI_v2.m",
+    "sha256": "46dfe95150bf439e81f2597ab87cf4df54fde2c69ff8f88e36a8f46ee7f2ab5f"
+  },
+  {
+    "source": "code/generated/ChatGPT/plotElectricField.m",
+    "distributed": "pilot-archive/code/generated/ChatGPT/plotElectricField.m",
+    "sha256": "7146f8925b4c6dff2deb8251e7dfcb44e87c0975c56763dafb0355e5c5e6968a"
+  },
+  {
+    "source": "code/generated/ChatGPT/Q11.m",
+    "distributed": "pilot-archive/code/generated/ChatGPT/Q11.m",
+    "sha256": "f7f609ea9190e4b5a56f37130af72cf36469005c0dc67ff882b9cfb80f9a4dc5"
+  },
+  {
+    "source": "code/generated/ChatGPT/Q12.m",
+    "distributed": "pilot-archive/code/generated/ChatGPT/Q12.m",
+    "sha256": "81e4dbc466166f7e5d13f438427960ac4aa5ecd076baf44c00772fa0bc840cd1"
+  },
+  {
+    "source": "code/generated/ChatGPT/Q21.m",
+    "distributed": "pilot-archive/code/generated/ChatGPT/Q21.m",
+    "sha256": "a755e1e76e2a3ed1fe2202c23951b45d99406fc0eead1f3a7223d8631c9a7a4e"
+  },
+  {
+    "source": "code/generated/ChatGPT/Q22.m",
+    "distributed": "pilot-archive/code/generated/ChatGPT/Q22.m",
+    "sha256": "884c3c07ab5100d8eb2c44eb1e0240cff179026eb943670ea4fc8733bd5c544e"
+  },
+  {
+    "source": "code/generated/Claude/GPS_Simulator.m",
+    "distributed": "pilot-archive/code/generated/Claude/GPS_Simulator.m",
+    "sha256": "1524fd2c57ccd18bc59aed0be77b27ea83082866f753a56761d4f478c5439ee3"
+  },
+  {
+    "source": "code/generated/Claude/Q11.m",
+    "distributed": "pilot-archive/code/generated/Claude/Q11.m",
+    "sha256": "f7a93988eb44449ec973f94723696ec4434e357baa6cdbc7286551fd15a3c45f"
+  },
+  {
+    "source": "code/generated/Claude/Q12.m",
+    "distributed": "pilot-archive/code/generated/Claude/Q12.m",
+    "sha256": "71b83e40807c139721afc847e4bfa35fd046110f4659970d39a7b1d2fce88b22"
+  },
+  {
+    "source": "code/generated/Claude/Q21.m",
+    "distributed": "pilot-archive/code/generated/Claude/Q21.m",
+    "sha256": "8a44ba736a8291a37c23e4365e5a4617c153b22a17ba4efc577217d81d1ff2fd"
+  },
+  {
+    "source": "code/generated/Claude/Q22.m",
+    "distributed": "pilot-archive/code/generated/Claude/Q22.m",
+    "sha256": "569d55dc4956ef83ef1251dc81d5524e38c7a0c1f78dfbfe27a9cc7df7fe0232"
+  },
+  {
+    "source": "code/generated/Deepseek/GPS_Simulation_GUI_v1.m",
+    "distributed": "pilot-archive/code/generated/Deepseek/GPS_Simulation_GUI_v1.m",
+    "sha256": "9997a8b1a857a5fac8da8c0f05dd34002838ff9081aafe02d0d215ee3845c60a"
+  },
+  {
+    "source": "code/generated/Deepseek/GPS_Simulation_GUI_v2.m",
+    "distributed": "pilot-archive/code/generated/Deepseek/GPS_Simulation_GUI_v2.m",
+    "sha256": "2ea52182d847f27c82dacfbc1f00a47f7148f0e623f304146f94e3b97a7fa7f8"
+  },
+  {
+    "source": "code/generated/Deepseek/Q11.m",
+    "distributed": "pilot-archive/code/generated/Deepseek/Q11.m",
+    "sha256": "b11bbb9c94d44e73159574a7d070199dc4c5c3139f8964bd7fa5e5b93b713eee"
+  },
+  {
+    "source": "code/generated/Deepseek/Q12.m",
+    "distributed": "pilot-archive/code/generated/Deepseek/Q12.m",
+    "sha256": "56465c5d6e917c0b2a6b4ebf51bcac515a78fffab287f33f9058319d71846711"
+  },
+  {
+    "source": "code/generated/Deepseek/Q21.m",
+    "distributed": "pilot-archive/code/generated/Deepseek/Q21.m",
+    "sha256": "01a1f3a99c60946e7e276c0f0190d9b4fe8c3c8bd3dba2eaf6fd2a5a76e07917"
+  },
+  {
+    "source": "code/generated/Deepseek/Q22.m",
+    "distributed": "pilot-archive/code/generated/Deepseek/Q22.m",
+    "sha256": "b16b8799de9693119e85411e37b37f6ee0fe2d9c7e653cc52ba097b33975ab63"
+  },
+  {
+    "source": "code/generated/Gemini/gps_gui_simulation.m",
+    "distributed": "pilot-archive/code/generated/Gemini/gps_gui_simulation.m",
+    "sha256": "2267022faaa0a71daecd96f30f1f33a60952614ed1274839bdada1c8385cdb74"
+  },
+  {
+    "source": "code/generated/Gemini/Q11.m",
+    "distributed": "pilot-archive/code/generated/Gemini/Q11.m",
+    "sha256": "9ba3d5043e5cf16c3207eda67a639c27f553dbd02285b36413bdc3564373dd8d"
+  },
+  {
+    "source": "code/generated/Gemini/Q12.m",
+    "distributed": "pilot-archive/code/generated/Gemini/Q12.m",
+    "sha256": "4e9939c1b09d80fbadc05a2a31ec8ea2d2ff300abac14cb13701770cbfc7e02f"
+  },
+  {
+    "source": "code/generated/Gemini/Q21.m",
+    "distributed": "pilot-archive/code/generated/Gemini/Q21.m",
+    "sha256": "f6263cc8b7149922b7c788a6b502754ecdaada9b4c2b7a891a5676024b062261"
+  },
+  {
+    "source": "code/generated/Gemini/Q22.m",
+    "distributed": "pilot-archive/code/generated/Gemini/Q22.m",
+    "sha256": "38d69fa4480398f934b6690244ad5fae2db187b7098b40770d8e62a7ca6aa945"
+  },
+  {
+    "source": "assets/img/q1_chatgpt_brief.png",
+    "distributed": "pilot-archive/images/q1_chatgpt_brief.png",
+    "sha256": "4c9a7bbb484a3fd07b0210944b5f24e282e740abafef26ff193552132fef8a94"
+  },
+  {
+    "source": "assets/img/q1_chatgpt_detailed.png",
+    "distributed": "pilot-archive/images/q1_chatgpt_detailed.png",
+    "sha256": "7ecb4e9c515714b6f1b2ab8c1ab1c14befcef02f388e7ae83874356544d08a63"
+  },
+  {
+    "source": "assets/img/q1_claude_brief.png",
+    "distributed": "pilot-archive/images/q1_claude_brief.png",
+    "sha256": "feaface219acbcd9fe3eecda5034d42b6a1a7a86f2ba8ac78d1f978c490f5c90"
+  },
+  {
+    "source": "assets/img/q1_claude_detailed.png",
+    "distributed": "pilot-archive/images/q1_claude_detailed.png",
+    "sha256": "9d2a7a4261586fdb74fda76a41b15634a03acfaee7001ef8366dbbce95740c8e"
+  },
+  {
+    "source": "assets/img/q1_deepseek_brief.png",
+    "distributed": "pilot-archive/images/q1_deepseek_brief.png",
+    "sha256": "40acc23fe028221fcf9933386042a6ef6e311250763b56225310fb6a10969246"
+  },
+  {
+    "source": "assets/img/q1_deepseek_detailed.png",
+    "distributed": "pilot-archive/images/q1_deepseek_detailed.png",
+    "sha256": "5329a8b88f27f646db1a247aa59afd84609c6c7cb8a6a1139d31e4291c2c705c"
+  },
+  {
+    "source": "assets/img/q1_gemini_brief.png",
+    "distributed": "pilot-archive/images/q1_gemini_brief.png",
+    "sha256": "0f9ea8fd4a67825a78eac329543045b3910df35b4d4a38f0b987f6a2fc8a920e"
+  },
+  {
+    "source": "assets/img/q1_gemini_detailed.png",
+    "distributed": "pilot-archive/images/q1_gemini_detailed.png",
+    "sha256": "6bc31f061f831f83aaa07691a57ce7f748696fe1193103c06fd73f8e02727fda"
+  },
+  {
+    "source": "assets/img/q2_chatgpt_brief.png",
+    "distributed": "pilot-archive/images/q2_chatgpt_brief.png",
+    "sha256": "1aedbfadaf0867e8d1a2d39803af5a9aa760be5df2300bc9a272b4900e8be17e"
+  },
+  {
+    "source": "assets/img/q2_chatgpt_detailed.png",
+    "distributed": "pilot-archive/images/q2_chatgpt_detailed.png",
+    "sha256": "85f1075aefc5eabab9c8d682f0a5e339f1591c078a479d778a949c4b77ab2929"
+  },
+  {
+    "source": "assets/img/q2_claude_brief.png",
+    "distributed": "pilot-archive/images/q2_claude_brief.png",
+    "sha256": "fb7918e864092258147e6b52691f804200189627a0498b4130158bc686790a3c"
+  },
+  {
+    "source": "assets/img/q2_claude_detailed.png",
+    "distributed": "pilot-archive/images/q2_claude_detailed.png",
+    "sha256": "b7b68b0c64f19c38ed6bc2aa24bdc508db6ac0e9e4914124c6de31867615fbd2"
+  },
+  {
+    "source": "assets/img/q2_deepseek_brief.png",
+    "distributed": "pilot-archive/images/q2_deepseek_brief.png",
+    "sha256": "c043dc3c3ff34ab373c2eb2e35b615dc8827d9717ab8d881c0c0e2c0e252a71f"
+  },
+  {
+    "source": "assets/img/q2_deepseek_detailed.png",
+    "distributed": "pilot-archive/images/q2_deepseek_detailed.png",
+    "sha256": "8be170313e4895987df1786cc3260edf3ce7c94038c8c25530c08f408119f0e9"
+  },
+  {
+    "source": "assets/img/q2_gemini_brief.png",
+    "distributed": "pilot-archive/images/q2_gemini_brief.png",
+    "sha256": "98b0595582d14c0f77a217738e30677f87a8c25950e6aa475e3f3705065451ad"
+  },
+  {
+    "source": "assets/img/q2_gemini_detailed.png",
+    "distributed": "pilot-archive/images/q2_gemini_detailed.png",
+    "sha256": "119ed778a0e2d2a529da27e5ce4fc39dc31dbbb650a6179196dff7fd9b774bfe"
+  },
+  {
+    "source": "assets/img/q3_chatgpt.png",
+    "distributed": "pilot-archive/images/q3_chatgpt.png",
+    "sha256": "9ea52225e05702d4fb9063dead5de0e2241f67e539e644caa65566cd9832fed9"
+  },
+  {
+    "source": "assets/img/q3_claude.png",
+    "distributed": "pilot-archive/images/q3_claude.png",
+    "sha256": "30461b9c0361fb213a14bf7b3cb202cc1500277fa012e786791d46e3724607dd"
+  },
+  {
+    "source": "assets/img/q3_deepseek.png",
+    "distributed": "pilot-archive/images/q3_deepseek.png",
+    "sha256": "96b41c2bc7bb56d66a756a51ed7b16c7d3a9a5a3290a398813dfec216be8ce4c"
+  },
+  {
+    "source": "assets/img/q3_gemini.png",
+    "distributed": "pilot-archive/images/q3_gemini.png",
+    "sha256": "e38a271e75e1f1316c4d8f6907612bff3168fe04e3e228c7217c8f9f9562a693"
+  },
+  {
+    "source": "assets/img/sim_supercap.png",
+    "distributed": "pilot-archive/images/sim_supercap.png",
+    "sha256": "3127b9cf20b1a437c6d6afe958e78d7bda0301d1ad314fc0c3d96ba63dd2f82e"
+  },
+  {
+    "source": "assets/img/sim_vector.png",
+    "distributed": "pilot-archive/images/sim_vector.png",
+    "sha256": "0588a84d5dd3084ff76d523a0ad9d1c2167ee189b98a47e4766b2d4ecdeaafc6"
+  }
+]

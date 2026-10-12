@@ -1,0 +1,17 @@
+--- raw primary block
++++ code_eval/deepseek/Q21_r1.m
+@@ -10,10 +10,10 @@
+ clear; clc; close all;
+ 
+ %% ---------------- User Inputs ----------------
+-I    = 10;              % Current (A) - positive => +z direction
+-l    = 5;               % Length of conductor (m)
+-A    = [0, 0, 0];       % Start point of conductor (Ax, Ay, Az)  [m]
+-P    = [2, 1, 1.5];     % Observation point (Px, Py, Pz)          [m]
++I    = 1;              % Current (A) - positive => +z direction
++l    = 2;               % Length of conductor (m)
++A    = [0.25, 0.5, 0];       % Start point of conductor (Ax, Ay, Az)  [m]
++P    = [1, 1, 0];     % Observation point (Px, Py, Pz)          [m]
+ mu0  = 4*pi*1e-7;       % Permeability of free space (H/m)
+ 
+ %% ---------------- Compute B vector ----------------

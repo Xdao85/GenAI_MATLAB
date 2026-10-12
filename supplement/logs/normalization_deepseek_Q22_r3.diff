@@ -1,0 +1,21 @@
+--- raw primary block
++++ code_eval/deepseek/Q22_r3.m
+@@ -16,14 +16,14 @@
+ clear; clc; close all;
+ 
+ %% ---------------- User-defined parameters ----------------
+-I  = 10;        % Current (A) — positive = +z direction
+-l  = 2.0;       % Length of conductor (m)
++I  = 1;        % Current (A) — positive = +z direction
++l  = 2;       % Length of conductor (m)
+ 
+ % Location of the center (or reference point) of the conductor
+-Ax = 0;  Ay = 0;  Az = 0;
++Ax = 0.25;  Ay = 0.5;  Az = 0;
+ 
+ % Field point P
+-Px = 0.5;  Py = 0.5;  Pz = 0.3;
++Px = 1;  Py = 1;  Pz = 0;
+ 
+ % Physical constant
+ mu0 = 4*pi*1e-7;   % Permeability of free space (H/m)

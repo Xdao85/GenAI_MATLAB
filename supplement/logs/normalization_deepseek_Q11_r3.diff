@@ -1,0 +1,23 @@
+--- raw primary block
++++ code_eval/deepseek/Q11_r3.m
+@@ -3,15 +3,15 @@
+ 
+ %% ================== USER INPUTS ==================
+ % Point P where electric field is to be calculated
+-Px = 0.5;  Py = 0.5;  Pz = 0.5;
++Px = 0;  Py = 1;  Pz = 2;
+ 
+ % Point charge 1
+-q1 = 1e-9;                    % Charge magnitude (Coulombs)
+-r1 = [0, 0, 0];               % Position [x, y, z]
++q1 = 2e-9;                    % Charge magnitude (Coulombs)
++r1 = [-1, 0, 0];               % Position [x, y, z]
+ 
+ % Point charge 2
+-q2 = -1e-9;                   % Charge magnitude (Coulombs)
+-r2 = [1, 1, 1];               % Position [x, y, z]
++q2 = -2e-9;                   % Charge magnitude (Coulombs)
++r2 = [1, 0, 0];               % Position [x, y, z]
+ 
+ % Physical constant
+ k = 8.9875e9;                 % Coulomb's constant (N·m²/C²)

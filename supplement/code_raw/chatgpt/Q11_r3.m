@@ -1,0 +1,122 @@
+%% Electric Field at Point P Due to Two Point Charges
+clear; clc; close all;
+
+% -----------------------------
+% Constants
+% -----------------------------
+eps0 = 8.854e-12;              % Permittivity of free space (F/m)
+k = 1/(4*pi*eps0);             % Coulomb's constant (N*m^2/C^2)
+
+% -----------------------------
+% Point charges
+% -----------------------------
+q1 = 2e-9;                     % Charge 1 (C)
+q2 = -3e-9;                    % Charge 2 (C)
+
+r1 = [0, 0, 0];                % Position of charge 1 [x y z] (m)
+r2 = [2, 0, 0];                % Position of charge 2 [x y z] (m)
+
+% -----------------------------
+% Observation point P
+% -----------------------------
+Px = 1;
+Py = 1;
+Pz = 1;
+
+P = [Px, Py, Pz];
+
+% -----------------------------
+% Electric field from charge 1
+% E1 = k*q1*(P-r1)/|P-r1|^3
+% -----------------------------
+R1 = P - r1;
+d1 = norm(R1);
+
+if d1 == 0
+    error('Point P cannot be located at charge 1.');
+end
+
+E1 = k*q1*R1/d1^3;
+
+% -----------------------------
+% Electric field from charge 2
+% -----------------------------
+R2 = P - r2;
+d2 = norm(R2);
+
+if d2 == 0
+    error('Point P cannot be located at charge 2.');
+end
+
+E2 = k*q2*R2/d2^3;
+
+% -----------------------------
+% Resultant electric field
+% -----------------------------
+E = E1 + E2;
+
+% -----------------------------
+% Display results
+% -----------------------------
+fprintf('Electric field due to charge 1:\n');
+fprintf('E1 = [%.4e, %.4e, %.4e] N/C\n\n', E1);
+
+fprintf('Electric field due to charge 2:\n');
+fprintf('E2 = [%.4e, %.4e, %.4e] N/C\n\n', E2);
+
+fprintf('Resultant electric field at P:\n');
+fprintf('E = [%.4e, %.4e, %.4e] N/C\n', E);
+
+fprintf('Magnitude |E| = %.4e N/C\n', norm(E));
+
+% -----------------------------
+% 3D visualization
+% -----------------------------
+figure('Color','w');
+hold on;
+grid on;
+axis equal;
+
+% Plot charge locations
+plot3(r1(1), r1(2), r1(3), 'ro', ...
+    'MarkerSize', 10, 'MarkerFaceColor', 'r');
+
+plot3(r2(1), r2(2), r2(3), 'bo', ...
+    'MarkerSize', 10, 'MarkerFaceColor', 'b');
+
+% Plot observation point P
+plot3(Px, Py, Pz, 'ko', ...
+    'MarkerSize', 8, 'MarkerFaceColor', 'k');
+
+% Plot electric field vectors
+quiver3(Px, Py, Pz, E1(1), E1(2), E1(3), ...
+    0.5, 'r', 'LineWidth', 2);
+
+quiver3(Px, Py, Pz, E2(1), E2(2), E2(3), ...
+    0.5, 'b', 'LineWidth', 2);
+
+quiver3(Px, Py, Pz, E(1), E(2), E(3), ...
+    0.5, 'k', 'LineWidth', 3);
+
+% Labels
+text(r1(1), r1(2), r1(3), '  q_1', ...
+    'FontSize', 11);
+
+text(r2(1), r2(2), r2(3), '  q_2', ...
+    'FontSize', 11);
+
+text(Px, Py, Pz, '  P', ...
+    'FontSize', 11);
+
+xlabel('x (m)');
+ylabel('y (m)');
+zlabel('z (m)');
+
+title('Electric Field at Point P Due to Two Point Charges');
+
+legend('q_1', 'q_2', 'Point P', ...
+       'E_1', 'E_2', 'Resultant E', ...
+       'Location', 'best');
+
+view(3);
+hold off;

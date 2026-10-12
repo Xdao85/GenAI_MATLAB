@@ -1,0 +1,22 @@
+--- raw primary block
++++ code_eval/gemini/Q12_r3.m
+@@ -16,16 +16,13 @@
+ 
+ % --- 1. Define Input Parameters ---
+ % Charge magnitudes in Coulombs (C)
+-q = [2e-9, -3e-9];  % Charge 1: +2 nC, Charge 2: -3 nC
++q = [2e-9, -2e-9];  % Charge 1: +2 nC, Charge 2: -3 nC
+ 
+ % Charge positions as Nx3 matrix: [x, y, z] in meters
+-charge_pos = [ ...
+-    -1.0,  0.5,  0.0;   % Position of q1
+-     1.5, -1.0,  0.5    % Position of q2
+-];
++charge_pos = [-1, 0, 0; 1, 0, 0];
+ 
+ % Observation point P(Px, Py, Pz) in meters
+-P = [0.5, 1.0, 1.5];
++P = [0, 1, 2];
+ 
+ % --- 2. Execution & Computation ---
+ % Compute total electric field vector at point P

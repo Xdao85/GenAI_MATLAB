@@ -1,0 +1,17 @@
+--- raw primary block
++++ code_eval/claude/Q22_r2.m
+@@ -21,11 +21,11 @@
+ %% ---------------------------- 1. INPUT DATA -----------------------------
+ mu0 = 4*pi*1e-7;          % Vacuum permeability [T*m/A]
+ 
+-I   = 10;                 % Current [A] (positive = +z direction)
++I   = 1;                 % Current [A] (positive = +z direction)
+ l   = 2;                  % Wire length [m]
+ 
+-A   = [0, 0, 0];          % Point A: lower end of the wire [m]
+-P   = [0.5, 0.3, 1.2];    % Observation point P [m]
++A   = [0.25, 0.5, 0];          % Point A: lower end of the wire [m]
++P   = [1, 1, 0];    % Observation point P [m]
+ 
+ N   = 2000;               % Number of segments for numerical integration
+ 

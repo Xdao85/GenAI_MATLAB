@@ -1,0 +1,21 @@
+--- raw primary block
++++ code_eval/chatgpt/Q11_r2.m
+@@ -7,14 +7,14 @@
+ 
+ %% Point charges
+ q1 = 2e-9;          % Charge 1 (C)
+-q2 = -3e-9;         % Charge 2 (C)
++q2 = -2e-9;         % Charge 2 (C)
+ 
+ % Positions of the charges [x y z] in meters
+-r1 = [0, 0, 0];
+-r2 = [2, 0, 0];
++r1 = [-1, 0, 0];
++r2 = [1, 0, 0];
+ 
+ %% Observation point P
+-P = [1, 1, 1];      % [Px Py Pz] in meters
++P = [0, 1, 2];      % [Px Py Pz] in meters
+ 
+ %% Electric field due to charge 1
+ R1 = P - r1;

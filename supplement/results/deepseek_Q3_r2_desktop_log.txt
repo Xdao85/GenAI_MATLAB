@@ -1,0 +1,15 @@
+Error using matlab.ui.control.TextArea/set.Value (line 111)
+'Value' must be a character vector, or a N-by-1 array of the following type: cell array of character vectors, string, or categorical.
+
+Error in GPS_GUI (line 110)
+fcnArea.Value = functionReferenceText();
+^^^^^^^^^^^^^
+Error in run_gui_reviews>execute_payload (line 72)
+if isFunction,feval(name);else,run(file);end
+              ^^^^^^^^^^^
+Error in run_gui_reviews>execute_file (line 69)
+execute_payload(file,name,~isempty(L)&&startsWith(strtrim(L(1)),'function'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in run_gui_reviews (line 26)
+  execute_file(char(file));drawnow;
+  ^^^^^^^^^^^^^^^^^^^^^^^^

@@ -1,0 +1,24 @@
+--- raw primary block
++++ code_eval/deepseek/Q11_r2.m
+@@ -6,16 +6,16 @@
+ k = 8.99e9;  % Coulomb's constant (N·m²/C²)
+ 
+ % Point P where we want to calculate E field
+-Px = 1.0; Py = 1.0; Pz = 1.0;  % Position of point P (meters)
++Px = 0; Py = 1; Pz = 2;  % Position of point P (meters)
+ P = [Px, Py, Pz];
+ 
+ % Charge 1
+-q1 = 1e-9;           % Charge magnitude (Coulombs)
+-r1 = [0, 0, 0];      % Position of charge 1
++q1 = 2e-9;           % Charge magnitude (Coulombs)
++r1 = [-1, 0, 0];      % Position of charge 1
+ 
+ % Charge 2
+-q2 = -1e-9;          % Charge magnitude (Coulombs)
+-r2 = [2, 2, 2];      % Position of charge 2
++q2 = -2e-9;          % Charge magnitude (Coulombs)
++r2 = [1, 0, 0];      % Position of charge 2
+ 
+ %% Compute Electric Field at Point P
+ % Vector from charge 1 to P

@@ -1,0 +1,27 @@
+--- raw primary block
++++ code_eval/chatgpt/Q22_r2.m
+@@ -22,18 +22,18 @@
+ %% -------------------- Input parameters --------------------
+ 
+ % Current and conductor length
+-I = 5;                  % Current [A]
++I = 1;                  % Current [A]
+ l = 2;                  % Conductor length [m]
+ 
+ % Position of the center of the conductor, A
+-Ax = 0;
+-Ay = 0;
++Ax = 0.25;
++Ay = 0.5;
+ Az = 0;
+ 
+ % Observation point P
+-Px = 1.0;
+-Py = 0.5;
+-Pz = 0.8;
++Px = 1;
++Py = 1;
++Pz = 0;
+ 
+ % Permeability of free space
+ mu0 = 4*pi*1e-7;        % [H/m]

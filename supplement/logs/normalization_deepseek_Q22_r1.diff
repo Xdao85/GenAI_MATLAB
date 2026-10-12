@@ -1,0 +1,29 @@
+--- raw primary block
++++ code_eval/deepseek/Q22_r1.m
+@@ -7,18 +7,18 @@
+ 
+ %% ==================== USER INPUTS ====================
+ % Conductor parameters
+-l  = 2.0;        % Length of conductor [m]
+-I  = 5.0;        % Current magnitude [A] (positive = +z direction)
++l  = 2;        % Length of conductor [m]
++I  = 1;        % Current magnitude [A] (positive = +z direction)
+ 
+ % Conductor center location A = (Ax, Ay, Az)
+-Ax = 0.0; 
+-Ay = 0.0; 
+-Az = 0.0;
++Ax = 0.25; 
++Ay = 0.5; 
++Az = 0;
+ 
+ % Field point P = (Px, Py, Pz)
+-Px = 0.5; 
+-Py = 0.5; 
+-Pz = 0.0;
++Px = 1; 
++Py = 1; 
++Pz = 0;
+ 
+ % Numerical integration resolution
+ N = 1000;        % Number of segments along the conductor

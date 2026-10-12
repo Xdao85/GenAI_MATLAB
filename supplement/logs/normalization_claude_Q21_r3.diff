@@ -1,0 +1,16 @@
+--- raw primary block
++++ code_eval/claude/Q21_r3.m
+@@ -7,10 +7,10 @@
+ 
+ %% ---------------- Inputs ----------------
+ mu0 = 4*pi*1e-7;          % permeability of free space [H/m]
+-I   = 10;                 % current [A] (positive = +z direction)
++I   = 1;                 % current [A] (positive = +z direction)
+ l   = 2;                  % conductor length [m]
+-A   = [0, 0, 0];          % start point of the conductor [Ax Ay Az]
+-P   = [0.5, 0.3, 1.0];    % field point [Px Py Pz]
++A   = [0.25, 0.5, 0];          % start point of the conductor [Ax Ay Az]
++P   = [1, 1, 0];    % field point [Px Py Pz]
+ 
+ %% ---------------- Field computation ----------------
+ B = wireB(P, A, l, I, mu0);

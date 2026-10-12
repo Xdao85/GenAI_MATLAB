@@ -1,0 +1,147 @@
+% =========================================================================
+% MAIN SCRIPT: Electric Field Computation and Visualization in 3D
+% =========================================================================
+% Mathematical Formulation:
+% Coulomb's Law calculates the electric field E at observation point P 
+% due to a point charge q_i at position r_i:
+%   E_i = (k * q_i / ||R_i||^3) * R_i
+% where R_i = P - r_i is the displacement vector from charge i to point P,
+% and k = 1 / (4 * pi * epsilon_0) approx 8.98755e9 N*m^2/C^2.
+%
+% By the principle of superposition, the total field at P is:
+%   E_total = sum(E_i)
+% =========================================================================
+
+clear; clc; close all;
+
+% --- 1. Define Input Parameters ---
+% Charge magnitudes in Coulombs (C)
+q = [2e-9, -3e-9];  % Charge 1: +2 nC, Charge 2: -3 nC
+
+% Charge positions as Nx3 matrix: [x, y, z] in meters
+charge_pos = [ ...
+    -1.0,  0.5,  0.0;   % Position of q1
+     1.5, -1.0,  0.5    % Position of q2
+];
+
+% Observation point P(Px, Py, Pz) in meters
+P = [0.5, 1.0, 1.5];
+
+% --- 2. Execution & Computation ---
+% Compute total electric field vector at point P
+E_total = computeElectricField(q, charge_pos, P);
+
+% Display numerical results in the Command Window
+fprintf('Observation Point P: [%.2f, %.2f, %.2f] m\n', P(1), P(2), P(3));
+fprintf('Electric Field E   : [%.3e, %.3e, %.3e] N/C\n', E_total(1), E_total(2), E_total(3));
+fprintf('E Magnitude |E|    : %.3e N/C\n', norm(E_total));
+
+% --- 3. Visualization ---
+% Plot 3D scene containing charges, observation point, and field vector
+plotElectricField(q, charge_pos, P, E_total);
+
+
+% =========================================================================
+% LOCAL FUNCTIONS
+% =========================================================================
+
+function E_total = computeElectricField(q, charge_pos, P)
+% COMPUTEELECTRICFIELD Calculates the net electric field at point P.
+%
+% Inputs:
+%   q          - 1xN array of charge magnitudes (Coulombs)
+%   charge_pos - Nx3 matrix of charge coordinates [x, y, z] (meters)
+%   P          - 1x3 vector of observation point coordinates [Px, Py, Pz]
+%
+% Output:
+%   E_total    - 1x3 total electric field vector [Ex, Ey, Ez] (N/C)
+
+    % Vacuum permittivity constant k = 1 / (4 * pi * epsilon_0)
+    k = 8.9875517923e9; % N*m^2/C^2
+
+    % Initialize total electric field vector
+    E_total = [0, 0, 0];
+    
+    num_charges = length(q);
+
+    % Calculate vector contribution from each charge using superposition
+    for i = 1:num_charges
+        % Displacement vector R from charge_i to observation point P
+        R_vec = P - charge_pos(i, :);
+        
+        % Euclidean distance |R|
+        R_mag = norm(R_vec);
+        
+        % Ensure observation point does not coincide with a point charge
+        if R_mag == 0
+            error('Observation point P cannot be at the exact location of a point charge.');
+        end
+        
+        % Field calculation: E_i = (k * q_i / |R|^3) * R_vec
+        E_i = (k * q(i) / (R_mag^3)) * R_vec;
+        
+        % Sum components (Superposition)
+        E_total = E_total + E_i;
+    end
+end
+
+
+function plotElectricField(q, charge_pos, P, E)
+% PLOTELECTRICFIELD Visualizes charges, point P, and electric field vector in 3D.
+%
+% Inputs:
+%   q          - 1xN array of charge magnitudes
+%   charge_pos - Nx3 matrix of charge coordinates
+%   P          - 1x3 vector of target point coordinates
+%   E          - 1x3 electric field vector at target point
+
+    figure('Color', 'w', 'Name', '3D Electric Field Vector');
+    hold on; grid on; box on;
+    axis equal;
+    view(3); % Set default 3D view angle
+
+    % Separate positive and negative charges for distinct markers
+    pos_idx = q > 0;
+    neg_idx = q < 0;
+
+    % Plot Positive Charges (Red Circles)
+    if any(pos_idx)
+        scatter3(charge_pos(pos_idx,1), charge_pos(pos_idx,2), charge_pos(pos_idx,3), ...
+            120, 'r', 'filled', 'MarkerEdgeColor', 'k', 'DisplayName', 'Positive Charge (+q)');
+    end
+
+    % Plot Negative Charges (Blue Circles)
+    if any(neg_idx)
+        scatter3(charge_pos(neg_idx,1), charge_pos(neg_idx,2), charge_pos(neg_idx,3), ...
+            120, 'b', 'filled', 'MarkerEdgeColor', 'k', 'DisplayName', 'Negative Charge (-q)');
+    end
+
+    % Plot Observation Point P (Black Diamond)
+    scatter3(P(1), P(2), P(3), 80, 'k', 'd', 'filled', 'DisplayName', 'Observation Point P');
+
+    % Normalize vector for visual scaling in quiver plot
+    scale_factor = 0.5; % Visual length scaling for plot
+    E_dir = E / norm(E) * scale_factor;
+
+    % Plot Electric Field Vector using quiver3
+    quiver3(P(1), P(2), P(3), E_dir(1), E_dir(2), E_dir(3), 0, ...
+        'Color', [0.8500 0.3250 0.0980], 'LineWidth', 2.5, ...
+        'MaxHeadSize', 0.5, 'DisplayName', 'Electric Field Vector E');
+
+    % Annotate individual charge magnitudes next to markers
+    for i = 1:length(q)
+        text(charge_pos(i,1) + 0.1, charge_pos(i,2) + 0.1, charge_pos(i,3), ...
+            sprintf('q_%d = %.1f nC', i, q(i)*1e9), 'FontSize', 9);
+    end
+
+    % Annotate Observation Point
+    text(P(1) + 0.1, P(2) + 0.1, P(3), 'P', 'FontSize', 10, 'FontWeight', 'bold');
+
+    % Formatting labels, title, and legend
+    xlabel('X Position (m)');
+    ylabel('Y Position (m)');
+    zlabel('Z Position (m)');
+    title('3D Electric Field Vector \mathbf{E} at Point P');
+    legend('Location', 'best');
+    rotate3d on; % Enable interactive 3D view rotation
+end

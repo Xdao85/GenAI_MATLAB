@@ -1,0 +1,60 @@
+run_id,assistant,prompt_id,rep,version,file,init_ok,start_ok,update_ok,stop_ok,reset_ok,error_message,error_id,error_line,rater,evidence,matlab_version,run_datetime
+chatgpt_Q3_r1,chatgpt,Q3,1,v1,code_eval/chatgpt/Q3_r1/GPS_Dynamics_GUI.m,0,NaN,NaN,NaN,NaN,"Error using feval
+Error: <a href=""matlab: opentoline('[LOCAL_ROOT]\code_eval\chatgpt\Q3_r1\GPS_Dynamics_GUI.m',165,5)"">File: GPS_Dynamics_GUI.m Line: 165 Column: 5</a>
+Character vector is not terminated properly.
+
+Error in run_gui_reviews>execute_payload (line 72)
+if isFunction,feval(name);else,run(file);end
+              ^^^^^^^^^^^
+Error in run_gui_reviews>execute_file (line 69)
+execute_payload(file,name,~isempty(L)&&startsWith(strtrim(L(1)),'function'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in run_gui_reviews (line 26)
+  execute_file(char(file));drawnow;
+  ^^^^^^^^^^^^^^^^^^^^^^^^",MATLAB:m_unterminated_string,72,Quang,,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:24:55
+chatgpt_Q3_r2,chatgpt,Q3,2,v1,code_eval/chatgpt/Q3_r2/gpsDynamicsGUI.m,0,NaN,NaN,NaN,NaN,"Error using feval
+Error: <a href=""matlab: opentoline('[LOCAL_ROOT]\code_eval\chatgpt\Q3_r2\gpsDynamicsGUI.m',223,13)"">File: gpsDynamicsGUI.m Line: 223 Column: 13</a>
+Character vector is not terminated properly.
+
+Error in run_gui_reviews>execute_payload (line 72)
+if isFunction,feval(name);else,run(file);end
+              ^^^^^^^^^^^
+Error in run_gui_reviews>execute_file (line 69)
+execute_payload(file,name,~isempty(L)&&startsWith(strtrim(L(1)),'function'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in run_gui_reviews (line 26)
+  execute_file(char(file));drawnow;
+  ^^^^^^^^^^^^^^^^^^^^^^^^",MATLAB:m_unterminated_string,72,Quang,,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:24:56
+chatgpt_Q3_r3,chatgpt,Q3,3,v1,code_eval/chatgpt/Q3_r3/GPS_Dynamics_GUI.m,0,NaN,NaN,NaN,NaN,"Error using feval
+Error: <a href=""matlab: opentoline('[LOCAL_ROOT]\code_eval\chatgpt\Q3_r3\GPS_Dynamics_GUI.m',83,12)"">File: GPS_Dynamics_GUI.m Line: 83 Column: 12</a>
+Character vector is not terminated properly.
+
+Error in run_gui_reviews>execute_payload (line 72)
+if isFunction,feval(name);else,run(file);end
+              ^^^^^^^^^^^
+Error in run_gui_reviews>execute_file (line 69)
+execute_payload(file,name,~isempty(L)&&startsWith(strtrim(L(1)),'function'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in run_gui_reviews (line 26)
+  execute_file(char(file));drawnow;
+  ^^^^^^^^^^^^^^^^^^^^^^^^",MATLAB:m_unterminated_string,72,Quang,,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:24:56
+claude_Q3_r1,claude,Q3,1,v1,code_eval/claude/Q3_r1/gps_simulator.m,1,NaN,NaN,NaN,NaN,"",,NaN,Quang,,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:24:56
+claude_Q3_r2,claude,Q3,2,v1,code_eval/claude/Q3_r2/gps_simulator_gui.m,1,NaN,NaN,NaN,NaN,"",,NaN,Quang,,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:27:17
+claude_Q3_r3,claude,Q3,3,v1,code_eval/claude/Q3_r3/gps_gui_simulator.m,1,NaN,NaN,NaN,NaN,"",,NaN,Quang,,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:27:36
+deepseek_Q3_r1,deepseek,Q3,1,v1,code_eval/deepseek/Q3_r1/GPS_GUI.m,1,NaN,NaN,NaN,NaN,"",,NaN,Quang,,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:27:44
+deepseek_Q3_r2,deepseek,Q3,2,v1,code_eval/deepseek/Q3_r2/GPS_GUI.m,0,NaN,NaN,NaN,NaN,"Error using matlab.ui.control.TextArea/set.Value (line 111)
+'Value' must be a character vector, or a N-by-1 array of the following type: cell array of character vectors, string, or categorical.
+
+Error in GPS_GUI (line 110)
+fcnArea.Value = functionReferenceText();
+^^^^^^^^^^^^^
+Error in run_gui_reviews>execute_payload (line 72)
+if isFunction,feval(name);else,run(file);end
+              ^^^^^^^^^^^
+Error in run_gui_reviews>execute_file (line 69)
+execute_payload(file,name,~isempty(L)&&startsWith(strtrim(L(1)),'function'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in run_gui_reviews (line 26)
+  execute_file(char(file));drawnow;
+  ^^^^^^^^^^^^^^^^^^^^^^^^",MATLAB:ui:TextArea:invalidMultilineTextValue,111,Quang,,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:27:51
+deepseek_Q3_r3,deepseek,Q3,3,v1,code_eval/deepseek/Q3_r3/GPS_Simulation.m,1,NaN,NaN,NaN,NaN,"",,NaN,Quang,,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:27:54

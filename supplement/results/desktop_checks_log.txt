@@ -1,0 +1,835 @@
+No observed field files. No checks.csv or rates created.
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+chatgpt Q1.1 r1
+Electric field due to Q1:
+E1 = [1.22308, 1.22308, 2.44615] N/C
+
+Electric field due to Q2:
+E2 = [1.22308, -1.22308, -2.44615] N/C
+
+Resultant electric field:
+E = [2.44615, 0, 0] N/C
+Magnitude of E = 2.44615 N/C
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+chatgpt Q1.1 r2
+Electric field due to q1:
+E1 = [1.2230e+00, 1.2230e+00, 2.4461e+00] N/C
+
+Electric field due to q2:
+E2 = [1.2230e+00, -1.2230e+00, -2.4461e+00] N/C
+
+Resultant electric field:
+E = [2.4461e+00, 0.0000e+00, 0.0000e+00] N/C
+|E| = 2.4461e+00 N/C
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+chatgpt Q1.1 r3
+Electric field due to charge 1:
+E1 = [1.2231e+00, 1.2231e+00, 2.4462e+00] N/C
+
+Electric field due to charge 2:
+E2 = [1.2231e+00, -1.2231e+00, -2.4462e+00] N/C
+
+Resultant electric field at P:
+E = [2.4462e+00, 0.0000e+00, 0.0000e+00] N/C
+Magnitude |E| = 2.4462e+00 N/C
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+chatgpt Q1.2 r1
+Electric field due to Charge 1:
+E1 = [1.2231e+00, 1.2231e+00, 2.4461e+00] N/C
+
+Electric field due to Charge 2:
+E2 = [1.2231e+00, -1.2231e+00, -2.4461e+00] N/C
+
+Total electric field at P:
+E  = [2.4461e+00, 0.0000e+00, 0.0000e+00] N/C
+Magnitude of E = 2.4461e+00 N/C
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+chatgpt Q1.2 r2
+Electric field due to Charge 1:
+E1 = [1.2231e+00, 1.2231e+00, 2.4461e+00] N/C
+
+Electric field due to Charge 2:
+E2 = [1.2231e+00, -1.2231e+00, -2.4461e+00] N/C
+
+Total electric field at P:
+E  = [2.4461e+00, 0.0000e+00, 0.0000e+00] N/C
+Magnitude of E = 2.4461e+00 N/C
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+chatgpt Q1.2 r3
+Electric field due to Charge 1:
+E1 = [1.2231e+00, 1.2231e+00, 2.4461e+00] N/C
+
+Electric field due to Charge 2:
+E2 = [1.2231e+00, -1.2231e+00, -2.4461e+00] N/C
+
+Total electric field at P:
+E = [2.4461e+00, 0.0000e+00, 0.0000e+00] N/C
+Magnitude of total electric field:
+|E| = 2.4461e+00 N/C
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+chatgpt Q2.1 r1
+Magnetic flux density at P:
+Bx = -9.141924e-08 T
+By = 1.371289e-07 T
+Bz = 0.000000e+00 T
+|B| = 1.648084e-07 T
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+chatgpt Q2.1 r2
+Magnetic flux density at P:
+Bx = -9.142334e-08 T
+By = 1.371350e-07 T
+Bz = 0.000000e+00 T
+|B| = 1.648158e-07 T
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+chatgpt Q2.1 r3
+Magnetic flux density at P:
+Bx = -9.146024e-08 T
+By = 1.371904e-07 T
+Bz = 0.000000e+00 T
+|B| = 1.648823e-07 T
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+chatgpt Q2.2 r1
+Magnetic field at P = [1.000, 1.000, 0.000] m:
+Bx = -9.141924e-08 T
+By = 1.371289e-07 T
+Bz = 0.000000e+00 T
+|B| = 1.648084e-07 T
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+chatgpt Q2.2 r2
+Magnetic field at P:
+Bx = -9.142334e-08 T
+By = 1.371350e-07 T
+Bz = 0.000000e+00 T
+|B| = 1.648158e-07 T
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+chatgpt Q2.2 r3
+Magnetic field at P = [1.000, 1.000, 0.000] m:
+Bx = -9.142334e-08 T
+By = 1.371350e-07 T
+Bz = 0.000000e+00 T
+|B| = 1.648158e-07 T
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+chatgpt S2 r1
+Finite-wire closed-form solution:
+B_ref = [-9.14192434e-08,  1.37128865e-07,  0.00000000e+00] T
+|B_ref| = 1.64808385e-07 T
+
+Numerical Biot-Savart solution:
+B_num = [-9.14192434e-08,  1.37128865e-07,  0.00000000e+00] T
+|B_num| = 1.64808385e-07 T
+
+Relative vector error = 1.237760e-11 (0.000000%)
+
+Right-hand-rule check:
+Expected direction = [-0.554700,  0.832050,  0.000000]
+Computed direction = [-0.554700,  0.832050,  0.000000]
+Direction dot product = 1.000000
+Right-hand rule check: PASS
+
+Vector error check: PASS (error <= 0.1%)
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+chatgpt S2 r2
+Finite straight conductor EM calculation
+-----------------------------------------
+Wire center A = (0.2500, 0.5000, 0.0000) m
+Observation point P = (1.0000, 1.0000, 0.0000) m
+Current I = 1.0000 A in the +z direction
+Wire length l = 2.0000 m
+
+Closed-form B_ref [T]:
+  Bx = -9.1419243410e-08 T
+  By = 1.3712886512e-07 T
+  Bz = 0.0000000000e+00 T
+  |B_ref| = 1.6480838484e-07 T
+
+Numerical Biot-Savart B_num [T]:
+  Bx = -9.1419243411e-08 T
+  By = 1.3712886512e-07 T
+  Bz = 0.0000000000e+00 T
+  |B_num| = 1.6480838484e-07 T
+
+Relative vector error = 3.091782e-12 (0.000000 %)
+
+Right-hand-rule check:
+Expected direction = [-0.5547, 0.8321, 0.0000]
+Calculated direction = [-0.5547, 0.8321, 0.0000]
+PASS: B_ref follows the right-hand rule.
+PASS: Vector error is below the 0.1% limit.
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+Error using S2_r3 (line 106)
+STOP: The numerical vector error is 200.000000 %, which exceeds the 0.1 % limit.
+
+Error in run (line 112)
+evalin('caller', strcat(scriptStem, ';'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in run_all_checks>execute_payload (line 83)
+if isempty(declared),printed=evalc('run(file)');
+                             ^^^^^^^^^^^^^^^^^^
+Error in run_all_checks>execute_isolated (line 79)
+[printed,candidates]=execute_payload(file,declared);
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in run_all_checks (line 20)
+  [printed,candidates]=execute_isolated(char(file));
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+gemini Q1.1 r1
+=== Electric Field Calculation Results ===
+E1 vector (from q1) : [ 1.223e+00,  1.223e+00,  2.446e+00] N/C
+E2 vector (from q2) : [ 1.223e+00, -1.223e+00, -2.446e+00] N/C
+E_total vector      : [ 2.446e+00,  0.000e+00,  0.000e+00] N/C
+E_total magnitude   :  2.446e+00 N/C
+
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+Error: <a href="matlab: opentoline('[LOCAL_ROOT]\code_eval\gemini\Q11_r2.m',40,9)">File: Q11_r2.m Line: 40 Column: 9</a>
+Character vector is not terminated properly.
+
+Error in run (line 112)
+evalin('caller', strcat(scriptStem, ';'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in run_all_checks>execute_payload (line 83)
+if isempty(declared),printed=evalc('run(file)');
+                             ^^^^^^^^^^^^^^^^^^
+Error in run_all_checks>execute_isolated (line 79)
+[printed,candidates]=execute_payload(file,declared);
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in run_all_checks (line 20)
+  [printed,candidates]=execute_isolated(char(file));
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+gemini Q1.2 r2
+--------------------------------------------------
+Observation Point P: [0.000, 1.000, 2.000] m
+Electric Field E   : [2.446e+00, 0.000e+00, 0.000e+00] N/C
+E-field Magnitude  : 2.446e+00 N/C
+--------------------------------------------------
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+gemini Q1.2 r3
+Observation Point P: [0.00, 1.00, 2.00] m
+Electric Field E   : [2.446e+00, 0.000e+00, 0.000e+00] N/C
+E Magnitude |E|    : 2.446e+00 N/C
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+gemini Q2.1 r1
+Magnetic Flux Density B at P(1, 1, 0):
+  Bx = -5.610e-08 T
+  By = 8.416e-08 T
+  Bz = 0.000e+00 T
+  |B| = 1.011e-07 T
+
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+gemini Q2.1 r2
+Magnetic Flux Density B at P(1.00, 1.00, 0.00):
+  Bx = -5.610367e-08 T
+  By = 8.415550e-08 T
+  Bz = 0.000000e+00 T
+  |B| = 1.011423e-07 T
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+gemini Q2.2 r3
+Magnetic Field Vector B at P: [-9.142e-08, 1.371e-07, 0.000e+00] T
+Magnitude |B|: 1.648e-07 T
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+claude Q1.1 r1
+E1    = [    1.223     1.223     2.446] N/C, |E1|    = 2.996 N/C
+E2    = [    1.223    -1.223    -2.446] N/C, |E2|    = 2.996 N/C
+Etot  = [    2.446     0.000     0.000] N/C, |Etot|  = 2.446 N/C
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+claude Q1.1 r2
+E1    = [+1.2231e+00  +1.2231e+00  +2.4461e+00] N/C,  |E1| = 2.9959e+00
+E2    = [+1.2231e+00  -1.2231e+00  -2.4461e+00] N/C,  |E2| = 2.9959e+00
+E tot = [+2.4461e+00  +0.0000e+00  +0.0000e+00] N/C,  |E|  = 2.4461e+00
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+claude Q1.1 r3
+E1    = [+1.223 +1.223 +2.446] N/C, |E1| = 2.996 N/C
+E2    = [+1.223 -1.223 -2.446] N/C, |E2| = 2.996 N/C
+Etot  = [+2.446 +0 +0] N/C, |Etot| = 2.446 N/C
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+claude Q1.2 r1
+Electric field at P = (0.00, 1.00, 2.00) m:
+  E = [2.4461e+00, 0.0000e+00, 0.0000e+00] N/C
+  |E| = 2.4461e+00 N/C
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+claude Q1.2 r2
+Field point P  = (0.000, 1.000, 2.000) m
+E from q1      = (1.2231e+00, 1.2231e+00, 2.4461e+00) N/C
+E from q2      = (1.2231e+00, -1.2231e+00, -2.4461e+00) N/C
+Total E        = (2.4461e+00, 0.0000e+00, 0.0000e+00) N/C
+|E|            = 2.4461e+00 N/C
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+claude Q1.2 r3
+Electric field at P = (0.00, 1.00, 2.00) m:
+  Ex = +2.4461e+00 N/C
+  Ey = +0.0000e+00 N/C
+  Ez = +0.0000e+00 N/C
+  |E| = 2.4461e+00 N/C
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+claude Q2.1 r1
+B at P = [-5.6104e-08  8.4156e-08  0.0000e+00] T
+|B|    = 1.0114e-07 T
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+claude Q2.1 r2
+rho = 0.9014 m
+B   = [-5.6104e-08  8.4156e-08  0.0000e+00] T
+|B| = 1.0114e-07 T
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+claude Q2.1 r3
+B at P = [-5.6104e-08  8.4156e-08  0.0000e+00] T,  |B| = 1.0114e-07 T
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+claude Q2.2 r1
+Numerical  B = [-5.6104e-08  +8.4156e-08  +0.0000e+00] T,  |B| = 1.0114e-07 T
+Analytical B = [-5.6104e-08  +8.4156e-08  +0.0000e+00] T,  |B| = 1.0114e-07 T
+Relative difference = 4.39e-09
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+claude Q2.2 r2
+--------------------------------------------
+Wire: from (0.25, 0.50, 0.00) to (0.25, 0.50, 2.00) m
+Current I = 1.00 A,  Point P = (1.00, 1.00, 0.00) m
+--------------------------------------------
+Numerical  B = [-5.6104e-08, 8.4156e-08, 0.0000e+00] T
+Analytical B = [-5.6104e-08, 8.4156e-08, 0.0000e+00] T
+|B| (numerical)  = 1.0114e-07 T
+|B| (analytical) = 1.0114e-07 T
+Relative difference = 4.39e-07 %
+
+Note: the plotted B arrow is scaled for visibility; its true
+magnitude is |B| = 1.0114e-07 T.
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+claude Q2.2 r3
+Numerical B = [-5.6104e-08  8.4156e-08  0.0000e+00] T
+Analytic  B = [-5.6104e-08  8.4156e-08  0.0000e+00] T
+|B| (numerical) = 1.0114e-07 T  (0.101 uT)
+Relative difference = 4.39e-09
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+claude S2 r1
+B (closed form)  = [-9.141924e-08 1.371289e-07 0.000000e+00] T, |B| = 1.648084e-07 T
+B (Biot-Savart)  = [-9.141925e-08 1.371289e-07 0.000000e+00] T, |B| = 1.648084e-07 T
+Relative vector error = 3.092e-08 (0.0000 %)
+Right-hand rule: cos(angle between B and z x rho_hat) = 1.00000000
+Right-hand rule check: PASSED
+Accuracy check: PASSED (error below 0.10 %)
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+claude S2 r2
+B closed form  = [-9.141924e-08 1.371289e-07 0.000000e+00] T
+B numerical    = [-9.141924e-08 1.371289e-07 0.000000e+00] T
+|B| closed form = 1.648084e-07 T
+Relative vector error = 0.000e+00 (limit 1.0e-03)
+Right-hand rule: cos(B,phi_hat) = +1.000000, cos(B,rho_hat) = +0.00e+00, cos(B,z_hat) = +0.00e+00 -> OK
+All checks passed.
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+claude S2 r3
+B closed form  = [-9.141924e-08 1.371289e-07 0.000000e+00] T
+B Biot-Savart  = [-9.141924e-08 1.371289e-07 0.000000e+00] T
+|B_ref| = 1.648084e-07 T,  |B_num| = 1.648084e-07 T
+Relative vector error = 1.796e-16 (0.0000 %)
+Right-hand rule: B.phi_hat/|B| = +1.000000 (expect +1)
+                 B.rho_hat/|B| = +0.00e+00, Bz/|B| = +0.00e+00 (expect 0)
+Right-hand rule check passed.
+Numerical result agrees with closed form within 0.1 %.
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+deepseek Q1.1 r1
+Field due to q1 : [ 1.223e+00,  1.223e+00,  2.446e+00] N/C
+Field due to q2 : [ 1.223e+00, -1.223e+00, -2.446e+00] N/C
+Total field E   : [ 2.446e+00,  0.000e+00,  0.000e+00] N/C
+|E| = 2.446e+00 N/C
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+deepseek Q1.1 r2
+=== Electric Field Calculation ===
+Point P = (0.00, 1.00, 2.00) m
+
+Charge q1 = 2.00e-09 C at (-1.00, 0.00, 0.00)
+Charge q2 = -2.00e-09 C at (1.00, 0.00, 0.00)
+
+E1 (from q1) = [1.22, 1.22, 2.45] N/C
+E2 (from q2) = [1.22, -1.22, -2.45] N/C
+E_total      = [2.45, 0.00, 0.00] N/C
+|E_total|    = 2.45 N/C
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+deepseek Q1.1 r3
+Distance from q1 to P : 2.4495
+Distance from q2 to P : 2.4495
+E1 = [1.22304, 1.22304, 2.44609] N/C
+E2 = [1.22304, -1.22304, -2.44609] N/C
+Total E at P = [2.44609, 0, 0] N/C
+|E| = 2.44609 N/C
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+deepseek Q1.2 r1
+Electric Field at P = (0.00, 1.00, 2.00):
+  E_total = [2.446102e+00, 0.000000e+00, 0.000000e+00] N/C
+  |E_total| = 2.446102e+00 N/C
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+deepseek Q1.2 r2
+Electric field due to q1 : [1.2231e+00, 1.2231e+00, 2.4461e+00] N/C
+Electric field due to q2 : [1.2231e+00, -1.2231e+00, -2.4461e+00] N/C
+Total electric field at P: [2.4461e+00, 0.0000e+00, 0.0000e+00] N/C
+Magnitude |E| = 2.4461e+00 N/C
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+deepseek Q1.2 r3
+Electric field at point P = [0.000, 1.000, 2.000] m:
+  E1 (from q1) = [1.2231e+00, 1.2231e+00, 2.4461e+00] N/C
+  E2 (from q2) = [1.2231e+00, -1.2231e+00, -2.4461e+00] N/C
+  E_total      = [2.4461e+00, 0.0000e+00, 0.0000e+00] N/C
+  |E_total|    = 2.4461e+00 N/C
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+deepseek Q2.1 r1
+Magnetic flux density at P = [1.000, 1.000, 0.000] m:
+  B = [-5.610367e-08,  8.415550e-08,  0.000000e+00] T
+  |B| = 1.011423e-07 T
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+deepseek Q2.1 r2
+Point P        : (1.000, 1.000, 0.000) m
+Conductor A    : (0.250, 0.500, 0.000) m, length 2.000 m
+Perp. distance : 0.9014 m
+|B|            : 1.648084e-07 T
+B vector       : (-9.141924e-08, 1.371289e-07, 0.000000e+00) T
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+deepseek Q2.1 r3
+B at P = [1.000, 1.000, 0.000] m
+Bx = -9.1419e-08 T
+By = 1.3713e-07 T
+Bz = 0.0000e+00 T
+|B| = 1.6481e-07 T
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+deepseek Q2.2 r1
+===== Magnetic Field Computation =====
+Conductor length l    = 2.000 m
+Current I             = 1.000 A (along +z)
+Conductor center A    = (0.250, 0.500, 0.000) m
+Field point P         = (1.000, 1.000, 0.000) m
+
+Magnetic field B at P:
+  Bx = -9.141925e-08 T
+  By = 1.371289e-07 T
+  Bz = 0.000000e+00 T
+  |B| = 1.648084e-07 T
+
+Reference: |B| for infinite wire = 2.218801e-07 T
+Ratio |B_finite| / |B_infinite| = 0.7428
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+deepseek Q2.2 r2
+Conductor centered at A = (0.250, 0.500, 0.000), length = 2.000 m
+Current I = 1.000 A (direction +z)
+Field point P = (1.000, 1.000, 0.000) m
+
+Magnetic field B at P:
+  Bx = -9.142744e-08 T
+  By = 1.371412e-07 T
+  Bz = 0.000000e+00 T
+  |B| = 1.648232e-07 T
+
+Analytical magnitude (finite wire): |B| = 1.648084e-07 T
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+deepseek Q2.2 r3
+Conductor: length l = 2.000 m, current I = 1.000 A (along +z)
+Conductor reference point A = (0.250, 0.500, 0.000)
+Field point P = (1.000, 1.000, 0.000)
+Magnetic field B at P (T):
+   Bx = -9.1419e-08
+   By = +1.3713e-07
+   Bz = +0.0000e+00
+   |B| = 1.6481e-07 T
+   Direction (unit): [-0.5547, 0.8321, 0.0000]
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+Error using S2_r1 (line 48)
+Relative vector error exceeds 0.1%%. Stopping script.
+
+Error in run (line 112)
+evalin('caller', strcat(scriptStem, ';'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in run_all_checks>execute_payload (line 83)
+if isempty(declared),printed=evalc('run(file)');
+                             ^^^^^^^^^^^^^^^^^^
+Error in run_all_checks>execute_isolated (line 79)
+[printed,candidates]=execute_payload(file,declared);
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in run_all_checks (line 20)
+  [printed,candidates]=execute_isolated(char(file));
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+deepseek S2 r2
+--- Finite straight wire: Biot-Savart demo ---
+Wire center A = (0.250, 0.500, 0.000) m
+Wire ends: z = -1.000 m to z = 1.000 m
+Current I = 1.000 A in +z direction
+Observation point P = (1.000, 1.000, 0.000) m
+
+Closed-form B_ref = [-9.141924e-08,  1.371289e-07,  0.000000e+00] T
+Numerical  B_num = [-9.141924e-08,  1.371289e-07,  0.000000e+00] T
+|B_ref| = 1.648084e-07 T,  |B_num| = 1.648084e-07 T
+Relative vector error ||B_num - B_ref|| / ||B_ref|| = 3.084442e-12
+
+Right-hand rule check:
+  phi_hat = aI x r_hat = [-0.5547,  0.8321,  0.0000]
+  B_ref . phi_hat = 1.648084e-07 T (should be > 0)
+  Right-hand rule: satisfied (B curls in +phi direction).
+
+Error within tolerance (0.1%). Proceeding to plot.
+
+
+[Warning: Function input has the same name as a MATLAB built-in. We suggest you rename the function to avoid a potential name conflict.] 
+[> In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('path', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m', 109)" style="font-weight:bold">path</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\path.m',109,0)">line 109</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath>doPathAddition', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 126)" style="font-weight:bold">addpath>doPathAddition</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',126,0)">line 126</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('addpath', 'C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m', 90)" style="font-weight:bold">addpath</a> (<a href="matlab: opentoline('C:\Program Files\MATLAB\R2024b\toolbox\matlab\general\addpath.m',90,0)">line 90</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks>execute_isolated', '[LOCAL_ROOT]\checks\run_all_checks.m', 62)" style="font-weight:bold">run_all_checks>execute_isolated</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',62,0)">line 62</a>)
+In <a href="matlab:matlab.lang.internal.introspective.errorDocCallback('run_all_checks', '[LOCAL_ROOT]\checks\run_all_checks.m', 20)" style="font-weight:bold">run_all_checks</a> (<a href="matlab: opentoline('[LOCAL_ROOT]\checks\run_all_checks.m',20,0)">line 20</a>)] 
+
+deepseek S2 r3
+Finite straight wire, I = 1.000 A, L = 2.000 m
+Wire center A = (0.250, 0.500, 0.000) m
+Observation point P = (1.000, 1.000, 0.000) m
+
+B_ref (closed-form)  = [-9.141924e-08,  1.371289e-07,  0.000000e+00] T
+B_num (Biot-Savart)  = [-9.141924e-08,  1.371289e-07,  0.000000e+00] T
+Relative error  ||B_num - B_ref|| / ||B_ref|| = 3.111e-12
+
+Right-hand rule check: (I_hat x rho_hat) . B_hat = +1.000000
+  -> PASS: B circulates CCW about +z as expected.
+
+

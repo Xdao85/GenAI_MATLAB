@@ -1,0 +1,162 @@
+%% ========================================================================
+%  electric_field_two_charges.m
+%  Electric field at a point P due to two point charges (Coulomb's law),
+%  visualised with a 3D quiver plot.
+%
+%  NOTE: This is a script file with local functions at the bottom.
+%        Requires MATLAB R2016b or newer.
+%
+%  MATHEMATICAL FORMULATION
+%  ------------------------
+%  For a point charge q located at position r_q, the electric field at a
+%  field point P (position vector r_P) is given by Coulomb's law:
+%
+%       E = k * q * (r_P - r_q) / |r_P - r_q|^3
+%
+%  where
+%       k = 1/(4*pi*eps0) ~ 8.9875e9 N*m^2/C^2
+%       R = r_P - r_q          (vector from the charge to the field point)
+%       |R|                    (distance between charge and field point)
+%
+%  Equivalent form: E = k*q/|R|^2 * R_hat, with R_hat = R/|R|.
+%
+%  Superposition principle: the total field is the vector sum of the
+%  fields produced by each charge individually:
+%
+%       E_total = E_1 + E_2
+% =========================================================================
+
+clear; clc; close all;
+
+%% ------------------------- MAIN SCRIPT ----------------------------------
+
+% ---- 1. Inputs (edit these values) --------------------------------------
+% Charge magnitudes in Coulombs (sign matters: + positive, - negative)
+q1 =  2e-6;                 % Charge 1:  +2 microcoulombs
+q2 = -3e-6;                 % Charge 2:  -3 microcoulombs
+
+% Charge positions [x y z] in metres
+r1 = [ 1,  0,  0];          % Position of charge 1
+r2 = [-1,  0,  0];          % Position of charge 2
+
+% Field point P = (Px, Py, Pz) in metres
+Px = 0;  Py = 1;  Pz = 1;
+P  = [Px, Py, Pz];
+
+% ---- 2. Compute the total electric field at P ---------------------------
+charges   = [q1, q2];           % 1x2 vector of charge values
+positions = [r1; r2];           % 2x3 matrix: each row is one charge position
+
+E = totalElectricField(charges, positions, P);
+
+% ---- 3. Display results in the command window ---------------------------
+fprintf('Electric field at P = (%.2f, %.2f, %.2f) m:\n', P);
+fprintf('  Ex = %+.4e N/C\n', E(1));
+fprintf('  Ey = %+.4e N/C\n', E(2));
+fprintf('  Ez = %+.4e N/C\n', E(3));
+fprintf('  |E| = %.4e N/C\n', norm(E));
+
+% ---- 4. Visualise -------------------------------------------------------
+plotElectricField(charges, positions, P, E);
+
+
+%% ------------------------- LOCAL FUNCTIONS ------------------------------
+
+function E = coulombField(q, rq, P)
+% COULOMBFIELD  Electric field at P due to ONE point charge (Coulomb's law).
+%
+%   E = coulombField(q, rq, P)
+%
+%   Inputs:
+%     q  - charge magnitude with sign (C)            [scalar]
+%     rq - charge position [x y z] (m)               [1x3]
+%     P  - field point     [x y z] (m)               [1x3]
+%   Output:
+%     E  - electric field vector [Ex Ey Ez] (N/C)    [1x3]
+
+    k = 8.9875517923e9;            % Coulomb constant 1/(4*pi*eps0) (N*m^2/C^2)
+
+    R    = P - rq;                 % Vector pointing from the charge to P
+    dist = norm(R);                % Distance |R|
+
+    % The field is undefined at the location of the charge itself
+    if dist < eps
+        error('coulombField:singularity', ...
+              'Field point P coincides with a charge; field is undefined.');
+    end
+
+    % E = k*q*R/|R|^3
+    E = k * q * R / dist^3;
+end
+
+
+function E = totalElectricField(charges, positions, P)
+% TOTALELECTRICFIELD  Net field at P from N point charges (superposition).
+%
+%   E = totalElectricField(charges, positions, P)
+%
+%   Inputs:
+%     charges   - charge values (C)                  [1xN or Nx1]
+%     positions - charge positions, one per row (m)  [Nx3]
+%     P         - field point [x y z] (m)            [1x3]
+%   Output:
+%     E         - net electric field [Ex Ey Ez]      [1x3]
+
+    E = zeros(1, 3);                         % Initialise the running sum
+
+    for i = 1:numel(charges)
+        % Add the contribution of charge i (superposition principle)
+        E = E + coulombField(charges(i), positions(i, :), P);
+    end
+end
+
+
+function plotElectricField(charges, positions, P, E)
+% PLOTELECTRICFIELD  3D visualisation of the charges, point P and E vector.
+%
+%   plotElectricField(charges, positions, P, E)
+%
+%   The field vector is drawn with quiver3, starting at P. Because real
+%   field magnitudes (e.g. 1e4-1e6 N/C) are far larger than the geometry
+%   (metres), the arrow is rescaled for display so that its length is
+%   about 40% of the scene size. The true values are reported in the legend.
+
+    figure('Name', 'Electric field from two point charges', 'Color', 'w');
+    hold on; grid on; box on; axis equal;
+
+    % ---- Charges: red = positive, blue = negative -----------------------
+    for i = 1:numel(charges)
+        if charges(i) >= 0
+            colour = [0.85 0.1 0.1];         % Positive charge -> red
+        else
+            colour = [0.1 0.2 0.85];         % Negative charge -> blue
+        end
+        scatter3(positions(i,1), positions(i,2), positions(i,3), ...
+                 140, colour, 'filled', 'MarkerEdgeColor', 'k', ...
+                 'HandleVisibility', 'off');
+        text(positions(i,1), positions(i,2), positions(i,3), ...
+             sprintf('  q%d = %.2g C', i, charges(i)), 'FontSize', 10);
+    end
+
+    % ---- Field point P --------------------------------------------------
+    scatter3(P(1), P(2), P(3), 70, 'k', 'filled', 'HandleVisibility', 'off');
+    text(P(1), P(2), P(3), sprintf('  P (%.2g, %.2g, %.2g)', P), 'FontSize', 10);
+
+    % ---- Scale E for display --------------------------------------------
+    allPts    = [positions; P];                          % All points in scene
+    sceneSize = max(max(allPts) - min(allPts));          % Largest extent (m)
+    scale     = 0.4 * sceneSize / norm(E);               % Display scale factor
+    Ed        = E * scale;                               % Scaled vector
+
+    % ---- Quiver plot of E at P (autoscale off => length = Ed exactly) ----
+    quiver3(P(1), P(2), P(3), Ed(1), Ed(2), Ed(3), 0, ...
+            'Color', [0.1 0.6 0.1], 'LineWidth', 2.5, 'MaxHeadSize', 0.8, ...
+            'DisplayName', sprintf('E = [%.2e, %.2e, %.2e] N/C', E));
+
+    % ---- Labels and view -------------------------------------------------
+    xlabel('x (m)'); ylabel('y (m)'); zlabel('z (m)');
+    title('Electric field at P due to two point charges');
+    legend('Location', 'best');
+    view(3);
+    hold off;
+end

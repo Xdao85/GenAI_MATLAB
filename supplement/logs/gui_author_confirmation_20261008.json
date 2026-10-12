@@ -1,0 +1,6 @@
+{
+  "confirmation": "Claude >=3 seconds for all three runs",
+  "source": "Direct user reply in this task on 8 October 2026",
+  "deepseek_r1": "Update=0/1, Stop=0/1 is ambiguous; no values inferred",
+  "original_csv": "Unchanged; duration confirmation retained separately"
+}

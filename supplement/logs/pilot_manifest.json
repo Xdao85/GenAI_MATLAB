@@ -1,0 +1,274 @@
+[
+  {
+    "file": "original_v1_v2/MATLAB_code/ChatGPT/Ch11.png",
+    "sha256": "b69f104188870c9130c772ad91c31690b59de010f0bebb9b96ca12c23e1f57a0"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/ChatGPT/Ch12.png",
+    "sha256": "7d111657288d3cea457d5cacec3daf12904a849884ae9002a9cebc89a56a8421"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/ChatGPT/Ch21.png",
+    "sha256": "7b55feec2e9a6ed464dee64b4b47c2e3515212a8588792837ef839c4bb5ff986"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/ChatGPT/Ch22.png",
+    "sha256": "d76dabad1c003b7e2dad61d3b0549c5ae7f99353f3a4cdb25c7d83f6acc50222"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/ChatGPT/desktop.ini",
+    "sha256": "08610ca6879c683ff30db24fee22b1040e6150db7ab0d0d92b51cb41ae415a3d"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/ChatGPT/electricFieldPointCharge.m",
+    "sha256": "a57d3950798ab8503f6270ae17f72ec17ea2367cba8fbb64622fe9a2155b3c1e"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/ChatGPT/GPS_Dynamics_GUI_v1.m",
+    "sha256": "e673e5c5459c9f8404da2d8066ef9a1ed2782df4cdc2381ade2c3b35fbd08f97"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/ChatGPT/GPS_Dynamics_GUI_v2.m",
+    "sha256": "46dfe95150bf439e81f2597ab87cf4df54fde2c69ff8f88e36a8f46ee7f2ab5f"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/ChatGPT/html/desktop.ini",
+    "sha256": "08610ca6879c683ff30db24fee22b1040e6150db7ab0d0d92b51cb41ae415a3d"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/ChatGPT/html/GPS_Dynamics_GUI.html",
+    "sha256": "92b9e8546f93a1bdcc7aca3e53eb3fa382ae9bc0e22329b81530d910f6929348"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/ChatGPT/html/GPS_Dynamics_GUI.png",
+    "sha256": "e6a6b4dd95170fceec0ed2c6b99531ede7a5debfc65df8da51f708131303063f"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/ChatGPT/html/GPS_Dynamics_GUI_01.png",
+    "sha256": "bcf7f63e7a11eb57d018c9567364f79f27cd5f416c08a54aab61358ea2c0c5dc"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/ChatGPT/html/GPS_Dynamics_GUI_02.png",
+    "sha256": "3b02394c2e0ea2673bf90a05f7b23933f27c8b6eb9934f50ca0db14b3905fcd7"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/ChatGPT/html/GPS_Dynamics_GUI_03.png",
+    "sha256": "b27962443859b84bb19fbc489dd525ecbbe07b5c66ea4c052a26239c3e776e18"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/ChatGPT/html/GPS_Dynamics_GUI_04.png",
+    "sha256": "1350e216ff824ee0d10e324cdd978705e1170981acadc9681b5148b2609f6f4e"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/ChatGPT/html/GPS_Dynamics_GUI_05.png",
+    "sha256": "5a5183c495db13a2c6ef1da4e1458d45cc5a421d183d73ce862c85f7f69e1cee"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/ChatGPT/html/GPS_Dynamics_GUI_06.png",
+    "sha256": "0c720465c27611b9bec3d85e92f6da93b569642a05344e27e48ee12387eb556b"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/ChatGPT/html/GPS_Dynamics_GUI_07.png",
+    "sha256": "8cd0032e09d4b3fc8e87af44eb2a6709106b089ef8858f0f3b29685f7c1bbf17"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/ChatGPT/html/GPS_Dynamics_GUI_08.png",
+    "sha256": "8cd0032e09d4b3fc8e87af44eb2a6709106b089ef8858f0f3b29685f7c1bbf17"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/ChatGPT/plotElectricField.m",
+    "sha256": "7146f8925b4c6dff2deb8251e7dfcb44e87c0975c56763dafb0355e5c5e6968a"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/ChatGPT/Q11.m",
+    "sha256": "f7f609ea9190e4b5a56f37130af72cf36469005c0dc67ff882b9cfb80f9a4dc5"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/ChatGPT/Q12.m",
+    "sha256": "81e4dbc466166f7e5d13f438427960ac4aa5ecd076baf44c00772fa0bc840cd1"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/ChatGPT/Q21.m",
+    "sha256": "a755e1e76e2a3ed1fe2202c23951b45d99406fc0eead1f3a7223d8631c9a7a4e"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/ChatGPT/Q22.m",
+    "sha256": "884c3c07ab5100d8eb2c44eb1e0240cff179026eb943670ea4fc8733bd5c544e"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Claude/Cl11.png",
+    "sha256": "132939657fc07d5312f9e391c8b21cca382c7b860f0a845ab755c8bb4f7826f5"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Claude/Cl12.png",
+    "sha256": "abd8d8fde4eb42b1eb43cd397bbdf5795f723bd69e68bb348f9c0eac076f32a8"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Claude/Cl21.png",
+    "sha256": "294cb07338f1b1cf392932fb8ad3cd44779c5bc580162b698e4b144ad6eb2259"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Claude/Cl22.png",
+    "sha256": "eada23b8d86d34779396be4d3b834e65a284c816dd85688c95547f3e358dc548"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Claude/desktop.ini",
+    "sha256": "08610ca6879c683ff30db24fee22b1040e6150db7ab0d0d92b51cb41ae415a3d"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Claude/GPS_Simulator.m",
+    "sha256": "1524fd2c57ccd18bc59aed0be77b27ea83082866f753a56761d4f478c5439ee3"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Claude/Q11.m",
+    "sha256": "f7a93988eb44449ec973f94723696ec4434e357baa6cdbc7286551fd15a3c45f"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Claude/Q12.m",
+    "sha256": "71b83e40807c139721afc847e4bfa35fd046110f4659970d39a7b1d2fce88b22"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Claude/Q21.m",
+    "sha256": "8a44ba736a8291a37c23e4365e5a4617c153b22a17ba4efc577217d81d1ff2fd"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Claude/Q22.m",
+    "sha256": "569d55dc4956ef83ef1251dc81d5524e38c7a0c1f78dfbfe27a9cc7df7fe0232"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Deepseek/De11.png",
+    "sha256": "85b8cc26370677e83bf094ba8105d0aca9f494c13850cded217c1e6b1dd0ddc8"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Deepseek/De12.png",
+    "sha256": "ee48928557660faf53f70f5554ae3d52ba9ddbe44179bebb6b58b0f511588e8e"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Deepseek/De21.png",
+    "sha256": "1398b64c897cdc55a824fcc083791472fb4bc903c4d08d603ec81b1a0a9ef8d9"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Deepseek/De22.png",
+    "sha256": "095f021b2dff092ec1dcb165ce9f420f1cc60b5f570355dc83782f052d2d5b85"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Deepseek/desktop.ini",
+    "sha256": "08610ca6879c683ff30db24fee22b1040e6150db7ab0d0d92b51cb41ae415a3d"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Deepseek/GPS_Simulation_GUI_v1.m",
+    "sha256": "9997a8b1a857a5fac8da8c0f05dd34002838ff9081aafe02d0d215ee3845c60a"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Deepseek/GPS_Simulation_GUI_v2.m",
+    "sha256": "2ea52182d847f27c82dacfbc1f00a47f7148f0e623f304146f94e3b97a7fa7f8"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Deepseek/Q11.m",
+    "sha256": "b11bbb9c94d44e73159574a7d070199dc4c5c3139f8964bd7fa5e5b93b713eee"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Deepseek/Q12.m",
+    "sha256": "56465c5d6e917c0b2a6b4ebf51bcac515a78fffab287f33f9058319d71846711"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Deepseek/Q21.m",
+    "sha256": "01a1f3a99c60946e7e276c0f0190d9b4fe8c3c8bd3dba2eaf6fd2a5a76e07917"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Deepseek/Q22.m",
+    "sha256": "b16b8799de9693119e85411e37b37f6ee0fe2d9c7e653cc52ba097b33975ab63"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/desktop.ini",
+    "sha256": "08610ca6879c683ff30db24fee22b1040e6150db7ab0d0d92b51cb41ae415a3d"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Gemini/11.pgm",
+    "sha256": "e426da8e5c3d0655d9c1b8439aec9fceec8e9c34a37e06f25a53d7fd5f86a209"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Gemini/desktop.ini",
+    "sha256": "08610ca6879c683ff30db24fee22b1040e6150db7ab0d0d92b51cb41ae415a3d"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Gemini/Ge11.png",
+    "sha256": "bdcf2ebc2fdede8166b51b16e8ea1d1c26a1217754ca30b07593506a6b6f0cb9"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Gemini/Ge12.png",
+    "sha256": "152cfe28e68cc307a26ed1c794847e4d0bac6161f6281e7e4faddeaf49993d90"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Gemini/Ge21.png",
+    "sha256": "fc870b9083ac95a57ac41144ef435e1db437abe1892bcedb7b40ba55be8714ce"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Gemini/Ge22.png",
+    "sha256": "f294a470c56b1a9d5626f74d389af96b33b02b0c34c75d98bbd9224428bc226a"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Gemini/gps_gui_simulation.m",
+    "sha256": "2267022faaa0a71daecd96f30f1f33a60952614ed1274839bdada1c8385cdb74"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Gemini/Q11.m",
+    "sha256": "9ba3d5043e5cf16c3207eda67a639c27f553dbd02285b36413bdc3564373dd8d"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Gemini/Q12.m",
+    "sha256": "4e9939c1b09d80fbadc05a2a31ec8ea2d2ff300abac14cb13701770cbfc7e02f"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Gemini/Q21.m",
+    "sha256": "f6263cc8b7149922b7c788a6b502754ecdaada9b4c2b7a891a5676024b062261"
+  },
+  {
+    "file": "original_v1_v2/MATLAB_code/Gemini/Q22.m",
+    "sha256": "38d69fa4480398f934b6690244ad5fae2db187b7098b40770d8e62a7ca6aa945"
+  },
+  {
+    "file": "original_v1_v2/verification/desktop.ini",
+    "sha256": "08610ca6879c683ff30db24fee22b1040e6150db7ab0d0d92b51cb41ae415a3d"
+  },
+  {
+    "file": "original_v1_v2/verification/dynamic_log.txt",
+    "sha256": "b31d0c813250e0c813787b6955d1ddb2ab398ed480bef1a58a60a3c051723f43"
+  },
+  {
+    "file": "original_v1_v2/verification/dynamic_results.json",
+    "sha256": "65e5c628fe269e8b45fe776305eade0bb8393d135f4dc76c9d4e5e5c91318f08"
+  },
+  {
+    "file": "original_v1_v2/verification/matlab_log.txt",
+    "sha256": "baf275c69fee4fd298eeda916c44db1809fc46707724349b715693ce4165bc6b"
+  },
+  {
+    "file": "original_v1_v2/verification/README.md",
+    "sha256": "e4bc14220e0eb84a1e3fcda85b9cea9c2ebe73fe46f46f6ca7c9f2ce65e9a17e"
+  },
+  {
+    "file": "original_v1_v2/verification/repair_log.txt",
+    "sha256": "966aa386434140b060cffce6fd0f5377d84a2aa9a6d881b5bf9dd99b1e84c389"
+  },
+  {
+    "file": "original_v1_v2/verification/rerun_v8_dynamic.m",
+    "sha256": "66d4a3d2fe6515448acc05251d0f0dec64466a5e2221029934ea485217e61f54"
+  },
+  {
+    "file": "original_v1_v2/verification/rerun_v8_initial.m",
+    "sha256": "8a85de2452a2cc402c666f90f981ffe6bcc41b752dde65ba8da55552100aef78"
+  },
+  {
+    "file": "original_v1_v2/verification/rerun_v8_repairs.m",
+    "sha256": "098595c02afcaf3202aa572355194223ce4af023c8c972377df3c8d48d732c45"
+  },
+  {
+    "file": "original_v1_v2/verification/results.json",
+    "sha256": "9b5eefacedcfe498332bbb0072074591e5a2264eee3dee9fc4396b0a3c71771f"
+  },
+  {
+    "file": "original_v1_v2/verification/source_manifest.json",
+    "sha256": "e2e4fe01d9bc10d9061f560e020d6a1de2f0c21da46907db5614fc223dd422cd"
+  }
+]

@@ -1,0 +1,923 @@
+function gpsDynamicsGUI
+% GPSDYNAMICSGUI
+% ==============================================================
+% GPS Technology Dynamics Simulator
+%
+% MATLAB R2024b compatible GUI for demonstrating GPS principles.
+%
+% Features:
+%   1. Displays GPS equations using MATLAB LaTeX rendering.
+%   2. Explains the MATLAB functions used by the simulation.
+%   3. Simulates GPS satellite motion and user movement in 3-D.
+%   4. Calculates noisy GPS pseudorange measurements.
+%   5. Estimates receiver position and receiver clock bias.
+%   6. Animates pseudorange connections in real time.
+%   7. Provides START, STOP, and RESET controls.
+%   8. Provides adjustable simulation speed.
+%
+% Save this file exactly as:
+%
+%       gpsDynamicsGUI.m
+%
+% Then run from the MATLAB Command Window:
+%
+%       gpsDynamicsGUI
+%
+% ==============================================================
+
+
+%% =============================================================
+% 1. GUI DESIGN
+% ==============================================================
+% Create the main MATLAB application window.
+
+fig = uifigure( ...
+    'Name', 'GPS Technology Dynamics Simulator', ...
+    'Position', [50 50 1450 850], ...
+    'Color', [0.94 0.94 0.94]);
+
+
+% Main title
+uilabel(fig, ...
+    'Text', 'GPS Technology Dynamics Simulator', ...
+    'FontSize', 22, ...
+    'FontWeight', 'bold', ...
+    'HorizontalAlignment', 'center', ...
+    'Position', [350 805 750 35]);
+
+
+%% =============================================================
+% 2. 3-D VISUALIZATION AXES
+% ==============================================================
+% uiaxes provides the 3-D graphics area inside the GUI.
+
+ax = uiaxes(fig, ...
+    'Position', [30 270 850 510]);
+
+title(ax, 'Real-Time GPS Satellite and User Dynamics');
+xlabel(ax, 'X (km)');
+ylabel(ax, 'Y (km)');
+zlabel(ax, 'Z (km)');
+
+grid(ax, 'on');
+axis(ax, 'equal');
+view(ax, 3);
+
+% Earth radius in kilometres.
+earthRadius = 6371;
+
+% Set the 3-D viewing limits.
+axis(ax, [-30000 30000 -30000 30000 -30000 30000]);
+
+
+%% =============================================================
+% 3. EARTH VISUALIZATION
+% ==============================================================
+% sphere() generates coordinates for a unit sphere.
+% surf() scales those coordinates to Earth's radius.
+
+[xe, ye, ze] = sphere(60);
+
+surf(ax, ...
+    earthRadius * xe, ...
+    earthRadius * ye, ...
+    earthRadius * ze, ...
+    'FaceAlpha', 0.25, ...
+    'EdgeColor', 'none');
+
+hold(ax, 'on');
+
+
+%% =============================================================
+% 4. GPS SATELLITE INITIAL CONDITIONS
+% ==============================================================
+% This is an educational simplified GPS constellation.
+%
+% Real GPS satellites orbit at approximately 20,200 km above
+% the Earth's surface.
+%
+% Here each satellite follows a simplified circular orbit.
+
+numSat = 6;
+
+% Approximate GPS orbital radius measured from Earth's centre.
+orbitRadius = earthRadius + 20200;
+
+% Orbital inclination.
+inclination = deg2rad(55);
+
+% Initial orbital phases.
+satPhase = linspace(0, 2*pi, numSat + 1);
+satPhase(end) = [];
+
+% Right ascension of ascending node for each satellite.
+raan = linspace(0, 2*pi, numSat + 1);
+raan(end) = [];
+
+% Artificially accelerated angular velocity for visualization.
+satAngularSpeed = 0.005;
+
+
+%% =============================================================
+% 5. USER INITIAL CONDITIONS
+% ==============================================================
+% The user receiver is represented by a point close to Earth's
+% surface.
+
+userTrue = [ ...
+    earthRadius * 0.80; ...
+    earthRadius * 0.25; ...
+    earthRadius * 0.45];
+
+% User velocity in km/s for the educational animation.
+userVelocity = [8; 5; -2];
+
+
+%% =============================================================
+% 6. GRAPHICAL OBJECTS
+% ==============================================================
+% Graphics objects are created once and their data are updated
+% during the simulation. This is more efficient than creating
+% new objects at every timer iteration.
+
+satPlot = gobjects(numSat, 1);
+
+for k = 1:numSat
+
+    satPlot(k) = plot3(ax, ...
+        NaN, NaN, NaN, ...
+        'o', ...
+        'MarkerSize', 9, ...
+        'MarkerFaceColor', 'y', ...
+        'MarkerEdgeColor', 'k');
+
+end
+
+
+% True receiver position.
+userPlot = plot3(ax, ...
+    NaN, NaN, NaN, ...
+    'o', ...
+    'MarkerSize', 12, ...
+    'MarkerFaceColor', 'r', ...
+    'MarkerEdgeColor', 'k');
+
+
+% Estimated receiver position.
+estimatePlot = plot3(ax, ...
+    NaN, NaN, NaN, ...
+    'p', ...
+    'MarkerSize', 13, ...
+    'MarkerFaceColor', 'g', ...
+    'MarkerEdgeColor', 'k');
+
+
+%% =============================================================
+% 7. PSEUDORANGE VISUALIZATION LINES
+% ==============================================================
+% Each line connects a satellite to the receiver.
+%
+% These lines are a visualization of the range measurements.
+% A real GPS receiver obtains range information from signal
+% propagation time rather than from a physical line.
+
+rangeLines = gobjects(numSat, 1);
+
+for k = 1:numSat
+
+    rangeLines(k) = plot3(ax, ...
+        NaN, NaN, NaN, ...
+        '-', ...
+        'LineWidth', 1.2);
+
+end
+
+
+%% =============================================================
+% 8. LEGEND
+% ==============================================================
+
+legend(ax, ...
+    [satPlot(1), userPlot, estimatePlot], ...
+    {'GPS Satellites', 'True User Position', 'Estimated Position'}, ...
+    'Location', 'northeast');
+
+
+%% =============================================================
+% 9. GPS EQUATION PANEL
+% ==============================================================
+% MATLAB's LaTeX interpreter is used to render the GPS equations.
+%
+% IMPORTANT:
+% Each Text value below is deliberately kept as a SINGLE MATLAB
+% character vector. This avoids the "Character vector is not
+% terminated properly" error that occurs when a quoted MATLAB
+% string is accidentally split across source-code lines.
+
+eqPanel = uipanel(fig, ...
+    'Title', 'GPS Equations', ...
+    'FontWeight', 'bold', ...
+    'Position', [900 430 520 350]);
+
+
+% -------------------------------------------------------------
+% Pseudorange equation
+% -------------------------------------------------------------
+
+uilabel(eqPanel, ...
+    'Text', '$$\rho_i = \left\|\mathbf{x}-\mathbf{s}_i\right\| + c\delta t + \epsilon_i$$', ...
+    'Interpreter', 'latex', ...
+    'FontSize', 15, ...
+    'HorizontalAlignment', 'center', ...
+    'Position', [15 240 490 60]);
+
+
+% -------------------------------------------------------------
+% Geometric range equation
+% -------------------------------------------------------------
+
+uilabel(eqPanel, ...
+    'Text', '$$\mathbf{r} = \sqrt{(x-x_i)^2+(y-y_i)^2+(z-z_i)^2}$$', ...
+    'Interpreter', 'latex', ...
+    'FontSize', 14, ...
+    'HorizontalAlignment', 'center', ...
+    'Position', [15 175 490 60]);
+
+
+% -------------------------------------------------------------
+% Position estimation equation
+% -------------------------------------------------------------
+
+uilabel(eqPanel, ...
+    'Text', '$$\hat{\mathbf{x}} = \operatorname*{arg\,min}_{\mathbf{x}}\sum_i\left(\rho_i-\hat{\rho}_i\right)^2$$', ...
+    'Interpreter', 'latex', ...
+    'FontSize', 14, ...
+    'HorizontalAlignment', 'center', ...
+    'Position', [15 105 490 60]);
+
+
+% -------------------------------------------------------------
+% Predicted pseudorange equation
+% -------------------------------------------------------------
+
+uilabel(eqPanel, ...
+    'Text', '$$\hat{\rho}_i = \left\|\hat{\mathbf{x}}-\mathbf{s}_i\right\| + c\hat{\delta t}$$', ...
+    'Interpreter', 'latex', ...
+    'FontSize', 14, ...
+    'HorizontalAlignment', 'center', ...
+    'Position', [15 40 490 60]);
+
+
+%% =============================================================
+% 10. MATLAB FUNCTION EXPLANATION PANEL
+% ==============================================================
+% This panel describes the MATLAB functions used by the GUI.
+
+funcPanel = uipanel(fig, ...
+    'Title', 'MATLAB Functions Used', ...
+    'FontWeight', 'bold', ...
+    'Position', [900 30 520 380]);
+
+
+% Use a cell array of character vectors rather than a multiline
+% character vector. This is compatible with MATLAB R2024b and
+% avoids accidental unterminated character vectors.
+
+functionText = { ...
+    'uifigure()    - Creates the main MATLAB GUI window.'; ...
+    'uiaxes()      - Creates the 3-D plotting area.'; ...
+    'uipanel()     - Groups related GUI controls.'; ...
+    'uilabel()     - Displays text and LaTeX equations.'; ...
+    'uibutton()    - Creates START, STOP, and RESET controls.'; ...
+    'uieditfield() - Provides adjustable simulation speed.'; ...
+    'sphere()      - Generates coordinates for the Earth.'; ...
+    'surf()        - Renders the Earth as a 3-D surface.'; ...
+    'plot3()       - Displays satellites, receiver, and ranges.'; ...
+    'timer()       - Executes the simulation periodically.'; ...
+    'norm()        - Calculates Euclidean satellite-receiver range.'; ...
+    'fminsearch()  - Solves the nonlinear GPS position problem.'; ...
+    'deg2rad()     - Converts orbital inclination to radians.'; ...
+    'drawnow()     - Updates the graphical interface.'; ...
+    'set()/XData   - Updates graphics objects during animation.' ...
+    };
+
+
+uitextarea(funcPanel, ...
+    'Value', functionText, ...
+    'Editable', 'off', ...
+    'FontName', 'Consolas', ...
+    'FontSize', 11, ...
+    'Position', [10 10 500 340]);
+
+
+%% =============================================================
+% 11. SIMULATION CONTROL PANEL
+% ==============================================================
+% The control panel contains START, STOP, RESET, speed control,
+% and numerical simulation information.
+
+controlPanel = uipanel(fig, ...
+    'Title', 'Simulation Control', ...
+    'FontWeight', 'bold', ...
+    'Position', [30 30 850 210]);
+
+
+% START button
+uibutton(controlPanel, ...
+    'push', ...
+    'Text', 'START', ...
+    'FontWeight', 'bold', ...
+    'Position', [30 145 120 40], ...
+    'ButtonPushedFcn', @startSimulation);
+
+
+% STOP button
+uibutton(controlPanel, ...
+    'push', ...
+    'Text', 'STOP', ...
+    'FontWeight', 'bold', ...
+    'Position', [170 145 120 40], ...
+    'ButtonPushedFcn', @stopSimulation);
+
+
+% RESET button
+uibutton(controlPanel, ...
+    'push', ...
+    'Text', 'RESET', ...
+    'FontWeight', 'bold', ...
+    'Position', [310 145 120 40], ...
+    'ButtonPushedFcn', @resetSimulation);
+
+
+% Simulation-speed label
+uilabel(controlPanel, ...
+    'Text', 'Simulation speed:', ...
+    'Position', [470 155 120 22]);
+
+
+% Simulation-speed input
+speedField = uieditfield(controlPanel, ...
+    'numeric', ...
+    'Value', 1, ...
+    'Limits', [0.1 10], ...
+    'RoundFractionalValues', false, ...
+    'Position', [600 155 80 22]);
+
+
+uilabel(controlPanel, ...
+    'Text', 'x real-time', ...
+    'Position', [690 155 80 22]);
+
+
+%% =============================================================
+% 12. STATUS DISPLAY
+% ==============================================================
+
+statusLabel = uilabel(controlPanel, ...
+    'Text', 'Status: Ready', ...
+    'FontWeight', 'bold', ...
+    'Position', [30 100 780 25]);
+
+
+positionLabel = uilabel(controlPanel, ...
+    'Text', 'Estimated Position: ---', ...
+    'Position', [30 65 780 25]);
+
+
+errorLabel = uilabel(controlPanel, ...
+    'Text', 'Position Error: ---', ...
+    'Position', [30 30 780 25]);
+
+
+%% =============================================================
+% 13. SIMULATION VARIABLES
+% ==============================================================
+% These variables are shared by the nested callback functions.
+
+simulationTime = 0;
+
+% MATLAB timer object.
+simulationTimer = [];
+
+
+%% =============================================================
+% 14. CREATE SIMULATION TIMER
+% ==============================================================
+% fixedRate causes updateSimulation() to be called repeatedly.
+
+simulationTimer = timer( ...
+    'ExecutionMode', 'fixedRate', ...
+    'Period', 0.05, ...
+    'BusyMode', 'drop', ...
+    'TimerFcn', @updateSimulation);
+
+
+%% =============================================================
+% 15. START SIMULATION CALLBACK
+% ==============================================================
+
+    function startSimulation(~, ~)
+
+        % Check that the GUI still exists.
+        if ~isvalid(fig)
+            return;
+        end
+
+        % Start only when the timer is currently stopped.
+        if strcmp(simulationTimer.Running, 'off')
+
+            statusLabel.Text = 'Status: Simulation running...';
+
+            start(simulationTimer);
+
+        end
+
+    end
+
+
+%% =============================================================
+% 16. STOP SIMULATION CALLBACK
+% ==============================================================
+
+    function stopSimulation(~, ~)
+
+        if isempty(simulationTimer)
+            return;
+        end
+
+        if isvalid(simulationTimer)
+
+            if strcmp(simulationTimer.Running, 'on')
+                stop(simulationTimer);
+            end
+
+        end
+
+        statusLabel.Text = 'Status: Simulation stopped.';
+
+    end
+
+
+%% =============================================================
+% 17. RESET SIMULATION CALLBACK
+% ==============================================================
+
+    function resetSimulation(~, ~)
+
+        % Stop timer if necessary.
+        if ~isempty(simulationTimer) && ...
+                isvalid(simulationTimer)
+
+            if strcmp(simulationTimer.Running, 'on')
+                stop(simulationTimer);
+            end
+
+        end
+
+
+        % Reset simulation clock.
+        simulationTime = 0;
+
+
+        % Reset user position.
+        userTrue = [ ...
+            earthRadius * 0.80; ...
+            earthRadius * 0.25; ...
+            earthRadius * 0.45];
+
+
+        % Clear satellite graphics.
+        for kk = 1:numSat
+
+            satPlot(kk).XData = NaN;
+            satPlot(kk).YData = NaN;
+            satPlot(kk).ZData = NaN;
+
+            rangeLines(kk).XData = NaN;
+            rangeLines(kk).YData = NaN;
+            rangeLines(kk).ZData = NaN;
+
+        end
+
+
+        % Clear receiver markers.
+        userPlot.XData = NaN;
+        userPlot.YData = NaN;
+        userPlot.ZData = NaN;
+
+        estimatePlot.XData = NaN;
+        estimatePlot.YData = NaN;
+        estimatePlot.ZData = NaN;
+
+
+        % Reset status text.
+        statusLabel.Text = 'Status: Ready';
+
+        positionLabel.Text = ...
+            'Estimated Position: ---';
+
+        errorLabel.Text = ...
+            'Position Error: ---';
+
+
+        drawnow;
+
+    end
+
+
+%% =============================================================
+% 18. MAIN SIMULATION UPDATE
+% ==============================================================
+% This function is executed periodically by the MATLAB timer.
+%
+% The simulation performs the following sequence:
+%
+%   1. Advance simulation time.
+%   2. Move the user.
+%   3. Calculate satellite positions.
+%   4. Generate pseudorange measurements.
+%   5. Estimate user position.
+%   6. Update 3-D graphics.
+%   7. Update numerical GUI information.
+
+    function updateSimulation(~, ~)
+
+        % Make sure the GUI still exists.
+        if ~isvalid(fig)
+            return;
+        end
+
+
+        %% ------------------------------------------------------
+        % 18.1 UPDATE SIMULATION TIME
+        % -------------------------------------------------------
+
+        dt = 0.05 * speedField.Value;
+
+        simulationTime = simulationTime + dt;
+
+
+        %% ------------------------------------------------------
+        % 18.2 UPDATE USER POSITION
+        % -------------------------------------------------------
+        % Simple kinematic model:
+        %
+        %       x(k+1) = x(k) + v*dt
+
+        userTrue = userTrue + userVelocity * dt;
+
+
+        % Keep receiver approximately on the Earth's surface.
+        userTrue = earthRadius * ...
+            userTrue / norm(userTrue);
+
+
+        %% ------------------------------------------------------
+        % 18.3 CALCULATE SATELLITE POSITIONS
+        % -------------------------------------------------------
+        % Each satellite follows a simplified circular orbit.
+
+        satellitePositions = zeros(3, numSat);
+
+
+        for k = 1:numSat
+
+            % Satellite orbital phase.
+            theta = satPhase(k) + ...
+                satAngularSpeed * simulationTime;
+
+
+            % Circular orbit in the equatorial plane.
+            p = orbitRadius * [ ...
+                cos(theta); ...
+                sin(theta); ...
+                0];
+
+
+            % Rotation matrix for orbital inclination.
+            Rx = [ ...
+                1  0                     0; ...
+                0  cos(inclination)     -sin(inclination); ...
+                0  sin(inclination)      cos(inclination)];
+
+
+            % Rotation matrix for right ascension of ascending node.
+            Omega = raan(k);
+
+            Rz = [ ...
+                cos(Omega)  -sin(Omega)  0; ...
+                sin(Omega)   cos(Omega)  0; ...
+                0            0           1];
+
+
+            % Final satellite position.
+            satellitePositions(:, k) = ...
+                Rz * Rx * p;
+
+        end
+
+
+        %% ------------------------------------------------------
+        % 18.4 CALCULATE PSEUDORANGES
+        % -------------------------------------------------------
+        %
+        % Simplified GPS measurement model:
+        %
+        % rho_i =
+        %   geometric range
+        %   + receiver clock bias
+        %   + measurement noise
+
+        speedOfLight = 299792.458;  % km/s
+
+
+        % Receiver clock bias represented as an equivalent range.
+        receiverClockBias = ...
+            0.00001 * speedOfLight;
+
+
+        % Measurement-noise standard deviation in kilometres.
+        noiseSigma = 0.02;
+
+
+        pseudoranges = zeros(numSat, 1);
+
+
+        for k = 1:numSat
+
+            % True geometric satellite-receiver distance.
+            geometricRange = norm( ...
+                satellitePositions(:, k) - userTrue);
+
+
+            % Gaussian measurement noise.
+            measurementNoise = ...
+                noiseSigma * randn;
+
+
+            % Simulated pseudorange.
+            pseudoranges(k) = ...
+                geometricRange + ...
+                receiverClockBias + ...
+                measurementNoise;
+
+        end
+
+
+        %% ------------------------------------------------------
+        % 18.5 ESTIMATE USER POSITION
+        % -------------------------------------------------------
+        %
+        % Unknown state:
+        %
+        %       [x y z clockBias]
+        %
+        % The predicted pseudorange is:
+        %
+        %       rho_hat =
+        %           norm(satellite - position) + clockBias
+        %
+        % The receiver state is found by minimizing:
+        %
+        %       sum((rho - rho_hat).^2)
+
+        initialGuess = [ ...
+            userTrue + [50; -50; 30]; ...
+            receiverClockBias];
+
+
+        % Optimization options.
+        optimizationOptions = optimset( ...
+            'Display', 'off', ...
+            'MaxIter', 80, ...
+            'MaxFunEvals', 500);
+
+
+        % fminsearch is part of base MATLAB.
+        estimatedState = fminsearch( ...
+            @(state) gpsResidualCost( ...
+                state, ...
+                satellitePositions, ...
+                pseudoranges), ...
+            initialGuess, ...
+            optimizationOptions);
+
+
+        estimatedPosition = ...
+            estimatedState(1:3);
+
+
+        %% ------------------------------------------------------
+        % 18.6 UPDATE SATELLITE GRAPHICS
+        % -------------------------------------------------------
+
+        for k = 1:numSat
+
+            satPlot(k).XData = ...
+                satellitePositions(1, k);
+
+            satPlot(k).YData = ...
+                satellitePositions(2, k);
+
+            satPlot(k).ZData = ...
+                satellitePositions(3, k);
+
+        end
+
+
+        %% ------------------------------------------------------
+        % 18.7 UPDATE TRUE USER POSITION
+        % -------------------------------------------------------
+
+        userPlot.XData = userTrue(1);
+        userPlot.YData = userTrue(2);
+        userPlot.ZData = userTrue(3);
+
+
+        %% ------------------------------------------------------
+        % 18.8 UPDATE ESTIMATED POSITION
+        % -------------------------------------------------------
+
+        estimatePlot.XData = ...
+            estimatedPosition(1);
+
+        estimatePlot.YData = ...
+            estimatedPosition(2);
+
+        estimatePlot.ZData = ...
+            estimatedPosition(3);
+
+
+        %% ------------------------------------------------------
+        % 18.9 UPDATE PSEUDORANGE LINES
+        % -------------------------------------------------------
+        % These lines visually connect the receiver with each
+        % satellite.
+
+        for k = 1:numSat
+
+            rangeLines(k).XData = [ ...
+                userTrue(1), ...
+                satellitePositions(1, k)];
+
+            rangeLines(k).YData = [ ...
+                userTrue(2), ...
+                satellitePositions(2, k)];
+
+            rangeLines(k).ZData = [ ...
+                userTrue(3), ...
+                satellitePositions(3, k)];
+
+        end
+
+
+        %% ------------------------------------------------------
+        % 18.10 CALCULATE POSITION ERROR
+        % -------------------------------------------------------
+
+        positionError = norm( ...
+            estimatedPosition - userTrue);
+
+
+        %% ------------------------------------------------------
+        % 18.11 UPDATE GUI NUMERICAL INFORMATION
+        % -------------------------------------------------------
+
+        positionLabel.Text = sprintf( ...
+            'Estimated Position: X = %.2f km, Y = %.2f km, Z = %.2f km', ...
+            estimatedPosition(1), ...
+            estimatedPosition(2), ...
+            estimatedPosition(3));
+
+
+        errorLabel.Text = sprintf( ...
+            'Position Error: %.3f km | Simulation Time: %.2f s', ...
+            positionError, ...
+            simulationTime);
+
+
+        %% ------------------------------------------------------
+        % 18.12 REFRESH GUI
+        % -------------------------------------------------------
+        % drawnow limitrate prevents unnecessary graphical updates
+        % while keeping the animation responsive.
+
+        drawnow limitrate;
+
+    end
+
+
+%% =============================================================
+% 19. GPS NONLINEAR LEAST-SQUARES COST FUNCTION
+% ==============================================================
+% This nested function calculates the GPS positioning residual.
+%
+% State vector:
+%
+%       state = [x y z b]
+%
+% where:
+%
+%       x,y,z = receiver position in km
+%       b     = receiver clock bias expressed as equivalent range
+%
+% Predicted pseudorange:
+%
+%       rho_hat =
+%           norm(satellitePosition - receiverPosition) + b
+%
+% Cost:
+%
+%       J = sum((rhoMeasured - rhoPredicted).^2)
+
+    function cost = gpsResidualCost( ...
+            state, ...
+            satellitePositions, ...
+            measuredRanges)
+
+
+        % Extract receiver position.
+        position = state(1:3);
+
+
+        % Extract receiver clock bias.
+        clockBias = state(4);
+
+
+        % Calculate predicted ranges.
+        predictedRanges = zeros(numSat, 1);
+
+
+        for ii = 1:numSat
+
+            predictedRanges(ii) = ...
+                norm(satellitePositions(:, ii) - position) ...
+                + clockBias;
+
+        end
+
+
+        % Pseudorange residual.
+        residual = ...
+            measuredRanges - predictedRanges;
+
+
+        % Least-squares objective.
+        cost = sum(residual.^2);
+
+
+        % ---------------------------------------------------------
+        % Earth-surface regularization.
+        %
+        % This is not part of the standard GPS pseudorange
+        % equation. It simply keeps the educational optimization
+        % from wandering unrealistically far from Earth.
+        % ---------------------------------------------------------
+
+        earthConstraint = ...
+            1e-6 * (norm(position) - earthRadius)^2;
+
+
+        cost = cost + earthConstraint;
+
+    end
+
+
+%% =============================================================
+% 20. APPLICATION CLEANUP
+% ==============================================================
+% Stop and delete the MATLAB timer when the GUI closes.
+
+fig.CloseRequestFcn = @closeApplication;
+
+
+    function closeApplication(~, ~)
+
+        try
+
+            if ~isempty(simulationTimer) && ...
+                    isvalid(simulationTimer)
+
+                if strcmp(simulationTimer.Running, 'on')
+                    stop(simulationTimer);
+                end
+
+                delete(simulationTimer);
+
+            end
+
+        catch
+
+            % Ignore cleanup errors during application shutdown.
+
+        end
+
+
+        % Delete GUI.
+        if isvalid(fig)
+            delete(fig);
+        end
+
+    end
+
+end

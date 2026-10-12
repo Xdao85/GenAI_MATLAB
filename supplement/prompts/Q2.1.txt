@@ -1,0 +1,1 @@
+A free-standing linear conductor of length l carries a current I at A(Ax, Ay, Az) parallel to the z axis. Write MATLAB code to plot the magnetic flux density B at a point P(Px, Py, Pz) in 3D.

@@ -1,0 +1,22 @@
+--- raw primary block
++++ code_eval/deepseek/Q12_r1.m
+@@ -22,15 +22,15 @@
+ 
+ %% -------------------- USER-DEFINED PARAMETERS ---------------------------
+ % Observation point P (where E is evaluated)
+-P = [0.5, 0.5, 0.5];        % [Px, Py, Pz] in meters
++P = [0, 1, 2];        % [Px, Py, Pz] in meters
+ 
+ % Charge 1: magnitude (C), position (m)
+ q1 = 2e-9;                  % +2 nC
+-r1 = [0, 0, 0];             % located at the origin
++r1 = [-1, 0, 0];             % located at the origin
+ 
+ % Charge 2: magnitude (C), position (m)
+-q2 = -1e-9;                 % -1 nC
+-r2 = [1, 1, 1];             % located at (1,1,1)
++q2 = -2e-9;                 % -1 nC
++r2 = [1, 0, 0];             % located at (1,1,1)
+ 
+ %% -------------------- COMPUTE ELECTRIC FIELD ---------------------------
+ E_total = computeElectricField(P, q1, r1, q2, r2);

@@ -1,0 +1,95 @@
+assistant,prompt_id,rep,version,file,executed,error_message,error_id,error_line,best_ref,eps,eps_rev,classification,dir_check,self_check,init_ok,start_ok,update_ok,stop_ok,reset_ok,matlab_version,run_datetime,review_required
+chatgpt,Q1.1,1,v1,code_eval/chatgpt/Q11_r1.m,1,"",,NaN,q1,1.97171785709902e-05,2.00001971717857,correct_q1,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:39,1
+chatgpt,Q1.1,2,v1,code_eval/chatgpt/Q11_r2.m,1,"",,NaN,q1,7.2350816482408e-07,1.99999927649184,correct_q1,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:47,1
+chatgpt,Q1.1,3,v1,code_eval/chatgpt/Q11_r3.m,1,"",,NaN,q1,2.12121935567247e-05,2.00002121219356,correct_q1,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:47,1
+chatgpt,Q1.2,1,v1,code_eval/chatgpt/Q12_r1.m,1,"",,NaN,q1,4.78671759286139e-10,1.99999999952133,correct_q1,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:50,1
+chatgpt,Q1.2,2,v1,code_eval/chatgpt/Q12_r2.m,1,"",,NaN,q1,4.78671759286139e-10,1.99999999952133,correct_q1,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:51,1
+chatgpt,Q1.2,3,v1,code_eval/chatgpt/Q12_r3.m,1,"",,NaN,q1,4.78671759286139e-10,1.99999999952133,correct_q1,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:52,1
+chatgpt,Q2.1,1,v1,code_eval/chatgpt/Q21_r1.m,1,"",,NaN,,NaN,NaN,no_match,NaN,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:52,1
+chatgpt,Q2.1,2,v1,code_eval/chatgpt/Q21_r2.m,1,"",,NaN,mid,4.48295953995462e-05,2.0000448295954,correct_mid,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:52,1
+chatgpt,Q2.1,3,v1,code_eval/chatgpt/Q21_r3.m,1,"",,NaN,mid,0.000448476766666682,2.00044847676667,correct_mid,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:52,1
+chatgpt,Q2.2,1,v1,code_eval/chatgpt/Q22_r1.m,1,"",,NaN,mid,2.47374055566309e-09,1.99999999752626,correct_mid,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:53,1
+chatgpt,Q2.2,2,v1,code_eval/chatgpt/Q22_r2.m,1,"",,NaN,mid,4.48295956734091e-05,2.00004482959567,correct_mid,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:53,1
+chatgpt,Q2.2,3,v1,code_eval/chatgpt/Q22_r3.m,1,"",,NaN,mid,4.48295954037334e-05,2.0000448295954,correct_mid,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:53,1
+chatgpt,S2,1,v1,code_eval/chatgpt/S2_r1.m,1,"",,NaN,mid,1.79566793875015e-16,2,correct_mid,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:53,1
+chatgpt,S2,2,v1,code_eval/chatgpt/S2_r2.m,1,"",,NaN,mid,1.79566793875015e-16,2,correct_mid,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:54,1
+chatgpt,S2,3,v1,code_eval/chatgpt/S2_r3.m,0,"Error using S2_r3 (line 106)
+STOP: The numerical vector error is 200.000000 %, which exceeds the 0.1 % limit.
+
+Error in run (line 112)
+evalin('caller', strcat(scriptStem, ';'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in run_all_checks>execute_payload (line 83)
+if isempty(declared),printed=evalc('run(file)');
+                             ^^^^^^^^^^^^^^^^^^
+Error in run_all_checks>execute_isolated (line 79)
+[printed,candidates]=execute_payload(file,declared);
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in run_all_checks (line 20)
+  [printed,candidates]=execute_isolated(char(file));
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^",,106,,NaN,NaN,not_executed,NaN,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:54,1
+gemini,Q1.1,1,v1,code_eval/gemini/Q11_r1.m,1,"",,NaN,q1,1.99420269308884e-07,1.99999980057973,correct_q1,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:54,1
+gemini,Q1.1,2,v1,code_eval/gemini/Q11_r2.m,0,"Error: <a href=""matlab: opentoline('[LOCAL_ROOT]\code_eval\gemini\Q11_r2.m',40,9)"">File: Q11_r2.m Line: 40 Column: 9</a>
+Character vector is not terminated properly.
+
+Error in run (line 112)
+evalin('caller', strcat(scriptStem, ';'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in run_all_checks>execute_payload (line 83)
+if isempty(declared),printed=evalc('run(file)');
+                             ^^^^^^^^^^^^^^^^^^
+Error in run_all_checks>execute_isolated (line 79)
+[printed,candidates]=execute_payload(file,declared);
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in run_all_checks (line 20)
+  [printed,candidates]=execute_isolated(char(file));
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^",MATLAB:m_unterminated_string,112,,NaN,NaN,not_executed,NaN,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:55,1
+gemini,Q1.2,2,v1,code_eval/gemini/Q12_r2.m,1,"",,NaN,q1,1.99420269308884e-07,1.99999980057973,correct_q1,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:55,1
+gemini,Q1.2,3,v1,code_eval/gemini/Q12_r3.m,1,"",,NaN,q1,0,2,correct_q1,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:56,1
+gemini,Q2.1,1,v1,code_eval/gemini/Q21_r1/main.m,1,"",,NaN,mid,8580956.18997516,8580956.58220743,no_match,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:56,1
+gemini,Q2.1,2,v1,code_eval/gemini/Q21_r2.m,1,"",,NaN,end,1.46299349958974e-16,2,correct_end,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:56,1
+gemini,Q2.2,3,v1,code_eval/gemini/Q22_r3.m,1,"",,NaN,mid,3.3110480783685e-16,2,correct_mid,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:57,1
+claude,Q1.1,1,v1,code_eval/claude/Q11_r1.m,1,"",,NaN,q1,0,2,correct_q1,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:57,1
+claude,Q1.1,2,v1,code_eval/claude/Q11_r2.m,1,"",,NaN,q1,0,2,correct_q1,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:57,1
+claude,Q1.1,3,v1,code_eval/claude/Q11_r3.m,1,"",,NaN,q1,0,2,correct_q1,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:57,1
+claude,Q1.2,1,v1,code_eval/claude/Q12_r1.m,1,"",,NaN,q1,4.32015828947536e-12,1.99999999999568,correct_q1,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:58,1
+claude,Q1.2,2,v1,code_eval/claude/Q12_r2.m,1,"",,NaN,q1,4.78671759286139e-10,1.99999999952133,correct_q1,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:58,1
+claude,Q1.2,3,v1,code_eval/claude/Q12_r3.m,1,"",,NaN,q1,0,2,correct_q1,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:58,1
+claude,Q2.1,1,v1,code_eval/claude/Q21_r1.m,1,"",,NaN,end,1.46299349958974e-16,2,correct_end,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:58,1
+claude,Q2.1,2,v1,code_eval/claude/Q21_r2.m,1,"",,NaN,end,1.46299349958974e-16,2,correct_end,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:59,1
+claude,Q2.1,3,v1,code_eval/claude/Q21_r3.m,1,"",,NaN,end,1.46299349958974e-16,2,correct_end,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:59,1
+claude,Q2.2,1,v1,code_eval/claude/Q22_r1.m,1,"",,NaN,end,1.46299349958974e-16,2,correct_end,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:59,1
+claude,Q2.2,2,v1,code_eval/claude/Q22_r2.m,1,"",,NaN,end,1.46299349958974e-16,2,correct_end,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:23:59,1
+claude,Q2.2,3,v1,code_eval/claude/Q22_r3.m,1,"",,NaN,end,1.46299349958974e-16,2,correct_end,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:24:00,1
+claude,S2,1,v1,code_eval/claude/S2_r1.m,1,"",,NaN,mid,1.79566793875015e-16,2,correct_mid,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:24:00,1
+claude,S2,2,v1,code_eval/claude/S2_r2.m,1,"",,NaN,mid,1.79566793875015e-16,2,correct_mid,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:24:00,1
+claude,S2,3,v1,code_eval/claude/S2_r3.m,1,"",,NaN,mid,1.79566793875015e-16,2,correct_mid,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:24:00,1
+deepseek,Q1.1,1,v1,code_eval/deepseek/Q11_r1.m,1,"",,NaN,q1,0,2,correct_q1,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:24:01,1
+deepseek,Q1.1,2,v1,code_eval/deepseek/Q11_r2.m,1,"",,NaN,q1,0.00027239984331425,2.00027239984331,correct_q1,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:24:01,1
+deepseek,Q1.1,3,v1,code_eval/deepseek/Q11_r3.m,1,"",,NaN,q1,4.81164551202324e-06,1.99999518835449,correct_q1,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:24:02,1
+deepseek,Q1.2,1,v1,code_eval/deepseek/Q12_r1.m,1,"",,NaN,q1,0,2,correct_q1,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:24:02,1
+deepseek,Q1.2,2,v1,code_eval/deepseek/Q12_r2.m,1,"",,NaN,q1,0,2,correct_q1,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:24:02,1
+deepseek,Q1.2,3,v1,code_eval/deepseek/Q12_r3.m,1,"",,NaN,q1,0,2,correct_q1,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:24:02,1
+deepseek,Q2.1,1,v1,code_eval/deepseek/Q21_r1.m,1,"",,NaN,end,1.46299349958974e-16,2,correct_end,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:24:03,1
+deepseek,Q2.1,2,v1,code_eval/deepseek/Q21_r2.m,1,"",,NaN,mid,1.79566793875015e-16,2,correct_mid,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:24:03,1
+deepseek,Q2.1,3,v1,code_eval/deepseek/Q21_r3.m,1,"",,NaN,mid,3.59133587750031e-16,2,correct_mid,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:24:03,1
+deepseek,Q2.2,1,v1,code_eval/deepseek/Q22_r1.m,1,"",,NaN,mid,1.23662272011233e-07,2.00000012366227,correct_mid,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:24:03,1
+deepseek,Q2.2,2,v1,code_eval/deepseek/Q22_r2.m,1,"",,NaN,mid,8.96632100922365e-05,2.00008966321009,correct_mid,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:24:04,1
+deepseek,Q2.2,3,v1,code_eval/deepseek/Q22_r3.m,1,"",,NaN,mid,3.09155740720698e-08,2.00000003091557,correct_mid,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:24:04,1
+deepseek,S2,1,v1,code_eval/deepseek/S2_r1.m,0,"Error using S2_r1 (line 48)
+Relative vector error exceeds 0.1%%. Stopping script.
+
+Error in run (line 112)
+evalin('caller', strcat(scriptStem, ';'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in run_all_checks>execute_payload (line 83)
+if isempty(declared),printed=evalc('run(file)');
+                             ^^^^^^^^^^^^^^^^^^
+Error in run_all_checks>execute_isolated (line 79)
+[printed,candidates]=execute_payload(file,declared);
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in run_all_checks (line 20)
+  [printed,candidates]=execute_isolated(char(file));
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^",,48,,NaN,NaN,not_executed,NaN,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:24:04,1
+deepseek,S2,2,v1,code_eval/deepseek/S2_r2.m,1,"",,NaN,mid,1.79566793875015e-16,2,correct_mid,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:24:04,1
+deepseek,S2,3,v1,code_eval/deepseek/S2_r3.m,1,"",,NaN,mid,1.60609423042491e-16,2,correct_mid,1,NaN,NaN,NaN,NaN,NaN,NaN,24.2.0.2833386 (R2024b) Update 4,08-Oct-2026 09:24:04,1

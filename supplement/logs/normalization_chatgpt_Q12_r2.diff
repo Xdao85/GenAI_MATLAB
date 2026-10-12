@@ -1,0 +1,24 @@
+--- raw primary block
++++ code_eval/chatgpt/Q12_r2.m
+@@ -29,16 +29,16 @@
+ 
+ %% 2. Define observation point P
+ % Coordinates of point P in meters
+-P = [2, 1, 1];
++P = [0, 1, 2];
+ 
+ %% 3. Define the two point charges
+ % Charge magnitudes in Coulombs
+-q1 = 5e-9;                    % Charge 1: +5 nC
+-q2 = -3e-9;                   % Charge 2: -3 nC
++q1 = 2e-9;                    % Charge 1: +5 nC
++q2 = -2e-9;                   % Charge 2: -3 nC
+ 
+ % Positions of the charges in meters
+-r1 = [0, 0, 0];               % Charge 1 position
+-r2 = [4, 0, 0];               % Charge 2 position
++r1 = [-1, 0, 0];               % Charge 1 position
++r2 = [1, 0, 0];               % Charge 2 position
+ 
+ %% 4. Calculate the electric field
+ % Calculate the electric field at P due to each charge and their total.

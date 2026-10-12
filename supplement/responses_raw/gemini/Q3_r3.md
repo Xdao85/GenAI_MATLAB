@@ -1,0 +1,3 @@
+Gemini said
+
+I'm having a hard time fulfilling your request. Can I help you with something else instead?

@@ -1,0 +1,13 @@
+Error using feval
+Error: <a href="matlab: opentoline('[LOCAL_ROOT]\code_eval\chatgpt\Q3_r2\gpsDynamicsGUI.m',223,13)">File: gpsDynamicsGUI.m Line: 223 Column: 13</a>
+Character vector is not terminated properly.
+
+Error in run_gui_reviews>execute_payload (line 72)
+if isFunction,feval(name);else,run(file);end
+              ^^^^^^^^^^^
+Error in run_gui_reviews>execute_file (line 69)
+execute_payload(file,name,~isempty(L)&&startsWith(strtrim(L(1)),'function'));
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+Error in run_gui_reviews (line 26)
+  execute_file(char(file));drawnow;
+  ^^^^^^^^^^^^^^^^^^^^^^^^

@@ -1,0 +1,16 @@
+--- raw primary block
++++ code_eval/gemini/Q21_r1/main.m
+@@ -1,9 +1,9 @@
+ function main()
+     % --- Input Parameters ---
+-    I = 10;                  % Current in Amperes
+-    l = 2.0;                 % Length of conductor in meters
+-    A = [1, 2, 0];           % Conductor start point A(Ax, Ay, Az)
+-    P = [2, 4, 1];           % Target evaluation point P(Px, Py, Pz)
++    I = 1;                  % Current in Amperes
++    l = 2;                 % Length of conductor in meters
++    A = [0.25, 0.5, 0];           % Conductor start point A(Ax, Ay, Az)
++    P = [1, 1, 0];           % Target evaluation point P(Px, Py, Pz)
+     mu0 = 4*pi*1e-7;         % Permeability of free space
+ 
+     % --- Single Point B-Field Calculation ---

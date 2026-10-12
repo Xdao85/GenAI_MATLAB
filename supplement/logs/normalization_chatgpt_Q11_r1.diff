@@ -1,0 +1,24 @@
+--- raw primary block
++++ code_eval/chatgpt/Q11_r1.m
+@@ -8,15 +8,15 @@
+ 
+ %% Point charges
+ q1 = 2e-9;                          % Charge 1 (C)
+-q2 = -3e-9;                         % Charge 2 (C)
++q2 = -2e-9;                         % Charge 2 (C)
+ 
+-r1 = [0, 0, 0];                     % Position of charge 1 (m)
+-r2 = [0.5, 0, 0];                   % Position of charge 2 (m)
++r1 = [-1, 0, 0];                     % Position of charge 1 (m)
++r2 = [1, 0, 0];                   % Position of charge 2 (m)
+ 
+ %% Observation point P(Px, Py, Pz)
+-Px = 0.25;
+-Py = 0.30;
+-Pz = 0.20;
++Px = 0;
++Py = 1;
++Pz = 2;
+ 
+ P = [Px, Py, Pz];
+ 

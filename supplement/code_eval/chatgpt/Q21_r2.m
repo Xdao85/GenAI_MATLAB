@@ -1,0 +1,102 @@
+%% Magnetic flux density B due to a finite straight conductor
+% Conductor: length l, current I, parallel to z-axis
+% A = (Ax, Ay, Az) is the center of the conductor
+% P = (Px, Py, Pz) is the observation point
+
+clear; clc; close all;
+
+%% Parameters
+mu0 = 4*pi*1e-7;       % Permeability of free space [H/m]
+
+I  = 1;               % Current [A]
+l  = 2;                % Conductor length [m]
+
+% Position of conductor center A
+Ax = 0.25;
+Ay = 0.5;
+Az = 0;
+
+% Observation point P
+Px = 1;
+Py = 1;
+Pz = 0;
+
+%% Discretize the conductor
+N = 10000;              % Number of current elements
+z = linspace(Az-l/2, Az+l/2, N);
+
+dz = z(2) - z(1);
+
+% Coordinates of current elements
+x = Ax * ones(size(z));
+y = Ay * ones(size(z));
+
+%% Vector from current element to observation point
+Rx = Px - x;
+Ry = Py - y;
+Rz = Pz - z;
+
+R = sqrt(Rx.^2 + Ry.^2 + Rz.^2);
+
+%% Biot-Savart law
+% dl = [0 0 dz]
+%
+% dl x R = [-Ry*dz, Rx*dz, 0]
+
+dBx = (-Ry ./ R.^3) * dz;
+dBy = ( Rx ./ R.^3) * dz;
+dBz = zeros(size(z));
+
+% Integrate all differential contributions
+Bx = mu0*I/(4*pi) * sum(dBx);
+By = mu0*I/(4*pi) * sum(dBy);
+Bz = mu0*I/(4*pi) * sum(dBz);
+
+B = [Bx, By, Bz];
+Bmag = norm(B);
+
+%% Display result
+fprintf('Magnetic flux density at P:\n');
+fprintf('Bx = %.6e T\n', Bx);
+fprintf('By = %.6e T\n', By);
+fprintf('Bz = %.6e T\n', Bz);
+fprintf('|B| = %.6e T\n', Bmag);
+
+%% 3D Plot
+figure;
+hold on;
+grid on;
+axis equal;
+
+% Plot conductor
+plot3(x, y, z, 'k', 'LineWidth', 4);
+
+% Plot point P
+plot3(Px, Py, Pz, 'ro', ...
+    'MarkerSize', 10, 'MarkerFaceColor', 'r');
+
+% Plot vector B at P
+scale = 1/max(Bmag, eps);   % Scaling for visualization
+
+quiver3(Px, Py, Pz, ...
+        Bx*scale, By*scale, Bz*scale, ...
+        0.3, 'b', 'LineWidth', 2, 'MaxHeadSize', 0.5);
+
+% Plot A
+plot3(Ax, Ay, Az, 'ko', ...
+    'MarkerSize', 7, 'MarkerFaceColor', 'k');
+
+%% Labels
+xlabel('x (m)');
+ylabel('y (m)');
+zlabel('z (m)');
+
+title('Magnetic Flux Density due to a Finite Straight Conductor');
+
+legend('Current-carrying conductor', ...
+       'Observation point P', ...
+       'Magnetic field B', ...
+       'Point A', ...
+       'Location', 'best');
+
+view(3);

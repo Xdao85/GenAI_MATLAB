@@ -1,0 +1,106 @@
+assistant,prompt_id,rep,version,file,executed,geometry,vectors_json,max_relative_error,classification,reviewer,evidence,code_sha256
+
+chatgpt,Q1.1,1,v1,code_eval/chatgpt/Q11_r1.m,1,q1,"[[2.44615, 0.0, 0.0]]",1.971717857117172e-05,reference_agreement,AI-assisted review source-and-diary audit,"E = [2.44615, 0, 0] N/C",351b298da067e34349f918d200efb8ea1fc29393aa8e163126f92725e8b795eb
+
+chatgpt,Q1.1,2,v1,code_eval/chatgpt/Q11_r2.m,1,q1,"[[2.4461, 0.0, 0.0]]",7.235081646425308e-07,reference_agreement,AI-assisted review source-and-diary audit,"E = [2.4461e+00, 0.0000e+00, 0.0000e+00] N/C",d8bcec3ca3c8b8b3af726b0fec6d625e91e13e1392edd5d64edd700798d280f0
+
+chatgpt,Q1.1,3,v1,code_eval/chatgpt/Q11_r3.m,1,q1,"[[2.4462, 0.0, 0.0]]",4.015786530716752e-05,reference_agreement,AI-assisted review source-and-diary audit,"E = [2.4462e+00, 0.0000e+00, 0.0000e+00] N/C",7505b3b9bc2f7f2828f9ba3930c2647c161b7c654d87548139735e2fe2683377
+
+chatgpt,Q1.2,1,v1,code_eval/chatgpt/Q12_r1.m,1,q1,"[[2.4461, 0.0, 0.0]]",7.235081646425308e-07,reference_agreement,AI-assisted review source-and-diary audit,"E  = [2.4461e+00, 0.0000e+00, 0.0000e+00] N/C",554321063e953f0532c361bca4a0e0dd958fd4bfdc4ad0de18bb265aad21f997
+
+chatgpt,Q1.2,2,v1,code_eval/chatgpt/Q12_r2.m,1,q1,"[[2.4461, 0.0, 0.0]]",7.235081646425308e-07,reference_agreement,AI-assisted review source-and-diary audit,"E  = [2.4461e+00, 0.0000e+00, 0.0000e+00] N/C",c325c2db3b68b41b41c44b8cf3431a5d075eb359507451272aa011b0a3d15660
+
+chatgpt,Q1.2,3,v1,code_eval/chatgpt/Q12_r3.m,1,q1,"[[2.4461, 0.0, 0.0]]",7.235081646425308e-07,reference_agreement,AI-assisted review source-and-diary audit,"E = [2.4461e+00, 0.0000e+00, 0.0000e+00] N/C",b6d254338730abfd399109e3f3eb955d56fc203516450394a89f7bbf8ca0871d
+
+chatgpt,Q2.1,1,v1,code_eval/chatgpt/Q21_r1.m,1,mid,"[[-9.141924e-08, 1.371289e-07, 0.0]]",2.1264871225715547e-07,reference_agreement,AI-assisted review source-and-diary audit,labeled Bx/By/Bz component group,3cc04738c19c1d3b0910a736032d5c16cd3987fd1f26e8aa133f34dc952533dd
+
+chatgpt,Q2.1,2,v1,code_eval/chatgpt/Q21_r2.m,1,mid,"[[-9.142334e-08, 1.37135e-07, 0.0]]",4.4760526481520765e-05,reference_agreement,AI-assisted review source-and-diary audit,labeled Bx/By/Bz component group,d200d93b1fb632cc47f307225d8c6d2a26176017df189efe1484477c9a08da5a
+
+chatgpt,Q2.1,3,v1,code_eval/chatgpt/Q21_r3.m,1,mid,"[[-9.146024e-08, 1.371904e-07, 0.0]]",0.0004486478945352177,reference_agreement,AI-assisted review source-and-diary audit,labeled Bx/By/Bz component group,ceeabaaad643dc45f998471d910f1328507efaa45e915f92bf8da777438334cd
+
+chatgpt,Q2.2,1,v1,code_eval/chatgpt/Q22_r1.m,1,mid,"[[-9.141924e-08, 1.371289e-07, 0.0]]",2.1264871225715547e-07,reference_agreement,AI-assisted review source-and-diary audit,labeled Bx/By/Bz component group,d6c95266e4e46967b8e8c0ab9fa662a6bbb381a021b1963c8fa238e5b2023228
+
+chatgpt,Q2.2,2,v1,code_eval/chatgpt/Q22_r2.m,1,mid,"[[-9.142334e-08, 1.37135e-07, 0.0]]",4.4760526481520765e-05,reference_agreement,AI-assisted review source-and-diary audit,labeled Bx/By/Bz component group,f3235a4baa7e7ad9784003c5d07ea7e20d10f923a39c639e03082beb67eeb5fb
+
+chatgpt,Q2.2,3,v1,code_eval/chatgpt/Q22_r3.m,1,mid,"[[-9.142334e-08, 1.37135e-07, 0.0]]",4.4760526481520765e-05,reference_agreement,AI-assisted review source-and-diary audit,labeled Bx/By/Bz component group,3e1900711219f8d8f86f3c0a69c120c9a88c59f659a6513ab4027a883176d982
+
+chatgpt,S2,1,v1,code_eval/chatgpt/S2_r1.m,1,mid,"[[-9.14192434e-08, 1.37128865e-07, 0.0], [-9.14192434e-08, 1.37128865e-07, 0.0]]",7.30642139083e-10,reference_agreement,AI-assisted review source-and-diary audit,"B_ref = [-9.14192434e-08,  1.37128865e-07,  0.00000000e+00] T | B_num = [-9.14192434e-08,  1.37128865e-07,  0.00000000e+00] T",e916c36e21ae4cb082fb332c06ba2bc8447dbfcdc71bf306d96bf37390ea5fd1
+
+chatgpt,S2,2,v1,code_eval/chatgpt/S2_r2.m,1,mid,"[[-9.141924341e-08, 1.3712886512e-07, 0.0], [-9.1419243411e-08, 1.3712886512e-07, 0.0]]",6.067663392985087e-12,reference_agreement,AI-assisted review source-and-diary audit,labeled Bx/By/Bz component group | labeled Bx/By/Bz component group,06ff661ee6fe924a4e8a794086abaf0d154bfd9db926881f059a71a5da1cbf1a
+
+chatgpt,S2,3,v1,code_eval/chatgpt/S2_r3.m,0,mid,[],,execution_failed,AI-assisted review source-and-diary audit,Error using S2_r3 (line 106),68fe94a88e90edcf57d75723342f22ba110e38cb4e07b1f9fb090141d2e5eb86
+
+gemini,Q1.1,1,v1,code_eval/gemini/Q11_r1.m,1,q1,"[[2.446, 0.0, 0.0]]",4.160488163627103e-05,reference_agreement,AI-assisted review source-and-diary audit,"E_total vector      : [ 2.446e+00,  0.000e+00,  0.000e+00] N/C",f68e61d8fead71cbafe2c9ac39ffbef985c5cc81db227d7ca80fdfc2d09bbb77
+
+gemini,Q1.1,2,v1,code_eval/gemini/Q11_r2.m,0,q1,[],,execution_failed,AI-assisted review source-and-diary audit,"Error: <a href=""matlab: opentoline('[LOCAL_ROOT]\code_eval\gemini\Q11_r2.m',40,9)"">File: Q11_r2.m Line: 40 Column: 9</a>",804f916324ffb5882edde5ad2496ce53c589c421b8a22f1531e1d58450683445
+
+gemini,Q1.2,2,v1,code_eval/gemini/Q12_r2.m,1,q1,"[[2.446, 0.0, 0.0]]",4.160488163627103e-05,reference_agreement,AI-assisted review source-and-diary audit,"Electric Field E   : [2.446e+00, 0.000e+00, 0.000e+00] N/C",149fa5fc9930a651e17005ccfc1b8e1e83cc9f6de31c65b80528678f5355a326
+
+gemini,Q1.2,3,v1,code_eval/gemini/Q12_r3.m,1,q1,"[[2.446, 0.0, 0.0]]",4.160488163627103e-05,reference_agreement,AI-assisted review source-and-diary audit,"Electric Field E   : [2.446e+00, 0.000e+00, 0.000e+00] N/C",6f72bca2b01ce9397f22e3d2c5182825643e052276b7d81972980ea923773667
+
+gemini,Q2.1,1,v1,code_eval/gemini/Q21_r1/main.m,1,end,"[[-5.61e-08, 8.416e-08, 0.0]]",5.738213331332433e-05,reference_agreement,AI-assisted review source-and-diary audit,labeled Bx/By/Bz component group,be8631d0ae21e5f422cb240e9b7d70e7a7079256b76d120e9586cb4de636baf4
+
+gemini,Q2.1,2,v1,code_eval/gemini/Q21_r2.m,1,end,"[[-5.610367e-08, 8.41555e-08, 0.0]]",3.030104888170543e-08,reference_agreement,AI-assisted review source-and-diary audit,labeled Bx/By/Bz component group,8f19b36d23a6f761e6de68114e461fbc82dd30160b73adf6712d5d13c7dbe013
+
+gemini,Q2.2,3,v1,code_eval/gemini/Q22_r3.m,1,mid,"[[-9.142e-08, 1.371e-07, 0.0]]",0.0001752036699968001,reference_agreement,AI-assisted review source-and-diary audit,"Magnetic Field Vector B at P: [-9.142e-08, 1.371e-07, 0.000e+00] T",fb9e66e228ea7f17ff0f936ec70729a47938ce89717525f82e8cf85db9f7842f
+
+claude,Q1.1,1,v1,code_eval/claude/Q11_r1.m,1,q1,"[[2.446, 0.0, 0.0]]",4.160488163627103e-05,reference_agreement,AI-assisted review source-and-diary audit,"Etot  = [    2.446     0.000     0.000] N/C, |Etot|  = 2.446 N/C",b586f54338e490458935e478db4a5ff849830b5a2165c7f29bf9313dae59c3d0
+
+claude,Q1.1,2,v1,code_eval/claude/Q11_r2.m,1,q1,"[[2.4461, 0.0, 0.0]]",7.235081646425308e-07,reference_agreement,AI-assisted review source-and-diary audit,"E tot = [+2.4461e+00  +0.0000e+00  +0.0000e+00] N/C,  |E|  = 2.4461e+00",7e6c47cded8706a239507fa161de76a6a187bc5de6e2694c97f2ac93d519b604
+
+claude,Q1.1,3,v1,code_eval/claude/Q11_r3.m,1,q1,"[[2.446, 0.0, 0.0]]",4.160488163627103e-05,reference_agreement,AI-assisted review source-and-diary audit,"Etot  = [+2.446 +0 +0] N/C, |Etot| = 2.446 N/C",95cb3319c6ab9e7840eb570591772a4a552b5aa540f48493e2767ec69e2e3115
+
+claude,Q1.2,1,v1,code_eval/claude/Q12_r1.m,1,q1,"[[2.4461, 0.0, 0.0]]",7.235081646425308e-07,reference_agreement,AI-assisted review source-and-diary audit,"E = [2.4461e+00, 0.0000e+00, 0.0000e+00] N/C",ae2ac14b332e5713efdd99a7ea293910715c440e9336b8b7a7ecd1c8a57830dc
+
+claude,Q1.2,2,v1,code_eval/claude/Q12_r2.m,1,q1,"[[2.4461, 0.0, 0.0]]",7.235081646425308e-07,reference_agreement,AI-assisted review source-and-diary audit,"Total E        = (2.4461e+00, 0.0000e+00, 0.0000e+00) N/C",328151e6cd604ad174861e2b4eaa8133485b162c04edae9b468a667ee7b67577
+
+claude,Q1.2,3,v1,code_eval/claude/Q12_r3.m,1,q1,"[[2.4461, 0.0, 0.0]]",7.235081646425308e-07,reference_agreement,AI-assisted review source-and-diary audit,labeled Bx/By/Bz component group,a6efdecbde840718062519d2135b435d96b07e3c007086eaf7a1b1188ba500dc
+
+claude,Q2.1,1,v1,code_eval/claude/Q21_r1.m,1,end,"[[-5.6104e-08, 8.4156e-08, 0.0]]",5.91026757596153e-06,reference_agreement,AI-assisted review source-and-diary audit,B at P = [-5.6104e-08  8.4156e-08  0.0000e+00] T,430403e9a3fa2009183641b69381ee37e6b6b7f7b88b61cac29edc8d90b619c0
+
+claude,Q2.1,2,v1,code_eval/claude/Q21_r2.m,1,end,"[[-5.6104e-08, 8.4156e-08, 0.0]]",5.91026757596153e-06,reference_agreement,AI-assisted review source-and-diary audit,B   = [-5.6104e-08  8.4156e-08  0.0000e+00] T,d975e44020d5ed1ed01cbe1f44ba50d79bd60085f4391196b5c292a74d564ed9
+
+claude,Q2.1,3,v1,code_eval/claude/Q21_r3.m,1,end,"[[-5.6104e-08, 8.4156e-08, 0.0]]",5.91026757596153e-06,reference_agreement,AI-assisted review source-and-diary audit,"B at P = [-5.6104e-08  8.4156e-08  0.0000e+00] T,  |B| = 1.0114e-07 T",f7f6a7099537b1eee4a30a8c0afe09af1fddc9847a439c90685b469f2b5c1e1d
+
+claude,Q2.2,1,v1,code_eval/claude/Q22_r1.m,1,end,"[[-5.6104e-08, 8.4156e-08, 0.0], [-5.6104e-08, 8.4156e-08, 0.0]]",5.91026757596153e-06,reference_agreement,AI-assisted review source-and-diary audit,"Numerical  B = [-5.6104e-08  +8.4156e-08  +0.0000e+00] T,  |B| = 1.0114e-07 T | Analytical B = [-5.6104e-08  +8.4156e-08  +0.0000e+00] T,  |B| = 1.0114e-07 T",8843719924834ec0dca725fba8f3b5c74e1500520abe2bfe8b7524ee91bd47e8
+
+claude,Q2.2,2,v1,code_eval/claude/Q22_r2.m,1,end,"[[-5.6104e-08, 8.4156e-08, 0.0], [-5.6104e-08, 8.4156e-08, 0.0]]",5.91026757596153e-06,reference_agreement,AI-assisted review source-and-diary audit,"Numerical  B = [-5.6104e-08, 8.4156e-08, 0.0000e+00] T | Analytical B = [-5.6104e-08, 8.4156e-08, 0.0000e+00] T",80c0f5d43d4cbefecd0ddd09f45ac77766c0ff590973e27df32cf8747bbbebdd
+
+claude,Q2.2,3,v1,code_eval/claude/Q22_r3.m,1,end,"[[-5.6104e-08, 8.4156e-08, 0.0], [-5.6104e-08, 8.4156e-08, 0.0]]",5.91026757596153e-06,reference_agreement,AI-assisted review source-and-diary audit,Numerical B = [-5.6104e-08  8.4156e-08  0.0000e+00] T | Analytic  B = [-5.6104e-08  8.4156e-08  0.0000e+00] T,ef5b48e3a2154e23944deb485508befffb4ceaa43d0568b87e92e9e9a7df3f33
+
+claude,S2,1,v1,code_eval/claude/S2_r1.m,1,mid,"[[-9.141924e-08, 1.371289e-07, 0.0], [-9.141925e-08, 1.371289e-07, 0.0]]",2.153839282412576e-07,reference_agreement,AI-assisted review source-and-diary audit,"B (closed form)  = [-9.141924e-08 1.371289e-07 0.000000e+00] T, |B| = 1.648084e-07 T | B (Biot-Savart)  = [-9.141925e-08 1.371289e-07 0.000000e+00] T, |B| = 1.648084e-07 T",21d56028e971b8ede94c7adc04ba8df67da1876573a005684babf7003ce1834f
+
+claude,S2,2,v1,code_eval/claude/S2_r2.m,1,mid,"[[-9.141924e-08, 1.371289e-07, 0.0], [-9.141924e-08, 1.371289e-07, 0.0]]",2.1264871225715547e-07,reference_agreement,AI-assisted review source-and-diary audit,B closed form  = [-9.141924e-08 1.371289e-07 0.000000e+00] T | B numerical    = [-9.141924e-08 1.371289e-07 0.000000e+00] T,d78bf8c8be68cd5c52f06e3ba6e4f29b6516b05f926ab837095b5ff9b6fe0935
+
+claude,S2,3,v1,code_eval/claude/S2_r3.m,1,mid,"[[-9.141924e-08, 1.371289e-07, 0.0], [-9.141924e-08, 1.371289e-07, 0.0]]",2.1264871225715547e-07,reference_agreement,AI-assisted review source-and-diary audit,B closed form  = [-9.141924e-08 1.371289e-07 0.000000e+00] T | B Biot-Savart  = [-9.141924e-08 1.371289e-07 0.000000e+00] T,93142c64cd1019a03124e75b14e22205fe00f55ea69541ac084d23794a3dc97f
+
+deepseek,Q1.1,1,v1,code_eval/deepseek/Q11_r1.m,1,q1,"[[2.446, 0.0, 0.0]]",4.160488163627103e-05,reference_agreement,AI-assisted review source-and-diary audit,"Total field E   : [ 2.446e+00,  0.000e+00,  0.000e+00] N/C",278745ec9c6d82c5768878352a7b696a96ee601b516024cde56ed4d635ece117
+
+deepseek,Q1.1,2,v1,code_eval/deepseek/Q11_r2.m,1,q1,"[[2.45, 0.0, 0.0]]",0.0015936500572326815,reference_agreement,AI-assisted review source-and-diary audit,"E_total      = [2.45, 0.00, 0.00] N/C",fc462462e60562a27b3bbc11ff59f9f773870b13993205ee3ab3a46d93fe874f
+
+deepseek,Q1.1,3,v1,code_eval/deepseek/Q11_r3.m,1,q1,"[[2.44609, 0.0, 0.0]]",4.811645511841691e-06,reference_agreement,AI-assisted review source-and-diary audit,"Total E at P = [2.44609, 0, 0] N/C",4b53512ecc77d5a3e1b629cbbef0bb363da22a01e249bbd78c916e9dda6f61e4
+
+deepseek,Q1.2,1,v1,code_eval/deepseek/Q12_r1.m,1,q1,"[[2.446102, 0.0, 0.0]]",9.411930490623104e-08,reference_agreement,AI-assisted review source-and-diary audit,"E_total = [2.446102e+00, 0.000000e+00, 0.000000e+00] N/C",e9a888b5215380cae4a1ecb798cff9f7a2412fae9df366d9c885c46d978ce4e9
+
+deepseek,Q1.2,2,v1,code_eval/deepseek/Q12_r2.m,1,q1,"[[2.4461, 0.0, 0.0]]",7.235081646425308e-07,reference_agreement,AI-assisted review source-and-diary audit,"Total electric field at P: [2.4461e+00, 0.0000e+00, 0.0000e+00] N/C",ec228bfefcdae041d63edd7022a1905b24725ab76079d446f1f5fb479c723671
+
+deepseek,Q1.2,3,v1,code_eval/deepseek/Q12_r3.m,1,q1,"[[2.4461, 0.0, 0.0]]",7.235081646425308e-07,reference_agreement,AI-assisted review source-and-diary audit,"E_total      = [2.4461e+00, 0.0000e+00, 0.0000e+00] N/C",715c0d9d3e2b59ce8cecb3b35eb45e7dd1a43c49197e89f8f81ad0797c045e06
+
+deepseek,Q2.1,1,v1,code_eval/deepseek/Q21_r1.m,1,end,"[[-5.610367e-08, 8.41555e-08, 0.0]]",3.030104888170543e-08,reference_agreement,AI-assisted review source-and-diary audit,"B = [-5.610367e-08,  8.415550e-08,  0.000000e+00] T",232ce0749b39c28d13a349302152598b866badf2b4ca72b5e18e49cade1d7df7
+
+deepseek,Q2.1,2,v1,code_eval/deepseek/Q21_r2.m,1,mid,"[[-9.141924e-08, 1.371289e-07, 0.0]]",2.1264871225715547e-07,reference_agreement,AI-assisted review source-and-diary audit,"B vector       : (-9.141924e-08, 1.371289e-07, 0.000000e+00) T",e96564f0e2c3f8a3eb7109816d22cac6cb79d5e1efbaccdf2d9d1999618d6088
+
+deepseek,Q2.1,3,v1,code_eval/deepseek/Q21_r3.m,1,mid,"[[-9.1419e-08, 1.3713e-07, 0.0]]",7.042662911111716e-06,reference_agreement,AI-assisted review source-and-diary audit,labeled Bx/By/Bz component group,4c2d3c407e8d2b8518790b9543e2119d1549b9c8e50d51e323dba3c16b9b6c69
+
+deepseek,Q2.2,1,v1,code_eval/deepseek/Q22_r1.m,1,mid,"[[-9.141925e-08, 1.371289e-07, 0.0]]",2.153839282412576e-07,reference_agreement,AI-assisted review source-and-diary audit,labeled Bx/By/Bz component group,c24702ae3cd8ac764f73a9169c49b8c11cd3fb7e93bc80d183924106a5a55c37
+
+deepseek,Q2.2,2,v1,code_eval/deepseek/Q22_r2.m,1,mid,"[[-9.142744e-08, 1.371412e-07, 0.0]]",8.986136989815765e-05,reference_agreement,AI-assisted review source-and-diary audit,labeled Bx/By/Bz component group,563972e921fb675f66c35e18b528e261efa29447c83d7290a00436cc7cbc3442
+
+deepseek,Q2.2,3,v1,code_eval/deepseek/Q22_r3.m,1,mid,"[[-9.1419e-08, 1.3713e-07, 0.0]]",7.042662911111716e-06,reference_agreement,AI-assisted review source-and-diary audit,labeled Bx/By/Bz component group,7f1a9290e909217967a3737fa9bfea2bd0a8462b76211e2a62db63ffcadc97ef
+
+deepseek,S2,1,v1,code_eval/deepseek/S2_r1.m,0,mid,[],,execution_failed,AI-assisted review source-and-diary audit,Error using S2_r1 (line 48),08e4709c7177021f1a8bb2ff0b74420e80f5224c29c5b2e022eefbc805d311c9
+
+deepseek,S2,2,v1,code_eval/deepseek/S2_r2.m,1,mid,"[[-9.141924e-08, 1.371289e-07, 0.0], [-9.141924e-08, 1.371289e-07, 0.0]]",2.1264871225715547e-07,reference_agreement,AI-assisted review source-and-diary audit,"Closed-form B_ref = [-9.141924e-08,  1.371289e-07,  0.000000e+00] T | Numerical  B_num = [-9.141924e-08,  1.371289e-07,  0.000000e+00] T",3565524f79afac5eacb916ca00e8dde645617c48c657f96922caff457c872e76
+
+deepseek,S2,3,v1,code_eval/deepseek/S2_r3.m,1,mid,"[[-9.141924e-08, 1.371289e-07, 0.0], [-9.141924e-08, 1.371289e-07, 0.0]]",2.1264871225715547e-07,reference_agreement,AI-assisted review source-and-diary audit,"B_ref (closed-form)  = [-9.141924e-08,  1.371289e-07,  0.000000e+00] T | B_num (Biot-Savart)  = [-9.141924e-08,  1.371289e-07,  0.000000e+00] T",d3599a5361d3b359e8d4f21db94ddab33c4bd51da9351571266d03bae961e939
+

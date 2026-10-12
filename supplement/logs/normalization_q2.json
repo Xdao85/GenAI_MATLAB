@@ -1,0 +1,687 @@
+[
+  {
+    "assistant": "chatgpt",
+    "run": "Q21_r1",
+    "file": "code_eval/chatgpt/Q21_r1.m",
+    "selection": "first primary code block; optional alternatives and duplicate blocks preserved",
+    "changes": [
+      {
+        "variable": "I",
+        "old": "10",
+        "new": "1"
+      },
+      {
+        "variable": "Ax",
+        "old": "0",
+        "new": "0.25"
+      },
+      {
+        "variable": "Ay",
+        "old": "0",
+        "new": "0.5"
+      },
+      {
+        "variable": "Px",
+        "old": "0.8",
+        "new": "1"
+      },
+      {
+        "variable": "Py",
+        "old": "0.6",
+        "new": "1"
+      },
+      {
+        "variable": "Pz",
+        "old": "0.5",
+        "new": "0"
+      }
+    ],
+    "raw_primary_sha256": "c0645012b22fffafd3ea2289c7e2790aa0b788b2f441ce05c58cd9c877195c40",
+    "eval_sha256": "932f091386911912f6f967a22b1e06d476e13b51b76c1c4b3cbc7e611d15cc45"
+  },
+  {
+    "assistant": "chatgpt",
+    "run": "Q21_r2",
+    "file": "code_eval/chatgpt/Q21_r2.m",
+    "selection": "first primary code block; optional alternatives and duplicate blocks preserved",
+    "changes": [
+      {
+        "variable": "I",
+        "old": "10",
+        "new": "1"
+      },
+      {
+        "variable": "Ax",
+        "old": "0",
+        "new": "0.25"
+      },
+      {
+        "variable": "Ay",
+        "old": "0",
+        "new": "0.5"
+      },
+      {
+        "variable": "Py",
+        "old": "0.8",
+        "new": "1"
+      },
+      {
+        "variable": "Pz",
+        "old": "0.5",
+        "new": "0"
+      }
+    ],
+    "raw_primary_sha256": "5595e38225fd38b56b5bbcbc44392531bb2a12a9d283478c56e8901d041adba7",
+    "eval_sha256": "65f62203b779c955696421c2ff62dc4fdd3ea4de293111b87a49235505eabef7"
+  },
+  {
+    "assistant": "chatgpt",
+    "run": "Q21_r3",
+    "file": "code_eval/chatgpt/Q21_r3.m",
+    "selection": "first primary code block; optional alternatives and duplicate blocks preserved",
+    "changes": [
+      {
+        "variable": "I",
+        "old": "10",
+        "new": "1"
+      },
+      {
+        "variable": "Ax",
+        "old": "0",
+        "new": "0.25"
+      },
+      {
+        "variable": "Ay",
+        "old": "0",
+        "new": "0.5"
+      },
+      {
+        "variable": "Pz",
+        "old": "0.5",
+        "new": "0"
+      }
+    ],
+    "raw_primary_sha256": "1c54eaf93b7e1cb57d0a67f474d5b54cae012ca208088ed30cf876644a37ae9d",
+    "eval_sha256": "1a18ff2c5afec062473ff9621c527e85eac25f229e4ddaa4bff526f22d85645f"
+  },
+  {
+    "assistant": "chatgpt",
+    "run": "Q22_r1",
+    "file": "code_eval/chatgpt/Q22_r1.m",
+    "selection": "first primary code block; optional alternatives and duplicate blocks preserved",
+    "changes": [
+      {
+        "variable": "I",
+        "old": "10",
+        "new": "1"
+      },
+      {
+        "variable": "Ax",
+        "old": "0",
+        "new": "0.25"
+      },
+      {
+        "variable": "Ay",
+        "old": "0",
+        "new": "0.5"
+      },
+      {
+        "variable": "Px",
+        "old": "1.0",
+        "new": "1"
+      },
+      {
+        "variable": "Py",
+        "old": "0.5",
+        "new": "1"
+      },
+      {
+        "variable": "Pz",
+        "old": "0.8",
+        "new": "0"
+      }
+    ],
+    "raw_primary_sha256": "cd60261109bbc866ee23c672668e0e8a980087f84e8082d09e42be59b3cf97de",
+    "eval_sha256": "af1cbc30a64d2ef97efd0981bbd2216df9c37b28508febd354ae393bb7ca70a3"
+  },
+  {
+    "assistant": "chatgpt",
+    "run": "Q22_r2",
+    "file": "code_eval/chatgpt/Q22_r2.m",
+    "selection": "first primary code block; optional alternatives and duplicate blocks preserved",
+    "changes": [
+      {
+        "variable": "I",
+        "old": "5",
+        "new": "1"
+      },
+      {
+        "variable": "Ax",
+        "old": "0",
+        "new": "0.25"
+      },
+      {
+        "variable": "Ay",
+        "old": "0",
+        "new": "0.5"
+      },
+      {
+        "variable": "Px",
+        "old": "1.0",
+        "new": "1"
+      },
+      {
+        "variable": "Py",
+        "old": "0.5",
+        "new": "1"
+      },
+      {
+        "variable": "Pz",
+        "old": "0.8",
+        "new": "0"
+      }
+    ],
+    "raw_primary_sha256": "c7bee4a9aebaca2c31e8cec2bb850a35dd37a20d853f4b17652bc7b9900a94ec",
+    "eval_sha256": "0c2779b8507613a4870b337ad9487dd9756716c0729e48f360d46148a8366d6a"
+  },
+  {
+    "assistant": "chatgpt",
+    "run": "Q22_r3",
+    "file": "code_eval/chatgpt/Q22_r3.m",
+    "selection": "first primary code block; optional alternatives and duplicate blocks preserved",
+    "changes": [
+      {
+        "variable": "I",
+        "old": "10",
+        "new": "1"
+      },
+      {
+        "variable": "Ax",
+        "old": "0",
+        "new": "0.25"
+      },
+      {
+        "variable": "Ay",
+        "old": "0",
+        "new": "0.5"
+      },
+      {
+        "variable": "Pz",
+        "old": "0.5",
+        "new": "0"
+      }
+    ],
+    "raw_primary_sha256": "b1f43d07b8544eee6ab207c047078787c0cc96dbc2583bed02cca30e0916ba0f",
+    "eval_sha256": "e77e5d1818e456624243e70ac675be287d01126503d559f4ba0df7a5e43025ea"
+  },
+  {
+    "assistant": "gemini",
+    "run": "Q21_r1",
+    "file": "code_eval/gemini/Q21_r1/main.m",
+    "selection": "first primary code block; optional alternatives and duplicate blocks preserved",
+    "changes": [
+      {
+        "variable": "I",
+        "old": "10",
+        "new": "1"
+      },
+      {
+        "variable": "l",
+        "old": "2.0",
+        "new": "2"
+      },
+      {
+        "variable": "A",
+        "old": "[1, 2, 0]",
+        "new": "[0.25, 0.5, 0]"
+      },
+      {
+        "variable": "P",
+        "old": "[2, 4, 1]",
+        "new": "[1, 1, 0]"
+      }
+    ],
+    "raw_primary_sha256": "6c873818de2d27373e895499dbf4743890b66b5ffc6fd43effb9893bb808d398",
+    "eval_sha256": "fd657f6e066a0e807c747c5fb406659f0c066a6326954b017f923af259bf5886"
+  },
+  {
+    "assistant": "gemini",
+    "run": "Q21_r2",
+    "file": "code_eval/gemini/Q21_r2.m",
+    "selection": "first primary code block; optional alternatives and duplicate blocks preserved",
+    "changes": [
+      {
+        "variable": "I",
+        "old": "10.0",
+        "new": "1"
+      },
+      {
+        "variable": "l",
+        "old": "2.0",
+        "new": "2"
+      },
+      {
+        "variable": "A",
+        "old": "[0.0, 0.0, 0.0]",
+        "new": "[0.25, 0.5, 0]"
+      },
+      {
+        "variable": "P",
+        "old": "[0.5, 0.5, 1.0]",
+        "new": "[1, 1, 0]"
+      }
+    ],
+    "raw_primary_sha256": "6f826a098a7bc0bd9df0652d832fc2cb73062a874092023482711fcb77621510",
+    "eval_sha256": "cbe35c1fa81f7d2675b4125bfb94d07a71fba0fc699a1ba4d8236b43e49da928"
+  },
+  {
+    "assistant": "gemini",
+    "run": "Q22_r3",
+    "file": "code_eval/gemini/Q22_r3.m",
+    "selection": "first primary code block; optional alternatives and duplicate blocks preserved",
+    "changes": [
+      {
+        "variable": "I",
+        "old": "10.0",
+        "new": "1"
+      },
+      {
+        "variable": "L",
+        "old": "2.0",
+        "new": "2"
+      },
+      {
+        "variable": "A",
+        "old": "[0.0, 0.0, 0.0]",
+        "new": "[0.25, 0.5, 0]"
+      },
+      {
+        "variable": "P",
+        "old": "[0.5, 0.5, 0.2]",
+        "new": "[1, 1, 0]"
+      }
+    ],
+    "raw_primary_sha256": "9bf423256a7ef35c8d84bf2f16112575c6f7b95c7d4a58a6cfa84ee977bd4fb3",
+    "eval_sha256": "a309b30dc351bc1e31bb10dec3e2cab94f11c83c538420ec65e5a9e57597a382"
+  },
+  {
+    "assistant": "claude",
+    "run": "Q21_r1",
+    "file": "code_eval/claude/Q21_r1.m",
+    "selection": "first primary code block; optional alternatives and duplicate blocks preserved",
+    "changes": [
+      {
+        "variable": "I",
+        "old": "10",
+        "new": "1"
+      },
+      {
+        "variable": "A",
+        "old": "[0.0, 0.0, 0.0]",
+        "new": "[0.25, 0.5, 0]"
+      },
+      {
+        "variable": "P",
+        "old": "[0.5, 0.3, 1.0]",
+        "new": "[1, 1, 0]"
+      }
+    ],
+    "raw_primary_sha256": "91382fdc1a7748852d3c27f076bd931ec1d33e2d22030db05546f62fa41fc2a9",
+    "eval_sha256": "2ba2f7a2e7d8a8234195cf3ff605f1f9247e3c9f4efae47ce61420d8a07ef552"
+  },
+  {
+    "assistant": "claude",
+    "run": "Q21_r2",
+    "file": "code_eval/claude/Q21_r2.m",
+    "selection": "first primary code block; optional alternatives and duplicate blocks preserved",
+    "changes": [
+      {
+        "variable": "I",
+        "old": "10",
+        "new": "1"
+      },
+      {
+        "variable": "l",
+        "old": "4",
+        "new": "2"
+      },
+      {
+        "variable": "A",
+        "old": "[1, 2, 0]",
+        "new": "[0.25, 0.5, 0]"
+      },
+      {
+        "variable": "P",
+        "old": "[3, 4, 1.5]",
+        "new": "[1, 1, 0]"
+      }
+    ],
+    "raw_primary_sha256": "32b4305ad567c8ba9210036499e6ea94285b2ae2fc9b764a887f490c6c22fb4f",
+    "eval_sha256": "ce97c685360646602ea4904c6ae9ebd11dff9b811a242b70bd016a697e6a34a9"
+  },
+  {
+    "assistant": "claude",
+    "run": "Q21_r3",
+    "file": "code_eval/claude/Q21_r3.m",
+    "selection": "first primary code block; optional alternatives and duplicate blocks preserved",
+    "changes": [
+      {
+        "variable": "I",
+        "old": "10",
+        "new": "1"
+      },
+      {
+        "variable": "A",
+        "old": "[0, 0, 0]",
+        "new": "[0.25, 0.5, 0]"
+      },
+      {
+        "variable": "P",
+        "old": "[0.5, 0.3, 1.0]",
+        "new": "[1, 1, 0]"
+      }
+    ],
+    "raw_primary_sha256": "5e6b515168a1bf79ffd7715cfc8415461603c94ccac7e9db1f6a2b7e179b5299",
+    "eval_sha256": "a5508bad5ea40f0d06ae7f98146ef202f621ece3328ba9ecc81f0896820ee488"
+  },
+  {
+    "assistant": "claude",
+    "run": "Q22_r1",
+    "file": "code_eval/claude/Q22_r1.m",
+    "selection": "first primary code block; optional alternatives and duplicate blocks preserved",
+    "changes": [
+      {
+        "variable": "I",
+        "old": "10",
+        "new": "1"
+      },
+      {
+        "variable": "A",
+        "old": "[0.0, 0.0, 0.0]",
+        "new": "[0.25, 0.5, 0]"
+      },
+      {
+        "variable": "P",
+        "old": "[0.5, 0.3, 1.0]",
+        "new": "[1, 1, 0]"
+      }
+    ],
+    "raw_primary_sha256": "69401e69afe17aeac07d50c25d9b9a1064d66db4e5c27e99f0726e5eb9dc898f",
+    "eval_sha256": "40585cd1c98be923a842466f5c18397ecd93074c84e4ccc4eb3374f5695ea5db"
+  },
+  {
+    "assistant": "claude",
+    "run": "Q22_r2",
+    "file": "code_eval/claude/Q22_r2.m",
+    "selection": "first primary code block; optional alternatives and duplicate blocks preserved",
+    "changes": [
+      {
+        "variable": "I",
+        "old": "10",
+        "new": "1"
+      },
+      {
+        "variable": "A",
+        "old": "[0, 0, 0]",
+        "new": "[0.25, 0.5, 0]"
+      },
+      {
+        "variable": "P",
+        "old": "[0.5, 0.3, 1.2]",
+        "new": "[1, 1, 0]"
+      }
+    ],
+    "raw_primary_sha256": "ae1b08ef5aab4ea4a33c88689d1cd538f41ce6445c8110d4f98fdc1ec3cbc18c",
+    "eval_sha256": "811a9529b0c820151458abce22a53b04397cda86c62a0c9de3a9870b1a67f2a1"
+  },
+  {
+    "assistant": "claude",
+    "run": "Q22_r3",
+    "file": "code_eval/claude/Q22_r3.m",
+    "selection": "first primary code block; optional alternatives and duplicate blocks preserved",
+    "changes": [
+      {
+        "variable": "I",
+        "old": "10",
+        "new": "1"
+      },
+      {
+        "variable": "A",
+        "old": "[0.0, 0.0, 0.0]",
+        "new": "[0.25, 0.5, 0]"
+      },
+      {
+        "variable": "P",
+        "old": "[0.5, 0.3, 1.0]",
+        "new": "[1, 1, 0]"
+      }
+    ],
+    "raw_primary_sha256": "906c5442e968a5a9cca161290825bac88872ff0a704a66c00ec63f3e0bec2a8b",
+    "eval_sha256": "cf8b77335b6509ad06c8ddfd2e49debf2f505b97074120ad3e7ed11111f30b65"
+  },
+  {
+    "assistant": "deepseek",
+    "run": "Q21_r1",
+    "file": "code_eval/deepseek/Q21_r1.m",
+    "selection": "first primary code block; optional alternatives and duplicate blocks preserved",
+    "changes": [
+      {
+        "variable": "I",
+        "old": "10",
+        "new": "1"
+      },
+      {
+        "variable": "l",
+        "old": "5",
+        "new": "2"
+      },
+      {
+        "variable": "A",
+        "old": "[0, 0, 0]",
+        "new": "[0.25, 0.5, 0]"
+      },
+      {
+        "variable": "P",
+        "old": "[2, 1, 1.5]",
+        "new": "[1, 1, 0]"
+      }
+    ],
+    "raw_primary_sha256": "1914ffe13c40127fa7b5f91be8e7138e59ea7b9fb19fc0623a0a53a6a3c6bb20",
+    "eval_sha256": "4407b1e81f213d98efd137dac1bab382edf52037e6980d6620480645d795d1bc"
+  },
+  {
+    "assistant": "deepseek",
+    "run": "Q21_r2",
+    "file": "code_eval/deepseek/Q21_r2.m",
+    "selection": "first primary code block; optional alternatives and duplicate blocks preserved",
+    "changes": [
+      {
+        "variable": "I",
+        "old": "10",
+        "new": "1"
+      },
+      {
+        "variable": "l",
+        "old": "2.0",
+        "new": "2"
+      },
+      {
+        "variable": "A",
+        "old": "[0.5, 0.3, 0.0]",
+        "new": "[0.25, 0.5, 0]"
+      },
+      {
+        "variable": "P",
+        "old": "[1.5, 1.0, 0.5]",
+        "new": "[1, 1, 0]"
+      }
+    ],
+    "raw_primary_sha256": "f021fed3c5d1a2d5a51ac27d3095fe9024813c434982b8d82e63976db5cdaeae",
+    "eval_sha256": "5d7fe22d812836573ea850bf75f5a80103b4accd228a7bc6ddf694027922c2e1"
+  },
+  {
+    "assistant": "deepseek",
+    "run": "Q21_r3",
+    "file": "code_eval/deepseek/Q21_r3.m",
+    "selection": "first primary code block; optional alternatives and duplicate blocks preserved",
+    "changes": [
+      {
+        "variable": "I",
+        "old": "10",
+        "new": "1"
+      },
+      {
+        "variable": "l",
+        "old": "2.0",
+        "new": "2"
+      },
+      {
+        "variable": "A",
+        "old": "[0, 0, 0]",
+        "new": "[0.25, 0.5, 0]"
+      },
+      {
+        "variable": "P",
+        "old": "[0.3, 0.4, 0.2]",
+        "new": "[1, 1, 0]"
+      }
+    ],
+    "raw_primary_sha256": "8d1bae22eb704ed14e34dfa6eb188f6487b9d23d5adcf61d20f14edb2dad9140",
+    "eval_sha256": "56abbc9db7554d8c5fe08afa72aab934b94b377cb626687bcb2ea5be89c8b14e"
+  },
+  {
+    "assistant": "deepseek",
+    "run": "Q22_r1",
+    "file": "code_eval/deepseek/Q22_r1.m",
+    "selection": "first primary code block; optional alternatives and duplicate blocks preserved",
+    "changes": [
+      {
+        "variable": "I",
+        "old": "5.0",
+        "new": "1"
+      },
+      {
+        "variable": "l",
+        "old": "2.0",
+        "new": "2"
+      },
+      {
+        "variable": "Ax",
+        "old": "0.0",
+        "new": "0.25"
+      },
+      {
+        "variable": "Ay",
+        "old": "0.0",
+        "new": "0.5"
+      },
+      {
+        "variable": "Az",
+        "old": "0.0",
+        "new": "0"
+      },
+      {
+        "variable": "Px",
+        "old": "0.5",
+        "new": "1"
+      },
+      {
+        "variable": "Py",
+        "old": "0.5",
+        "new": "1"
+      },
+      {
+        "variable": "Pz",
+        "old": "0.0",
+        "new": "0"
+      }
+    ],
+    "raw_primary_sha256": "6e398df3b03188e929d96b38ff5eb032746d4b8246426e3a9905878086347fc8",
+    "eval_sha256": "bd77cf5ffc09ecc49a83f11fc0d5a1260976d8fbd461db75eed8d3c6bf15042a"
+  },
+  {
+    "assistant": "deepseek",
+    "run": "Q22_r2",
+    "file": "code_eval/deepseek/Q22_r2.m",
+    "selection": "first primary code block; optional alternatives and duplicate blocks preserved",
+    "changes": [
+      {
+        "variable": "I",
+        "old": "10",
+        "new": "1"
+      },
+      {
+        "variable": "l",
+        "old": "2.0",
+        "new": "2"
+      },
+      {
+        "variable": "Ax",
+        "old": "0.0",
+        "new": "0.25"
+      },
+      {
+        "variable": "Ay",
+        "old": "0.0",
+        "new": "0.5"
+      },
+      {
+        "variable": "Az",
+        "old": "0.0",
+        "new": "0"
+      },
+      {
+        "variable": "P",
+        "old": "[0.5, 0.0, 0.0]",
+        "new": "[1, 1, 0]"
+      }
+    ],
+    "raw_primary_sha256": "fcfe6f3a9927fd76c12e68db7df02b22166a43bf36dab8c88fc784ab4dcf0144",
+    "eval_sha256": "2763c1eb61ed37045a1da8063e20d895b4dfb93ea8208365e8ca416d2dbe6b61"
+  },
+  {
+    "assistant": "deepseek",
+    "run": "Q22_r3",
+    "file": "code_eval/deepseek/Q22_r3.m",
+    "selection": "first primary code block; optional alternatives and duplicate blocks preserved",
+    "changes": [
+      {
+        "variable": "I",
+        "old": "10",
+        "new": "1"
+      },
+      {
+        "variable": "l",
+        "old": "2.0",
+        "new": "2"
+      },
+      {
+        "variable": "Ax",
+        "old": "0",
+        "new": "0.25"
+      },
+      {
+        "variable": "Ay",
+        "old": "0",
+        "new": "0.5"
+      },
+      {
+        "variable": "Px",
+        "old": "0.5",
+        "new": "1"
+      },
+      {
+        "variable": "Py",
+        "old": "0.5",
+        "new": "1"
+      },
+      {
+        "variable": "Pz",
+        "old": "0.3",
+        "new": "0"
+      }
+    ],
+    "raw_primary_sha256": "aea603fcd32cf84e9032524c767db659df988501274f7ad6ec49b5df2d89b973",
+    "eval_sha256": "6916955aa879b7af2c87f19d5f9596f6b285c005f8dce93e18648c9c2781b880"
+  }
+]

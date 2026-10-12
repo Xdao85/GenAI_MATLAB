@@ -1,0 +1,11 @@
+--- raw primary block
++++ code_eval/gemini/Q11_r1.m
+@@ -13,7 +13,7 @@
+ pos2 = [1, 0, 0];   
+ 
+ % Observation Point P [Px, Py, Pz] in meters
+-P = [0.5, 1.2, 0.8]; 
++P = [0, 1, 2]; 
+ 
+ % --- 2. Field Computation ---
+ % Displacement vectors pointing from charges to P

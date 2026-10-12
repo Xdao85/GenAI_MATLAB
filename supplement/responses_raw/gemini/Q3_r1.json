@@ -1,0 +1,11 @@
+{
+  "assistant": "gemini",
+  "prompt_id": "Q3",
+  "rep": 1,
+  "model_shown": "3.6 Thinking",
+  "mode": "Thinking; temporary chat",
+  "url": "https://gemini.google.com/app",
+  "capture_method": "visible DOM text and code textContent",
+  "codes": [],
+  "text": "Gemini said\n\nI'm having a hard time fulfilling your request. Can I help you with something else instead?"
+}

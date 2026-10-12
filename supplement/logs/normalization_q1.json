@@ -1,0 +1,755 @@
+[
+  {
+    "assistant": "chatgpt",
+    "run": "Q11_r1",
+    "selection": "first primary script block; all blocks preserved in raw JSON",
+    "changes": [
+      {
+        "variable": "q2",
+        "old": "-3e-9",
+        "new": "-2e-9"
+      },
+      {
+        "variable": "Px",
+        "old": "0.25",
+        "new": "0"
+      },
+      {
+        "variable": "Py",
+        "old": "0.30",
+        "new": "1"
+      },
+      {
+        "variable": "Pz",
+        "old": "0.20",
+        "new": "2"
+      },
+      {
+        "variable": "r1",
+        "old": "[0, 0, 0]",
+        "new": "[-1, 0, 0]"
+      },
+      {
+        "variable": "r2",
+        "old": "[0.5, 0, 0]",
+        "new": "[1, 0, 0]"
+      }
+    ],
+    "raw_primary_sha256": "8deea0145b82317fd868186f802ef24cbc886cf90925f0a7bf266abdf26a1275",
+    "eval_sha256": "f62f9d1d1b65977edda3ecdc26ef98faf942a2207708a1d6bf05062a8eb8422b"
+  },
+  {
+    "assistant": "chatgpt",
+    "run": "Q11_r2",
+    "selection": "first primary script block; all blocks preserved in raw JSON",
+    "changes": [
+      {
+        "variable": "q2",
+        "old": "-3e-9",
+        "new": "-2e-9"
+      },
+      {
+        "variable": "P",
+        "old": "[1, 1, 1]",
+        "new": "[0, 1, 2]"
+      },
+      {
+        "variable": "r1",
+        "old": "[0, 0, 0]",
+        "new": "[-1, 0, 0]"
+      },
+      {
+        "variable": "r2",
+        "old": "[2, 0, 0]",
+        "new": "[1, 0, 0]"
+      }
+    ],
+    "raw_primary_sha256": "de7766960495e741578645235715688f7f29b173ea5f94bde675808a6ecb183c",
+    "eval_sha256": "d06de01db0e2f057c84792d5503da05af9d674b0dcc3d472c06e7ec61270d346"
+  },
+  {
+    "assistant": "chatgpt",
+    "run": "Q11_r3",
+    "selection": "first primary script block; all blocks preserved in raw JSON",
+    "changes": [
+      {
+        "variable": "q2",
+        "old": "-3e-9",
+        "new": "-2e-9"
+      },
+      {
+        "variable": "Px",
+        "old": "1",
+        "new": "0"
+      },
+      {
+        "variable": "Pz",
+        "old": "1",
+        "new": "2"
+      },
+      {
+        "variable": "r1",
+        "old": "[0, 0, 0]",
+        "new": "[-1, 0, 0]"
+      },
+      {
+        "variable": "r2",
+        "old": "[2, 0, 0]",
+        "new": "[1, 0, 0]"
+      }
+    ],
+    "raw_primary_sha256": "bb4e0dfd1ec6c4461fb8e981367642c801d8561ae59fe9830ba9e417c91a5d0d",
+    "eval_sha256": "40dd1778d4d7a0d00747f0c080d7a00fe72822dd597169a9da17e834b487fa35"
+  },
+  {
+    "assistant": "chatgpt",
+    "run": "Q12_r1",
+    "selection": "first primary script block; all blocks preserved in raw JSON",
+    "changes": [
+      {
+        "variable": "q1",
+        "old": "5e-9",
+        "new": "2e-9"
+      },
+      {
+        "variable": "q2",
+        "old": "-3e-9",
+        "new": "-2e-9"
+      },
+      {
+        "variable": "P",
+        "old": "[2, 1, 1]",
+        "new": "[0, 1, 2]"
+      },
+      {
+        "variable": "pos1",
+        "old": "[0, 0, 0]",
+        "new": "[-1, 0, 0]"
+      },
+      {
+        "variable": "pos2",
+        "old": "[4, 2, 1]",
+        "new": "[1, 0, 0]"
+      }
+    ],
+    "raw_primary_sha256": "312a21b7a61d934afda10ce4bd22f5bbfc379240ece060b0212899190af2eff5",
+    "eval_sha256": "d599c1dc23b8a44f7a46f0eac5cb4f4750517c4c9f374e19d15ecd39f89b95b5"
+  },
+  {
+    "assistant": "chatgpt",
+    "run": "Q12_r2",
+    "selection": "first primary script block; all blocks preserved in raw JSON",
+    "changes": [
+      {
+        "variable": "q1",
+        "old": "5e-9",
+        "new": "2e-9"
+      },
+      {
+        "variable": "q2",
+        "old": "-3e-9",
+        "new": "-2e-9"
+      },
+      {
+        "variable": "P",
+        "old": "[2, 1, 1]",
+        "new": "[0, 1, 2]"
+      },
+      {
+        "variable": "r1",
+        "old": "[0, 0, 0]",
+        "new": "[-1, 0, 0]"
+      },
+      {
+        "variable": "r2",
+        "old": "[4, 0, 0]",
+        "new": "[1, 0, 0]"
+      }
+    ],
+    "raw_primary_sha256": "3bd0ba240fe9471c64042c575a6bb3057b0e3d0693f989553e09f7c86ef75f7a",
+    "eval_sha256": "6d93335d5701d653093ce67d56ebf72ea9f4397d8931465c463150b15ebb4beb"
+  },
+  {
+    "assistant": "chatgpt",
+    "run": "Q12_r3",
+    "selection": "first primary script block; all blocks preserved in raw JSON",
+    "changes": [
+      {
+        "variable": "q2",
+        "old": "-3e-9",
+        "new": "-2e-9"
+      },
+      {
+        "variable": "P",
+        "old": "[1, 1, 2]",
+        "new": "[0, 1, 2]"
+      },
+      {
+        "variable": "r1",
+        "old": "[0, 0, 0]",
+        "new": "[-1, 0, 0]"
+      },
+      {
+        "variable": "r2",
+        "old": "[2, 1, 0]",
+        "new": "[1, 0, 0]"
+      }
+    ],
+    "raw_primary_sha256": "5b6edf8732712719bb3420a4908119084810caeb0c4d6fdc2bb53e04beb7e011",
+    "eval_sha256": "8f0c2383be8981a03209956bb4ad6bf585242959d8f192f4b0b5374df1ecf506"
+  },
+  {
+    "assistant": "gemini",
+    "run": "Q11_r1",
+    "selection": "first primary script block; all blocks preserved in raw JSON",
+    "changes": [
+      {
+        "variable": "P",
+        "old": "[0.5, 1.2, 0.8]",
+        "new": "[0, 1, 2]"
+      }
+    ],
+    "raw_primary_sha256": "4ec84ebdd1a1e4e53f35b3839a8af127ce491c3f66bf9b1f14586d4bc478cf6f",
+    "eval_sha256": "0ed74ba8e7e0fa6428f8fd38b4e581a3951d532214a5ec44b707f00def0ec8cf"
+  },
+  {
+    "assistant": "gemini",
+    "run": "Q11_r2",
+    "selection": "first primary script block; all blocks preserved in raw JSON",
+    "changes": [
+      {
+        "variable": "q1",
+        "old": "2e-6",
+        "new": "2e-9"
+      },
+      {
+        "variable": "q2",
+        "old": "-3e-6",
+        "new": "-2e-9"
+      },
+      {
+        "variable": "P",
+        "old": "[1, 2, 3]",
+        "new": "[0, 1, 2]"
+      },
+      {
+        "variable": "rP",
+        "old": "[0.2, 1.2, 0.8]",
+        "new": "[0, 1, 2]"
+      },
+      {
+        "variable": "r1",
+        "old": "[-1.0, -0.5, 0.0]",
+        "new": "[-1, 0, 0]"
+      },
+      {
+        "variable": "r2",
+        "old": "[1.0, 0.5, 0.0]",
+        "new": "[1, 0, 0]"
+      },
+      {
+        "variable": "q1_pos",
+        "old": "[-2, 1, 0]",
+        "new": "[-1, 0, 0]"
+      },
+      {
+        "variable": "q2_pos",
+        "old": "[3, -1, 1]",
+        "new": "[1, 0, 0]"
+      }
+    ],
+    "raw_primary_sha256": "8b3552ccbf51bfe6c906fc33d044174c81ef1eea33e56a7d653b5de3c50807d8",
+    "eval_sha256": "8a959a4159ed0316472f8b678607f011510b633d78e15b14b0dae950dbaddaea"
+  },
+  {
+    "assistant": "gemini",
+    "run": "Q12_r2",
+    "selection": "first primary script block; all blocks preserved in raw JSON",
+    "changes": [
+      {
+        "variable": "P",
+        "old": "[0.02, 0.03, 0.04]",
+        "new": "[0, 1, 2]"
+      },
+      {
+        "variable": "q_pos",
+        "old": "[ 0.05,  0.0, 0.0; ...\n         -0.05,  0.0, 0.0]",
+        "new": "[-1, 0, 0; 1, 0, 0]"
+      }
+    ],
+    "raw_primary_sha256": "922de009925d3ea720d96c66f08066e36c0412540e4f3c120a12edb1e259912a",
+    "eval_sha256": "a5897887be7efdf82c92bbc39b678f8e8d6e10e5ed5709bf4a9ec2dbb4cf2d7a"
+  },
+  {
+    "assistant": "gemini",
+    "run": "Q12_r3",
+    "selection": "first primary script block; all blocks preserved in raw JSON",
+    "changes": [
+      {
+        "variable": "P",
+        "old": "[0.5, 1.0, 1.5]",
+        "new": "[0, 1, 2]"
+      },
+      {
+        "variable": "q",
+        "old": "[2e-9, -3e-9]",
+        "new": "[2e-9, -2e-9]"
+      },
+      {
+        "variable": "charge_pos",
+        "old": "[ ...\n    -1.0,  0.5,  0.0;   % Position of q1\n     1.5, -1.0,  0.5    % Position of q2\n]",
+        "new": "[-1, 0, 0; 1, 0, 0]"
+      }
+    ],
+    "raw_primary_sha256": "b7ea001c7bee2ae55a02f059777cd35b1b128e2abbdc0d27a76f61a88ae2f5fe",
+    "eval_sha256": "14e784d3f5b180a963068c51268a99b803b718ab2d715e8557d7c0eec3749fa8"
+  },
+  {
+    "assistant": "claude",
+    "run": "Q11_r1",
+    "selection": "first primary script block; all blocks preserved in raw JSON",
+    "changes": [
+      {
+        "variable": "q1",
+        "old": "+2e-9",
+        "new": "2e-9"
+      },
+      {
+        "variable": "q2",
+        "old": "-3e-9",
+        "new": "-2e-9"
+      },
+      {
+        "variable": "Px",
+        "old": "0.5",
+        "new": "0"
+      },
+      {
+        "variable": "Py",
+        "old": "2",
+        "new": "1"
+      },
+      {
+        "variable": "Pz",
+        "old": "1.5",
+        "new": "2"
+      },
+      {
+        "variable": "r1",
+        "old": "[ 1  0  0]",
+        "new": "[-1, 0, 0]"
+      },
+      {
+        "variable": "r2",
+        "old": "[-1  1  0.5]",
+        "new": "[1, 0, 0]"
+      }
+    ],
+    "raw_primary_sha256": "2b631eca08bc4b675027eb52fe7d08e243eeeaa84c255dbc8fdcf2308ec6fa8d",
+    "eval_sha256": "9857913ff018fb56b4f76a740cbb48f2d7bac77ee2f870b8ff099edf52cc1f65"
+  },
+  {
+    "assistant": "claude",
+    "run": "Q11_r2",
+    "selection": "first primary script block; all blocks preserved in raw JSON",
+    "changes": [
+      {
+        "variable": "q1",
+        "old": "+2e-9",
+        "new": "2e-9"
+      },
+      {
+        "variable": "q2",
+        "old": "-3e-9",
+        "new": "-2e-9"
+      },
+      {
+        "variable": "Px",
+        "old": "0.5",
+        "new": "0"
+      },
+      {
+        "variable": "Py",
+        "old": "1.5",
+        "new": "1"
+      },
+      {
+        "variable": "Pz",
+        "old": "1.0",
+        "new": "2"
+      },
+      {
+        "variable": "r1",
+        "old": "[ 1,  0,  0]",
+        "new": "[-1, 0, 0]"
+      },
+      {
+        "variable": "r2",
+        "old": "[-1,  0.5, 0]",
+        "new": "[1, 0, 0]"
+      }
+    ],
+    "raw_primary_sha256": "3004ae84491a46f7b168cf21fde1f713d8891e47639a842fca85732bbeb7bb51",
+    "eval_sha256": "5da01096758b43f631581f3dc69acd9f8b50e9bbb706f4d671a13752c42a51fa"
+  },
+  {
+    "assistant": "claude",
+    "run": "Q11_r3",
+    "selection": "first primary script block; all blocks preserved in raw JSON",
+    "changes": [
+      {
+        "variable": "q1",
+        "old": "+2e-9",
+        "new": "2e-9"
+      },
+      {
+        "variable": "q2",
+        "old": "-3e-9",
+        "new": "-2e-9"
+      },
+      {
+        "variable": "P",
+        "old": "[0.5, 1.5, 1.0]",
+        "new": "[0, 1, 2]"
+      },
+      {
+        "variable": "r1",
+        "old": "[ 1.0,  0.0,  0.0]",
+        "new": "[-1, 0, 0]"
+      },
+      {
+        "variable": "r2",
+        "old": "[-1.0,  0.5,  0.5]",
+        "new": "[1, 0, 0]"
+      }
+    ],
+    "raw_primary_sha256": "d7376d1a84f8f9ea70d708472fe60944a05231d84c592a2b0aa50f1cf36106d6",
+    "eval_sha256": "ea4f8133ea2f128513438981cb1b010b712fc3de85e6c17bb81e642870729609"
+  },
+  {
+    "assistant": "claude",
+    "run": "Q12_r1",
+    "selection": "first primary script block; all blocks preserved in raw JSON",
+    "changes": [
+      {
+        "variable": "q2",
+        "old": "-3e-9",
+        "new": "-2e-9"
+      },
+      {
+        "variable": "P",
+        "old": "[ 0,  1,  1]",
+        "new": "[0, 1, 2]"
+      },
+      {
+        "variable": "r1",
+        "old": "[ 1,  0,  0]",
+        "new": "[-1, 0, 0]"
+      },
+      {
+        "variable": "r2",
+        "old": "[-1,  0,  0]",
+        "new": "[1, 0, 0]"
+      }
+    ],
+    "raw_primary_sha256": "8d47347c755c89c1f69200640e13167f4b6e8e087db283f2c1355306a54e9cfc",
+    "eval_sha256": "ae2f572c980eb82d62b680d1d9c6214c7f514c4cc5395f25ced3afd6c087cd17"
+  },
+  {
+    "assistant": "claude",
+    "run": "Q12_r2",
+    "selection": "first primary script block; all blocks preserved in raw JSON",
+    "changes": [
+      {
+        "variable": "q2",
+        "old": "-3e-9",
+        "new": "-2e-9"
+      },
+      {
+        "variable": "Px",
+        "old": "0.5",
+        "new": "0"
+      },
+      {
+        "variable": "Py",
+        "old": "1.5",
+        "new": "1"
+      },
+      {
+        "variable": "Pz",
+        "old": "1.0",
+        "new": "2"
+      },
+      {
+        "variable": "r1",
+        "old": "[ 1.0,  0.0,  0.0]",
+        "new": "[-1, 0, 0]"
+      },
+      {
+        "variable": "r2",
+        "old": "[-1.0,  0.5,  0.0]",
+        "new": "[1, 0, 0]"
+      }
+    ],
+    "raw_primary_sha256": "aaf698e6d0581ae89f40230c135251a79379488795e6e57da69ace931367c69e",
+    "eval_sha256": "91539c88c9e12109666874f9d07d8270f774f5ddd1aa2cb997114a308a043696"
+  },
+  {
+    "assistant": "claude",
+    "run": "Q12_r3",
+    "selection": "first primary script block; all blocks preserved in raw JSON",
+    "changes": [
+      {
+        "variable": "q1",
+        "old": "2e-6",
+        "new": "2e-9"
+      },
+      {
+        "variable": "q2",
+        "old": "-3e-6",
+        "new": "-2e-9"
+      },
+      {
+        "variable": "Pz",
+        "old": "1",
+        "new": "2"
+      },
+      {
+        "variable": "r1",
+        "old": "[ 1,  0,  0]",
+        "new": "[-1, 0, 0]"
+      },
+      {
+        "variable": "r2",
+        "old": "[-1,  0,  0]",
+        "new": "[1, 0, 0]"
+      }
+    ],
+    "raw_primary_sha256": "21b03627f5070c8221c0494e15504602dc06bb022a55a4a8b52f0eba71e12463",
+    "eval_sha256": "900a9686aabe2d74d1ca49a254497e7fd34d01599a39c0f9316e33b0c86dd242"
+  },
+  {
+    "assistant": "deepseek",
+    "run": "Q11_r1",
+    "selection": "first primary script block; all blocks preserved in raw JSON",
+    "changes": [
+      {
+        "variable": "q2",
+        "old": "-1.5e-9",
+        "new": "-2e-9"
+      },
+      {
+        "variable": "Px",
+        "old": "1.0",
+        "new": "0"
+      },
+      {
+        "variable": "Py",
+        "old": "1.0",
+        "new": "1"
+      },
+      {
+        "variable": "Pz",
+        "old": "1.0",
+        "new": "2"
+      },
+      {
+        "variable": "r1",
+        "old": "[-1.0,  0.0,  0.0]",
+        "new": "[-1, 0, 0]"
+      },
+      {
+        "variable": "r2",
+        "old": "[ 1.0,  1.0,  0.5]",
+        "new": "[1, 0, 0]"
+      }
+    ],
+    "raw_primary_sha256": "ed47d4024726fcd72f146f533ff0c3fcef25e035ea684bf2b8975344fc9d53ba",
+    "eval_sha256": "d1921ed3c88f289ed0f50e5118d112fd20665b8dcdcae59a4df87c6d559a9a3e"
+  },
+  {
+    "assistant": "deepseek",
+    "run": "Q11_r2",
+    "selection": "first primary script block; all blocks preserved in raw JSON",
+    "changes": [
+      {
+        "variable": "q1",
+        "old": "1e-9",
+        "new": "2e-9"
+      },
+      {
+        "variable": "q2",
+        "old": "-1e-9",
+        "new": "-2e-9"
+      },
+      {
+        "variable": "Px",
+        "old": "1.0",
+        "new": "0"
+      },
+      {
+        "variable": "Py",
+        "old": "1.0",
+        "new": "1"
+      },
+      {
+        "variable": "Pz",
+        "old": "1.0",
+        "new": "2"
+      },
+      {
+        "variable": "r1",
+        "old": "[0, 0, 0]",
+        "new": "[-1, 0, 0]"
+      },
+      {
+        "variable": "r2",
+        "old": "[2, 2, 2]",
+        "new": "[1, 0, 0]"
+      }
+    ],
+    "raw_primary_sha256": "4c879b0764244085c02028a4d9cc1a29205cd80786c746cd95d690731d55727b",
+    "eval_sha256": "fc79aa2e1a60b15a608748036e3c02d9e711bead18c7460f81417c864ac6d15e"
+  },
+  {
+    "assistant": "deepseek",
+    "run": "Q11_r3",
+    "selection": "first primary script block; all blocks preserved in raw JSON",
+    "changes": [
+      {
+        "variable": "q1",
+        "old": "1e-9",
+        "new": "2e-9"
+      },
+      {
+        "variable": "q2",
+        "old": "-1e-9",
+        "new": "-2e-9"
+      },
+      {
+        "variable": "Px",
+        "old": "0.5",
+        "new": "0"
+      },
+      {
+        "variable": "Py",
+        "old": "0.5",
+        "new": "1"
+      },
+      {
+        "variable": "Pz",
+        "old": "0.5",
+        "new": "2"
+      },
+      {
+        "variable": "r1",
+        "old": "[0, 0, 0]",
+        "new": "[-1, 0, 0]"
+      },
+      {
+        "variable": "r2",
+        "old": "[1, 1, 1]",
+        "new": "[1, 0, 0]"
+      }
+    ],
+    "raw_primary_sha256": "2e5a82444c965ce7b67398deb8107cfe3a3c662ff64ea9c07eec010d0df05fa4",
+    "eval_sha256": "f46369b8ee224f20c4e87878d5d1d273e6d9f8ac7958426b26f6dbb74e41822b"
+  },
+  {
+    "assistant": "deepseek",
+    "run": "Q12_r1",
+    "selection": "first primary script block; all blocks preserved in raw JSON",
+    "changes": [
+      {
+        "variable": "q2",
+        "old": "-1e-9",
+        "new": "-2e-9"
+      },
+      {
+        "variable": "P",
+        "old": "[0.5, 0.5, 0.5]",
+        "new": "[0, 1, 2]"
+      },
+      {
+        "variable": "r1",
+        "old": "[0, 0, 0]",
+        "new": "[-1, 0, 0]"
+      },
+      {
+        "variable": "r2",
+        "old": "[1, 1, 1]",
+        "new": "[1, 0, 0]"
+      }
+    ],
+    "raw_primary_sha256": "51c84ac9b21c7d9ce5b40a60d3b0e1ce82ce4ca7208a02cf0674eb946736cead",
+    "eval_sha256": "b6e01c2ac105bd53bcbac07988744e537e06f654f6e6760e6149472ad1c6aa87"
+  },
+  {
+    "assistant": "deepseek",
+    "run": "Q12_r2",
+    "selection": "first primary script block; all blocks preserved in raw JSON",
+    "changes": [
+      {
+        "variable": "q1",
+        "old": "1e-6",
+        "new": "2e-9"
+      },
+      {
+        "variable": "q2",
+        "old": "-1e-6",
+        "new": "-2e-9"
+      },
+      {
+        "variable": "P",
+        "old": "[ 0.5,  0.5,  0.5]",
+        "new": "[0, 1, 2]"
+      },
+      {
+        "variable": "pos1",
+        "old": "[ 0.0,  0.0,  0.0]",
+        "new": "[-1, 0, 0]"
+      },
+      {
+        "variable": "pos2",
+        "old": "[ 1.0,  0.5,  0.5]",
+        "new": "[1, 0, 0]"
+      }
+    ],
+    "raw_primary_sha256": "2d8962af93f0d99ef8cf025fc364d3c5100a07571b886490a5f0c6d2fd6f3a97",
+    "eval_sha256": "0c28019473d0d8052556dccbc1ce3b2ee72ebe71a1db7275884c689e197da6d2"
+  },
+  {
+    "assistant": "deepseek",
+    "run": "Q12_r3",
+    "selection": "first primary script block; all blocks preserved in raw JSON",
+    "changes": [
+      {
+        "variable": "q1",
+        "old": "1e-9",
+        "new": "2e-9"
+      },
+      {
+        "variable": "q2",
+        "old": "-1e-9",
+        "new": "-2e-9"
+      },
+      {
+        "variable": "P",
+        "old": "[0.5, 0.5, 0.5]",
+        "new": "[0, 1, 2]"
+      },
+      {
+        "variable": "pos1",
+        "old": "[1, 1, 1]",
+        "new": "[-1, 0, 0]"
+      },
+      {
+        "variable": "pos2",
+        "old": "[-1, -1, 0.5]",
+        "new": "[1, 0, 0]"
+      }
+    ],
+    "raw_primary_sha256": "e294817e7fcc0604cf929d028bcdb277b1cc586fc28e5731405698bd8b65ccf1",
+    "eval_sha256": "034f09879e955073c9bf4f407ae9160f2089b5814bd762ef1956c0c3bb616574"
+  }
+]

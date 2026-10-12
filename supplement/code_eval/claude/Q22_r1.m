@@ -1,0 +1,97 @@
+%% BIOT-SAVART: MAGNETIC FIELD OF A FINITE STRAIGHT WIRE PARALLEL TO THE Z-AXIS
+% Model:
+%   - Straight conductor of length l carrying current I (positive = +z).
+%   - Point A(Ax,Ay,Az) is the LOWER END of the wire; the wire runs from
+%     z = Az to z = Az + l at fixed (x,y) = (Ax,Ay).
+%   - B is computed at P(Px,Py,Pz) in two ways:
+%       (a) numerical integration of the Biot-Savart law
+%       (b) closed-form analytic result (used as a cross-check)
+%   - The result is shown in 3D with quiver3 (vector arrow).
+%
+% Biot-Savart law:  dB = (mu0*I/(4*pi)) * (dl x r) / |r|^3
+%   dl : current element, r : vector from the element to the point P
+
+clear; clc; close all;
+
+%% 1. INPUT PARAMETERS (SI units)
+mu0 = 4*pi*1e-7;          % vacuum permeability [T*m/A]
+I   = 1;                 % current [A]  (sign gives direction along +z / -z)
+l   = 2;                  % wire length [m]
+A   = [0.25, 0.5, 0];    % wire start point A = [Ax Ay Az] [m]
+P   = [1, 1, 0];    % field point P = [Px Py Pz] [m]
+N   = 2000;               % number of segments for numerical integration
+
+%% 2. WIRE GEOMETRY
+% Split the wire into N small segments along z. Use segment midpoints.
+zEdges = linspace(A(3), A(3) + l, N+1);          % segment boundaries
+zMid   = (zEdges(1:end-1) + zEdges(2:end))/2;    % segment midpoints
+dz     = l/N;                                    % segment length
+
+src = [A(1)*ones(N,1), A(2)*ones(N,1), zMid(:)]; % source points (N x 3)
+dl  = repmat([0, 0, dz], N, 1);                  % current elements (N x 3), along +z
+
+%% 3. NUMERICAL BIOT-SAVART INTEGRATION
+r    = P - src;                          % vectors source -> P (N x 3)
+rmag = sqrt(sum(r.^2, 2));               % |r| (N x 1)
+
+if any(rmag < 1e-9)
+    error('Point P lies on the wire: the field is singular there.');
+end
+
+dB    = (mu0*I/(4*pi)) * cross(dl, r, 2) ./ rmag.^3;  % contribution of each segment
+B_num = sum(dB, 1);                                    % total field [Bx By Bz] (T)
+
+%% 4. ANALYTIC RESULT (for verification)
+dx = P(1) - A(1);                 % perpendicular offset components
+dy = P(2) - A(2);
+d  = hypot(dx, dy);               % perpendicular distance from P to the wire axis
+
+z1 = A(3)     - P(3);             % wire end coordinates relative to P's height
+z2 = A(3) + l - P(3);
+
+% B_phi = mu0*I/(4*pi*d) * (sin(theta2) - sin(theta1))
+Bphi  = mu0*I/(4*pi*d) * ( z2/sqrt(d^2 + z2^2) - z1/sqrt(d^2 + z1^2) );
+phi_hat = [-dy, dx, 0] / d;       % azimuthal unit vector = z_hat x (radial direction)
+B_ana = Bphi * phi_hat;
+
+%% 5. PRINT RESULTS
+fprintf('Numerical  B = [%+.4e  %+.4e  %+.4e] T,  |B| = %.4e T\n', B_num, norm(B_num));
+fprintf('Analytical B = [%+.4e  %+.4e  %+.4e] T,  |B| = %.4e T\n', B_ana, norm(B_ana));
+fprintf('Relative difference = %.2e\n', norm(B_num - B_ana)/norm(B_ana));
+
+%% 6. 3D VISUALIZATION
+figure('Color','w','Name','Magnetic field of a finite straight wire');
+hold on; grid on; axis equal; box on;
+
+% Wire (thick line) with current-direction arrow at its midpoint
+plot3([A(1) A(1)], [A(2) A(2)], [A(3) A(3)+l], 'k-', 'LineWidth', 4);
+quiver3(A(1), A(2), A(3)+l/2 - sign(I)*0.1*l/2, 0, 0, sign(I)*0.2*l, 0, ...
+        'k', 'LineWidth', 2, 'MaxHeadSize', 2);
+
+% Points A and P
+plot3(A(1), A(2), A(3), 'ko', 'MarkerFaceColor','k', 'MarkerSize', 7);
+plot3(P(1), P(2), P(3), 'ro', 'MarkerFaceColor','r', 'MarkerSize', 7);
+text(A(1), A(2), A(3), '  A', 'FontSize', 12);
+text(P(1), P(2), P(3), '  P', 'FontSize', 12, 'Color', 'r');
+
+% Perpendicular from the wire axis to P (shows distance d)
+plot3([A(1) P(1)], [A(2) P(2)], [P(3) P(3)], 'b--', 'LineWidth', 1);
+plot3([A(1) A(1)], [A(2) A(2)], [A(3) P(3)], ':', 'Color', [0.5 0.5 0.5]); % helper line
+
+% B vector at P (arrow rescaled so it is visible: length = 25 % of wire length)
+scale = 0.25 * l / norm(B_num);
+quiver3(P(1), P(2), P(3), ...
+        scale*B_num(1), scale*B_num(2), scale*B_num(3), 0, ...  % 0 -> no auto-scaling
+        'r', 'LineWidth', 2.5, 'MaxHeadSize', 0.8);
+
+% Optional: circle of constant |B| around the wire through P (field-line direction)
+t = linspace(0, 2*pi, 200);
+plot3(A(1) + d*cos(t + atan2(dy,dx)), A(2) + d*sin(t + atan2(dy,dx)), ...
+      P(3)*ones(size(t)), 'Color', [1 0.6 0.6], 'LineStyle', '-');
+
+xlabel('x [m]'); ylabel('y [m]'); zlabel('z [m]');
+title(sprintf('B at P = %.3g \\muT  (arrow rescaled for display)', norm(B_num)*1e6));
+legend({'Wire','Current direction','A','P','Perpendicular distance d', ...
+        'Helper line','B vector at P','Field line circle'}, 'Location','best');
+view(35, 25);
+hold off;

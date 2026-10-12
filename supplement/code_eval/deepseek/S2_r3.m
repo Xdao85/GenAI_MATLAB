@@ -1,0 +1,155 @@
+% EM Course Script: Magnetic Field of a Finite Straight Wire
+% -------------------------------------------------------------------------
+% Models a straight conductor of length l = 2 m carrying I = 1 A in +z,
+% centered at A(0.25, 0.5, 0) m.  The observation point is P(1, 1, 0) m.
+% Computes B at P two independent ways:
+%   (1) Closed-form finite-wire formula (reference)
+%   (2) Numerical Biot-Savart integration
+% Prints both, relative error, checks right-hand rule, and plots.
+% Base MATLAB, ASCII only.
+% -------------------------------------------------------------------------
+
+clear; clc; close all;
+
+%% ------------------------- Physical parameters ---------------------------
+mu0 = 4*pi*1e-7;          % Permeability of free space [H/m]
+I   = 1.0;                % Current [A]  (+z direction)
+L   = 2.0;                % Wire length [m]
+A   = [0.25, 0.5, 0.0];   % Wire center [m]
+P   = [1.0,  1.0, 0.0];   % Observation point [m]
+
+% Endpoints of the wire: z runs from -L/2 to +L/2 about A
+P1 = A + [0, 0, -L/2];    % start point [m]
+P2 = A + [0, 0, +L/2];    % end   point [m]
+
+%% --------------------------- Reference solution --------------------------
+B_ref = finiteWireB(mu0, I, P1, P2, P);
+
+%% ---------------------- Numerical Biot-Savart ----------------------------
+B_num = biotSavartB(mu0, I, P1, P2, P);
+
+%% ------------------------------ Report -----------------------------------
+fprintf('Finite straight wire, I = %.3f A, L = %.3f m\n', I, L);
+fprintf('Wire center A = (%.3f, %.3f, %.3f) m\n', A);
+fprintf('Observation point P = (%.3f, %.3f, %.3f) m\n\n', P);
+
+fprintf('B_ref (closed-form)  = [% .6e, % .6e, % .6e] T\n', ...
+        B_ref(1), B_ref(2), B_ref(3));
+fprintf('B_num (Biot-Savart)  = [% .6e, % .6e, % .6e] T\n', ...
+        B_num(1), B_num(2), B_num(3));
+
+rel_err = norm(B_num - B_ref) / norm(B_ref);
+fprintf('Relative error  ||B_num - B_ref|| / ||B_ref|| = %.3e\n\n', rel_err);
+
+%% ------------------------- Right-hand rule check -------------------------
+% For current in +z, B must circulate CCW about +z (viewed from +z).
+% Check sign of (I_hat x rho_hat) . B_hat, where rho is radial from wire.
+I_hat   = [0, 0, 1];                       % current direction
+rho_vec = P - [A(1), A(2), 0];             % radial vector in xy-plane
+rho_vec(3) = 0;
+rho_hat = rho_vec / norm(rho_vec);
+expected_dir = cross(I_hat, rho_hat);      % should point along +B
+B_hat = B_ref / norm(B_ref);
+rh_dot = dot(expected_dir, B_hat);
+
+fprintf('Right-hand rule check: (I_hat x rho_hat) . B_hat = %+.6f\n', rh_dot);
+if rh_dot > 0
+    fprintf('  -> PASS: B circulates CCW about +z as expected.\n\n');
+else
+    fprintf('  -> FAIL: B direction violates right-hand rule.\n\n');
+end
+
+%% --------------------------- Error tolerance -----------------------------
+if rel_err > 1e-3
+    error('Vector error %.3e exceeds 0.1%% tolerance. Stopping.', rel_err);
+end
+
+%% ------------------------------- Plot ------------------------------------
+plotGeometry(P1, P2, A, P, B_ref);
+
+%% ======================== Local functions ================================
+
+function B = finiteWireB(mu0, I, P1, P2, P)
+% Closed-form magnetic field of a finite straight wire segment.
+% Formula (Griffiths / standard EM texts):
+%   B = (mu0*I / (4*pi*rho)) * (sin(theta2) - sin(theta1)) * phi_hat
+% where rho is perpendicular distance from P to the wire line, and
+% theta1, theta2 are the angles subtended by the endpoints as seen from
+% the foot of the perpendicular on the wire.
+%
+% Equivalent vector form used here (robust for arbitrary geometry):
+%   Let a = P - P1, b = P - P2, and let the wire direction be
+%   d = (P2 - P1)/|P2 - P1|.  Then
+%   B = (mu0*I/(4*pi)) * ( (d x a)/|d x a|^2 ) * ( (d . a)/|a| - (d . b)/|b| )
+% with the sign convention giving the right-hand-rule direction.
+
+    d = (P2 - P1) / norm(P2 - P1);   % unit vector along wire (current dir)
+    a = P - P1;                      % vector from start to P
+    b = P - P2;                      % vector from end   to P
+
+    cross_da = cross(d, a);          % d x a
+    denom    = dot(cross_da, cross_da);   % |d x a|^2 = rho^2
+
+    % Projection terms: cos of angles between wire direction and a, b
+    term1 = dot(d, a) / norm(a);
+    term2 = dot(d, b) / norm(b);
+
+    % Biot-Savart closed form for a straight finite segment
+    B = (mu0 * I / (4*pi)) * cross_da / denom * (term1 - term2);
+end
+
+function B = biotSavartB(mu0, I, P1, P2, P)
+% Numerical Biot-Savart integration:
+%   B(P) = (mu0*I/(4*pi)) * integral dl' x (P - r') / |P - r'|^3
+% Discretize the wire into N segments and sum contributions.
+
+    N = 200000;                          % number of segments
+    z1 = P1(3); z2 = P2(3);
+    z_edges = linspace(z1, z2, N+1);     % segment edges along z
+    z_mid   = 0.5*(z_edges(1:end-1) + z_edges(2:end));  % midpoints
+    dz      = (z2 - z1) / N;             % segment length (signed)
+
+    xw = P1(1); yw = P1(2);              % wire is straight along z at (xw,yw)
+
+    B = [0, 0, 0];
+    for k = 1:N
+        rp    = [xw, yw, z_mid(k)];      % source point r'
+        Rvec  = P - rp;                  % P - r'
+        Rmag  = norm(Rvec);
+        dl    = [0, 0, dz];              % dl' along +z
+        B = B + cross(dl, Rvec) / Rmag^3;
+    end
+    B = B * (mu0 * I / (4*pi));
+end
+
+function plotGeometry(P1, P2, A, P, B)
+% Plot wire, points A and P, and B vector at P.
+
+    figure('Color', 'w'); hold on; grid on; axis equal;
+
+    % Wire as a thick line
+    plot3([P1(1), P2(1)], [P1(2), P2(2)], [P1(3), P2(3)], ...
+          'k-', 'LineWidth', 3);
+
+    % Current direction arrow (midpoint, +z)
+    quiver3(A(1), A(2), A(3), 0, 0, 0.5, 0, ...
+            'Color', [0 0.6 0], 'LineWidth', 2, 'MaxHeadSize', 0.5);
+
+    % Points A and P
+    plot3(A(1), A(2), A(3), 'ko', 'MarkerFaceColor', 'y', 'MarkerSize', 8);
+    plot3(P(1), P(2), P(3), 'rs', 'MarkerFaceColor', 'r', 'MarkerSize', 8);
+
+    % B vector at P (scaled for visibility)
+    Bmag  = norm(B);
+    scale = 0.5 / Bmag;                  % draw half-meter arrow
+    quiver3(P(1), P(2), P(3), ...
+            B(1)*scale, B(2)*scale, B(3)*scale, 0, ...
+            'b-', 'LineWidth', 2, 'MaxHeadSize', 0.4);
+
+    xlabel('x [m]'); ylabel('y [m]'); zlabel('z [m]');
+    title('Finite straight wire, I = 1 A in +z, B at P');
+    legend({'Wire (l = 2 m)', 'Current +z', 'A (wire center)', ...
+            'P (observation)', 'B at P'}, 'Location', 'best');
+    view(35, 25);
+    hold off;
+end

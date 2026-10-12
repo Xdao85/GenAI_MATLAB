@@ -1,0 +1,84 @@
+function main()
+    % --- Input Parameters ---
+    I = 1;                  % Current in Amperes
+    l = 2;                 % Length of conductor in meters
+    A = [0.25, 0.5, 0];           % Conductor start point A(Ax, Ay, Az)
+    P = [1, 1, 0];           % Target evaluation point P(Px, Py, Pz)
+    mu0 = 4*pi*1e-7;         % Permeability of free space
+
+    % --- Single Point B-Field Calculation ---
+    [Bx_P, By_P, Bz_P] = calc_B_field(P(1), P(2), P(3), A, l, I, mu0);
+    B_mag_P = norm([Bx_P, By_P, Bz_P]);
+
+    fprintf('Magnetic Flux Density B at P(%g, %g, %g):\n', P(1), P(2), P(3));
+    fprintf('  Bx = %.3e T\n', Bx_P);
+    fprintf('  By = %.3e T\n', By_P);
+    fprintf('  Bz = %.3e T\n', Bz_P);
+    fprintf('  |B| = %.3e T\n\n', B_mag_P);
+
+    % --- 3D Vector Field Grid ---
+    grid_x = linspace(A(1) - 2, A(1) + 2, 12);
+    grid_y = linspace(A(2) - 2, A(2) + 2, 12);
+    grid_z = linspace(A(3) - 1, A(3) + l + 1, 8);
+
+    [X, Y, Z] = meshgrid(grid_x, grid_y, grid_z);
+    Bx = zeros(size(X));
+    By = zeros(size(Y));
+    Bz = zeros(size(Z));
+
+    for i = 1:numel(X)
+        [Bx(i), By(i), Bz(i)] = calc_B_field(X(i), Y(i), Z(i), A, l, I, mu0);
+    end
+
+    % --- Visualization ---
+    figure('Color', 'w');
+    hold on; grid on; box on;
+    view(3);
+
+    % 1. Conductor wire
+    line([A(1), A(1)], [A(2), A(2)], [A(3), A(3)+l], ...
+        'Color', 'r', 'LineWidth', 3, 'DisplayName', 'Conductor (I)');
+
+    % 2. 3D Vector Field (Normalized for visual clarity)
+    B_mag = sqrt(Bx.^2 + By.^2 + Bz.^2);
+    B_mag(B_mag == 0) = NaN; % Avoid divide-by-zero on conductor axis
+    quiver3(X, Y, Z, Bx./B_mag, By./B_mag, Bz./B_mag, 0.4, ...
+        'Color', [0.6 0.6 0.6], 'DisplayName', 'B Vector Field');
+
+    % 3. Point P and local B vector
+    plot3(P(1), P(2), P(3), 'ko', 'MarkerFaceColor', 'b', 'MarkerSize', 8, 'DisplayName', 'Point P');
+    quiver3(P(1), P(2), P(3), Bx_P/B_mag_P, By_P/B_mag_P, Bz_P/B_mag_P, 0.8, ...
+        'Color', 'b', 'LineWidth', 2.5, 'MaxHeadSize', 0.8, 'DisplayName', 'B Vector at P');
+
+    % Labeling
+    xlabel('X (m)'); ylabel('Y (m)'); zlabel('Z (m)');
+    title('3D Magnetic Flux Density \vec{B} Around Linear Conductor');
+    legend('Location', 'northeast');
+    axis equal;
+    rotate3d on;
+end
+
+function [Bx, By, Bz] = calc_B_field(Px, Py, Pz, A, l, I, mu0)
+    z1 = A(3);
+    z2 = A(3) + l;
+    
+    rx = Px - A(1);
+    ry = Py - A(2);
+    rho2 = rx^2 + ry^2;
+    
+    % Singularity check on axis
+    if rho2 < 1e-12
+        Bx = 0; By = 0; Bz = 0;
+        return;
+    end
+    
+    R1 = sqrt(rho2 + (Pz - z1)^2);
+    R2 = sqrt(rho2 + (Pz - z2)^2);
+    
+    term = ((z2 - Pz) / R2) - ((z1 - Pz) / R1);
+    factor = (mu0 * I) / (4 * pi * rho2) * term;
+    
+    Bx = -ry * factor;
+    By =  rx * factor;
+    Bz =  0;
+end

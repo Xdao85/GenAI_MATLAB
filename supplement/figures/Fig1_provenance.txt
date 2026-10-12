@@ -1,0 +1,1 @@
+Reconstructed from original_v1_v2/verification/matlab_log.txt, Q21 sections. Gemini and Claude values are rounded as printed. Blue: observed analytical result. Gray: matching-geometry reference. Shared display scale 4e6 m/T. Not newly collected data. DeepSeek numerical result is reported separately in paper text.

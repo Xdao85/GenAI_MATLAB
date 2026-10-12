@@ -1,0 +1,119 @@
+
+===== ChatGPT dynamic check =====
+Error while evaluating TimerFcn for timer 'timer-1'
+
+Invalid or deleted object.
+Invalid or deleted object.
+
+Error in GPS_Dynamics_GUI_v2/updateSimulation (line 422)
+    satellitePlot.XData = satPositions(:,1);
+    ^^^^^^^^^^^^^^^^^^^
+Error in rerun_v8_dynamic>invoke_callback (line 59)
+if isa(cb,'function_handle'),cb(obj,[]);elseif iscell(cb),feval(cb{1},obj,[],cb{2:end});else,error('Unsupported callback format');end
+                             ^^^^^^^^^^
+Error in rerun_v8_dynamic (line 24)
+    for k=1:numel(ts),cb=ts(k).TimerFcn;invoke_callback(cb,ts(k));end
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^
+
+===== Gemini dynamic check =====
+[Warning: Error in state of SceneNode.
+String scalar or character vector must have valid interpreter syntax:
+$$\\mathbf{3.\\ Gauss\\text{-}Newton\\ Step:}\\quad \\Delta\\mathbf{x} = (\\mathbf{H}^T\\mathbf{H})^{-1}\\mathbf{H}^T
+\\Delta\\mathbf{\\rho} = \\mathbf{H} \\backslash \\Delta\\mathbf{\\rho}$$
+] 
+[> In defaulterrorcallback (line 12)
+In rerun_v8_dynamic (line 12)] 
+START/UPDATE/STOP PASS: displayed state changed.
+
+===== Claude dynamic check =====
+START/UPDATE/STOP PASS: displayed state changed.
+RESET PASS
+
+===== Deepseek dynamic check =====
+START/UPDATE/STOP PASS: displayed state changed.
+RESET PASS
+Error using exportapp
+Specified handle is not valid for export.
+
+Error in rerun_v8_dynamic (line 36)
+   exportapp(figs(1),fullfile(root,[names{i} '_v2.png']));
+   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+===== reference_q1_point_charges =====
+E1 = [1.2231 1.2231 2.4461] V/m
+E2 = [1.2231 -1.2231 -2.4461] V/m
+E  = [2.4461 0.0000 0.0000] V/m, |E| = 2.4461 V/m
+REFERENCE PASS
+
+===== reference_q2_finite_wire =====
+
+--- Conductor centered at A ---
+Analytical B = [-9.1419e-08 1.3713e-07 0.0000e+00] T, |B| = 1.6481e-07 T
+Numerical  B = [-9.1419e-08 1.3713e-07 0.0000e+00] T, |B| = 1.6481e-07 T
+V2: relative difference = 3.09e-10
+V3: B . a_phi / |B| = 1.0000 (must be +1), B_z = 0.0e+00
+
+--- Conductor starting at A ---
+Analytical B = [-5.6104e-08 8.4156e-08 0.0000e+00] T, |B| = 1.0114e-07 T
+Numerical  B = [-5.6104e-08 8.4156e-08 0.0000e+00] T, |B| = 1.0114e-07 T
+V2: relative difference = 4.39e-11
+V3: B . a_phi / |B| = 1.0000 (must be +1), B_z = 0.0e+00
+REFERENCE PASS
+
+===== ChatGPT dynamic check =====
+Error while evaluating TimerFcn for timer 'timer-1'
+
+Invalid or deleted object.
+Invalid or deleted object.
+
+Error in GPS_Dynamics_GUI_v2/updateSimulation (line 422)
+    satellitePlot.XData = satPositions(:,1);
+    ^^^^^^^^^^^^^^^^^^^
+Error in rerun_v8_dynamic>invoke_callback (line 72)
+if isa(cb,'function_handle'),cb(obj,[]);elseif iscell(cb),feval(cb{1},obj,[],cb{2:end});else,error('Unsupported callback format');end
+                             ^^^^^^^^^^
+Error in rerun_v8_dynamic (line 25)
+    for k=1:numel(ts),cb=ts(k).TimerFcn;invoke_callback(cb,ts(k));end
+                                        ^^^^^^^^^^^^^^^^^^^^^^^^^
+RESET FAIL: Invalid or deleted object.
+
+===== Gemini dynamic check =====
+[Warning: Error in state of SceneNode.
+String scalar or character vector must have valid interpreter syntax:
+$$\\mathbf{3.\\ Gauss\\text{-}Newton\\ Step:}\\quad \\Delta\\mathbf{x} = (\\mathbf{H}^T\\mathbf{H})^{-1}\\mathbf{H}^T
+\\Delta\\mathbf{\\rho} = \\mathbf{H} \\backslash \\Delta\\mathbf{\\rho}$$
+] 
+[> In defaulterrorcallback (line 12)
+In rerun_v8_dynamic (line 12)] 
+START/UPDATE/STOP PASS: displayed state changed.
+
+===== Claude dynamic check =====
+START/UPDATE/STOP PASS: displayed state changed.
+RESET PASS
+[Warning: UI components will not be included in the output.] 
+
+===== Deepseek dynamic check =====
+START/UPDATE/STOP PASS: displayed state changed.
+RESET PASS
+[Warning: UI components will not be included in the output.] 
+
+===== reference_q1_point_charges =====
+E1 = [1.2231 1.2231 2.4461] V/m
+E2 = [1.2231 -1.2231 -2.4461] V/m
+E  = [2.4461 0.0000 0.0000] V/m, |E| = 2.4461 V/m
+REFERENCE PASS
+
+===== reference_q2_finite_wire =====
+
+--- Conductor centered at A ---
+Analytical B = [-9.1419e-08 1.3713e-07 0.0000e+00] T, |B| = 1.6481e-07 T
+Numerical  B = [-9.1419e-08 1.3713e-07 0.0000e+00] T, |B| = 1.6481e-07 T
+V2: relative difference = 3.09e-10
+V3: B . a_phi / |B| = 1.0000 (must be +1), B_z = 0.0e+00
+
+--- Conductor starting at A ---
+Analytical B = [-5.6104e-08 8.4156e-08 0.0000e+00] T, |B| = 1.0114e-07 T
+Numerical  B = [-5.6104e-08 8.4156e-08 0.0000e+00] T, |B| = 1.0114e-07 T
+V2: relative difference = 4.39e-11
+V3: B . a_phi / |B| = 1.0000 (must be +1), B_z = 0.0e+00
+REFERENCE PASS

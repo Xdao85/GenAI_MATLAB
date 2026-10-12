@@ -1,0 +1,13 @@
+assistant,prompt_id,rep,version,rater,C1_equations,C2_functions,C3_position_solver,C4_comments,evidence
+chatgpt,Q3,1,v1,,,,,,
+chatgpt,Q3,2,v1,,,,,,
+chatgpt,Q3,3,v1,,,,,,
+gemini,Q3,1,v1,,,,,,
+gemini,Q3,2,v1,,,,,,
+gemini,Q3,3,v1,,,,,,
+claude,Q3,1,v1,,,,,,
+claude,Q3,2,v1,,,,,,
+claude,Q3,3,v1,,,,,,
+deepseek,Q3,1,v1,,,,,,
+deepseek,Q3,2,v1,,,,,,
+deepseek,Q3,3,v1,,,,,,

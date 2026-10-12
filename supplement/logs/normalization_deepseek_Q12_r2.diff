@@ -1,0 +1,23 @@
+--- raw primary block
++++ code_eval/deepseek/Q12_r2.m
+@@ -16,15 +16,15 @@
+ k = 8.9875517923e9;              % Coulomb constant [N·m^2/C^2]
+ 
+ % Positions of the two charges [x, y, z] (meters)
+-pos1 = [ 0.0,  0.0,  0.0];
+-pos2 = [ 1.0,  0.5,  0.5];
++pos1 = [-1, 0, 0];
++pos2 = [1, 0, 0];
+ 
+ % Charge magnitudes (Coulombs). Sign matters: +/-
+-q1 =  1e-6;     % +1 µC
+-q2 = -1e-6;     % -1 µC
++q1 =  2e-9;     % +1 µC
++q2 = -2e-9;     % -1 µC
+ 
+ % Observation point P where we evaluate the field (meters)
+-P = [ 0.5,  0.5,  0.5];
++P = [0, 1, 2];
+ 
+ %% -------- 2. Compute total electric field at P -------------------------
+ E1 = electricField(k, q1, pos1, P);   % Field due to charge 1

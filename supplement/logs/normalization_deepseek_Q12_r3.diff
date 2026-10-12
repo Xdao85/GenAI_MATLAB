@@ -1,0 +1,23 @@
+--- raw primary block
++++ code_eval/deepseek/Q12_r3.m
+@@ -9,15 +9,15 @@
+ k = 8.9875517923e9;
+ 
+ % Charge 1: position (m) and magnitude (C)
+-q1 = 1e-9;              % Charge magnitude [C]
+-pos1 = [1, 1, 1];       % Position [x, y, z] in meters
++q1 = 2e-9;              % Charge magnitude [C]
++pos1 = [-1, 0, 0];       % Position [x, y, z] in meters
+ 
+ % Charge 2: position (m) and magnitude (C)
+-q2 = -1e-9;             % Charge magnitude [C]
+-pos2 = [-1, -1, 0.5];   % Position [x, y, z] in meters
++q2 = -2e-9;             % Charge magnitude [C]
++pos2 = [1, 0, 0];   % Position [x, y, z] in meters
+ 
+ % Point P where electric field is evaluated
+-P = [0.5, 0.5, 0.5];    % Point coordinates [x, y, z] in meters
++P = [0, 1, 2];    % Point coordinates [x, y, z] in meters
+ 
+ %% Compute Electric Field at Point P
+ % Sum the contributions from both charges (superposition principle)

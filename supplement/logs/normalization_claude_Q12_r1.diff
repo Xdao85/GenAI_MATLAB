@@ -1,0 +1,19 @@
+--- raw primary block
++++ code_eval/claude/Q12_r1.m
+@@ -23,12 +23,12 @@
+ 
+ % ---- 1. Inputs (SI units: charges in Coulombs, positions in meters) -----
+ q1  = 2e-9;            % Charge 1 magnitude [C]  (+2 nC)
+-r1  = [ 1,  0,  0];    % Charge 1 position [x y z] [m]
++r1  = [-1, 0, 0];    % Charge 1 position [x y z] [m]
+ 
+-q2  = -3e-9;           % Charge 2 magnitude [C]  (-3 nC)
+-r2  = [-1,  0,  0];    % Charge 2 position [x y z] [m]
++q2  = -2e-9;           % Charge 2 magnitude [C]  (-3 nC)
++r2  = [1, 0, 0];    % Charge 2 position [x y z] [m]
+ 
+-P   = [ 0,  1,  1];    % Field point P = [Px Py Pz] [m]
++P   = [0, 1, 2];    % Field point P = [Px Py Pz] [m]
+ 
+ % Pack charges into arrays so the field function works for any number of
+ % charges: row i of 'positions' belongs to charges(i).

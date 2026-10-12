@@ -1,0 +1,21 @@
+--- raw primary block
++++ code_eval/claude/Q12_r2.m
+@@ -24,14 +24,14 @@
+ % --- User inputs --------------------------------------------------------
+ % Charge magnitudes in coulombs (sign matters: + repels, - attracts)
+ q1 =  2e-9;                 % charge 1: +2 nC
+-q2 = -3e-9;                 % charge 2: -3 nC
++q2 = -2e-9;                 % charge 2: -3 nC
+ 
+ % Charge positions in meters, as [x y z]
+-r1 = [ 1.0,  0.0,  0.0];    % position of charge 1
+-r2 = [-1.0,  0.5,  0.0];    % position of charge 2
++r1 = [-1, 0, 0];    % position of charge 1
++r2 = [1, 0, 0];    % position of charge 2
+ 
+ % Field point P in meters
+-Px = 0.5;  Py = 1.5;  Pz = 1.0;
++Px = 0;  Py = 1;  Pz = 2;
+ P  = [Px, Py, Pz];
+ 
+ % --- Computation --------------------------------------------------------

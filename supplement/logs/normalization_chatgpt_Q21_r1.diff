@@ -1,0 +1,26 @@
+--- raw primary block
++++ code_eval/chatgpt/Q21_r1.m
+@@ -8,17 +8,17 @@
+ %% Parameters
+ mu0 = 4*pi*1e-7;      % Permeability of free space (H/m)
+ 
+-I  = 10;              % Current (A)
++I  = 1;              % Current (A)
+ l  = 2;               % Conductor length (m)
+ 
+-Ax = 0;
+-Ay = 0;
++Ax = 0.25;
++Ay = 0.5;
+ Az = 0;
+ 
+ % Observation point
+-Px = 0.8;
+-Py = 0.6;
+-Pz = 0.5;
++Px = 1;
++Py = 1;
++Pz = 0;
+ 
+ %% Conductor endpoints
+ z1 = Az - l/2;

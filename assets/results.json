@@ -1,0 +1,1771 @@
+{
+  "title": "From Plausible to Verified: Evaluating GenAI-Generated MATLAB Code in Electromagnetics Education",
+  "runs": [
+    {
+      "assistant": "chatgpt",
+      "prompt": "Q1.1",
+      "rep": 1,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "q1",
+      "vectors": [
+        [
+          2.44615,
+          0.0,
+          0.0
+        ]
+      ],
+      "error": "1.971717857117172e-05",
+      "file": "code_eval/chatgpt/Q11_r1.m",
+      "evidence": "E = [2.44615, 0, 0] N/C",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "chatgpt",
+      "prompt": "Q1.1",
+      "rep": 2,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "q1",
+      "vectors": [
+        [
+          2.4461,
+          0.0,
+          0.0
+        ]
+      ],
+      "error": "7.235081646425308e-07",
+      "file": "code_eval/chatgpt/Q11_r2.m",
+      "evidence": "E = [2.4461e+00, 0.0000e+00, 0.0000e+00] N/C",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "chatgpt",
+      "prompt": "Q1.1",
+      "rep": 3,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "q1",
+      "vectors": [
+        [
+          2.4462,
+          0.0,
+          0.0
+        ]
+      ],
+      "error": "4.015786530716752e-05",
+      "file": "code_eval/chatgpt/Q11_r3.m",
+      "evidence": "E = [2.4462e+00, 0.0000e+00, 0.0000e+00] N/C",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "chatgpt",
+      "prompt": "Q1.2",
+      "rep": 1,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "q1",
+      "vectors": [
+        [
+          2.4461,
+          0.0,
+          0.0
+        ]
+      ],
+      "error": "7.235081646425308e-07",
+      "file": "code_eval/chatgpt/Q12_r1.m",
+      "evidence": "E  = [2.4461e+00, 0.0000e+00, 0.0000e+00] N/C",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "chatgpt",
+      "prompt": "Q1.2",
+      "rep": 2,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "q1",
+      "vectors": [
+        [
+          2.4461,
+          0.0,
+          0.0
+        ]
+      ],
+      "error": "7.235081646425308e-07",
+      "file": "code_eval/chatgpt/Q12_r2.m",
+      "evidence": "E  = [2.4461e+00, 0.0000e+00, 0.0000e+00] N/C",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "chatgpt",
+      "prompt": "Q1.2",
+      "rep": 3,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "q1",
+      "vectors": [
+        [
+          2.4461,
+          0.0,
+          0.0
+        ]
+      ],
+      "error": "7.235081646425308e-07",
+      "file": "code_eval/chatgpt/Q12_r3.m",
+      "evidence": "E = [2.4461e+00, 0.0000e+00, 0.0000e+00] N/C",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "chatgpt",
+      "prompt": "Q2.1",
+      "rep": 1,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "mid",
+      "vectors": [
+        [
+          -9.141924e-08,
+          1.371289e-07,
+          0.0
+        ]
+      ],
+      "error": "2.1264871225715547e-07",
+      "file": "code_eval/chatgpt/Q21_r1.m",
+      "evidence": "labeled Bx/By/Bz component group",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "chatgpt",
+      "prompt": "Q2.1",
+      "rep": 2,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "mid",
+      "vectors": [
+        [
+          -9.142334e-08,
+          1.37135e-07,
+          0.0
+        ]
+      ],
+      "error": "4.4760526481520765e-05",
+      "file": "code_eval/chatgpt/Q21_r2.m",
+      "evidence": "labeled Bx/By/Bz component group",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "chatgpt",
+      "prompt": "Q2.1",
+      "rep": 3,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "mid",
+      "vectors": [
+        [
+          -9.146024e-08,
+          1.371904e-07,
+          0.0
+        ]
+      ],
+      "error": "0.0004486478945352177",
+      "file": "code_eval/chatgpt/Q21_r3.m",
+      "evidence": "labeled Bx/By/Bz component group",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "chatgpt",
+      "prompt": "Q2.2",
+      "rep": 1,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "mid",
+      "vectors": [
+        [
+          -9.141924e-08,
+          1.371289e-07,
+          0.0
+        ]
+      ],
+      "error": "2.1264871225715547e-07",
+      "file": "code_eval/chatgpt/Q22_r1.m",
+      "evidence": "labeled Bx/By/Bz component group",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "chatgpt",
+      "prompt": "Q2.2",
+      "rep": 2,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "mid",
+      "vectors": [
+        [
+          -9.142334e-08,
+          1.37135e-07,
+          0.0
+        ]
+      ],
+      "error": "4.4760526481520765e-05",
+      "file": "code_eval/chatgpt/Q22_r2.m",
+      "evidence": "labeled Bx/By/Bz component group",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "chatgpt",
+      "prompt": "Q2.2",
+      "rep": 3,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "mid",
+      "vectors": [
+        [
+          -9.142334e-08,
+          1.37135e-07,
+          0.0
+        ]
+      ],
+      "error": "4.4760526481520765e-05",
+      "file": "code_eval/chatgpt/Q22_r3.m",
+      "evidence": "labeled Bx/By/Bz component group",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "chatgpt",
+      "prompt": "S2",
+      "rep": 1,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "mid",
+      "vectors": [
+        [
+          -9.14192434e-08,
+          1.37128865e-07,
+          0.0
+        ],
+        [
+          -9.14192434e-08,
+          1.37128865e-07,
+          0.0
+        ]
+      ],
+      "error": "7.30642139083e-10",
+      "file": "code_eval/chatgpt/S2_r1.m",
+      "evidence": "B_ref = [-9.14192434e-08,  1.37128865e-07,  0.00000000e+00] T | B_num = [-9.14192434e-08,  1.37128865e-07,  0.00000000e+00] T",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "chatgpt",
+      "prompt": "S2",
+      "rep": 2,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "mid",
+      "vectors": [
+        [
+          -9.141924341e-08,
+          1.3712886512e-07,
+          0.0
+        ],
+        [
+          -9.1419243411e-08,
+          1.3712886512e-07,
+          0.0
+        ]
+      ],
+      "error": "6.067663392985087e-12",
+      "file": "code_eval/chatgpt/S2_r2.m",
+      "evidence": "labeled Bx/By/Bz component group | labeled Bx/By/Bz component group",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "chatgpt",
+      "prompt": "S2",
+      "rep": 3,
+      "stage": "initial",
+      "status": "selfcheck_stop",
+      "geometry": "mid",
+      "vectors": [],
+      "error": "",
+      "file": "code_eval/chatgpt/S2_r3.m",
+      "evidence": "Error using S2_r3 (line 106)",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "gemini",
+      "prompt": "Q1.1",
+      "rep": 1,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "q1",
+      "vectors": [
+        [
+          2.446,
+          0.0,
+          0.0
+        ]
+      ],
+      "error": "4.160488163627103e-05",
+      "file": "code_eval/gemini/Q11_r1.m",
+      "evidence": "E_total vector      : [ 2.446e+00,  0.000e+00,  0.000e+00] N/C",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "gemini",
+      "prompt": "Q1.1",
+      "rep": 2,
+      "stage": "initial",
+      "status": "execution_failure",
+      "geometry": "q1",
+      "vectors": [],
+      "error": "",
+      "file": "code_eval/gemini/Q11_r2.m",
+      "evidence": "Error: <a href=\"matlab: opentoline('[LOCAL_ROOT]\\code_eval\\gemini\\Q11_r2.m',40,9)\">File: Q11_r2.m Line: 40 Column: 9</a>",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "gemini",
+      "prompt": "Q1.2",
+      "rep": 2,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "q1",
+      "vectors": [
+        [
+          2.446,
+          0.0,
+          0.0
+        ]
+      ],
+      "error": "4.160488163627103e-05",
+      "file": "code_eval/gemini/Q12_r2.m",
+      "evidence": "Electric Field E   : [2.446e+00, 0.000e+00, 0.000e+00] N/C",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "gemini",
+      "prompt": "Q1.2",
+      "rep": 3,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "q1",
+      "vectors": [
+        [
+          2.446,
+          0.0,
+          0.0
+        ]
+      ],
+      "error": "4.160488163627103e-05",
+      "file": "code_eval/gemini/Q12_r3.m",
+      "evidence": "Electric Field E   : [2.446e+00, 0.000e+00, 0.000e+00] N/C",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "gemini",
+      "prompt": "Q2.1",
+      "rep": 1,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "end",
+      "vectors": [
+        [
+          -5.61e-08,
+          8.416e-08,
+          0.0
+        ]
+      ],
+      "error": "5.738213331332433e-05",
+      "file": "code_eval/gemini/Q21_r1/main.m",
+      "evidence": "labeled Bx/By/Bz component group",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "gemini",
+      "prompt": "Q2.1",
+      "rep": 2,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "end",
+      "vectors": [
+        [
+          -5.610367e-08,
+          8.41555e-08,
+          0.0
+        ]
+      ],
+      "error": "3.030104888170543e-08",
+      "file": "code_eval/gemini/Q21_r2.m",
+      "evidence": "labeled Bx/By/Bz component group",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "gemini",
+      "prompt": "Q2.2",
+      "rep": 3,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "mid",
+      "vectors": [
+        [
+          -9.142e-08,
+          1.371e-07,
+          0.0
+        ]
+      ],
+      "error": "0.0001752036699968001",
+      "file": "code_eval/gemini/Q22_r3.m",
+      "evidence": "Magnetic Field Vector B at P: [-9.142e-08, 1.371e-07, 0.000e+00] T",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "claude",
+      "prompt": "Q1.1",
+      "rep": 1,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "q1",
+      "vectors": [
+        [
+          2.446,
+          0.0,
+          0.0
+        ]
+      ],
+      "error": "4.160488163627103e-05",
+      "file": "code_eval/claude/Q11_r1.m",
+      "evidence": "Etot  = [    2.446     0.000     0.000] N/C, |Etot|  = 2.446 N/C",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "claude",
+      "prompt": "Q1.1",
+      "rep": 2,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "q1",
+      "vectors": [
+        [
+          2.4461,
+          0.0,
+          0.0
+        ]
+      ],
+      "error": "7.235081646425308e-07",
+      "file": "code_eval/claude/Q11_r2.m",
+      "evidence": "E tot = [+2.4461e+00  +0.0000e+00  +0.0000e+00] N/C,  |E|  = 2.4461e+00",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "claude",
+      "prompt": "Q1.1",
+      "rep": 3,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "q1",
+      "vectors": [
+        [
+          2.446,
+          0.0,
+          0.0
+        ]
+      ],
+      "error": "4.160488163627103e-05",
+      "file": "code_eval/claude/Q11_r3.m",
+      "evidence": "Etot  = [+2.446 +0 +0] N/C, |Etot| = 2.446 N/C",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "claude",
+      "prompt": "Q1.2",
+      "rep": 1,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "q1",
+      "vectors": [
+        [
+          2.4461,
+          0.0,
+          0.0
+        ]
+      ],
+      "error": "7.235081646425308e-07",
+      "file": "code_eval/claude/Q12_r1.m",
+      "evidence": "E = [2.4461e+00, 0.0000e+00, 0.0000e+00] N/C",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "claude",
+      "prompt": "Q1.2",
+      "rep": 2,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "q1",
+      "vectors": [
+        [
+          2.4461,
+          0.0,
+          0.0
+        ]
+      ],
+      "error": "7.235081646425308e-07",
+      "file": "code_eval/claude/Q12_r2.m",
+      "evidence": "Total E        = (2.4461e+00, 0.0000e+00, 0.0000e+00) N/C",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "claude",
+      "prompt": "Q1.2",
+      "rep": 3,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "q1",
+      "vectors": [
+        [
+          2.4461,
+          0.0,
+          0.0
+        ]
+      ],
+      "error": "7.235081646425308e-07",
+      "file": "code_eval/claude/Q12_r3.m",
+      "evidence": "labeled Bx/By/Bz component group",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "claude",
+      "prompt": "Q2.1",
+      "rep": 1,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "end",
+      "vectors": [
+        [
+          -5.6104e-08,
+          8.4156e-08,
+          0.0
+        ]
+      ],
+      "error": "5.91026757596153e-06",
+      "file": "code_eval/claude/Q21_r1.m",
+      "evidence": "B at P = [-5.6104e-08  8.4156e-08  0.0000e+00] T",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "claude",
+      "prompt": "Q2.1",
+      "rep": 2,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "end",
+      "vectors": [
+        [
+          -5.6104e-08,
+          8.4156e-08,
+          0.0
+        ]
+      ],
+      "error": "5.91026757596153e-06",
+      "file": "code_eval/claude/Q21_r2.m",
+      "evidence": "B   = [-5.6104e-08  8.4156e-08  0.0000e+00] T",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "claude",
+      "prompt": "Q2.1",
+      "rep": 3,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "end",
+      "vectors": [
+        [
+          -5.6104e-08,
+          8.4156e-08,
+          0.0
+        ]
+      ],
+      "error": "5.91026757596153e-06",
+      "file": "code_eval/claude/Q21_r3.m",
+      "evidence": "B at P = [-5.6104e-08  8.4156e-08  0.0000e+00] T,  |B| = 1.0114e-07 T",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "claude",
+      "prompt": "Q2.2",
+      "rep": 1,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "end",
+      "vectors": [
+        [
+          -5.6104e-08,
+          8.4156e-08,
+          0.0
+        ],
+        [
+          -5.6104e-08,
+          8.4156e-08,
+          0.0
+        ]
+      ],
+      "error": "5.91026757596153e-06",
+      "file": "code_eval/claude/Q22_r1.m",
+      "evidence": "Numerical  B = [-5.6104e-08  +8.4156e-08  +0.0000e+00] T,  |B| = 1.0114e-07 T | Analytical B = [-5.6104e-08  +8.4156e-08  +0.0000e+00] T,  |B| = 1.0114e-07 T",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "claude",
+      "prompt": "Q2.2",
+      "rep": 2,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "end",
+      "vectors": [
+        [
+          -5.6104e-08,
+          8.4156e-08,
+          0.0
+        ],
+        [
+          -5.6104e-08,
+          8.4156e-08,
+          0.0
+        ]
+      ],
+      "error": "5.91026757596153e-06",
+      "file": "code_eval/claude/Q22_r2.m",
+      "evidence": "Numerical  B = [-5.6104e-08, 8.4156e-08, 0.0000e+00] T | Analytical B = [-5.6104e-08, 8.4156e-08, 0.0000e+00] T",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "claude",
+      "prompt": "Q2.2",
+      "rep": 3,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "end",
+      "vectors": [
+        [
+          -5.6104e-08,
+          8.4156e-08,
+          0.0
+        ],
+        [
+          -5.6104e-08,
+          8.4156e-08,
+          0.0
+        ]
+      ],
+      "error": "5.91026757596153e-06",
+      "file": "code_eval/claude/Q22_r3.m",
+      "evidence": "Numerical B = [-5.6104e-08  8.4156e-08  0.0000e+00] T | Analytic  B = [-5.6104e-08  8.4156e-08  0.0000e+00] T",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "claude",
+      "prompt": "S2",
+      "rep": 1,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "mid",
+      "vectors": [
+        [
+          -9.141924e-08,
+          1.371289e-07,
+          0.0
+        ],
+        [
+          -9.141925e-08,
+          1.371289e-07,
+          0.0
+        ]
+      ],
+      "error": "2.153839282412576e-07",
+      "file": "code_eval/claude/S2_r1.m",
+      "evidence": "B (closed form)  = [-9.141924e-08 1.371289e-07 0.000000e+00] T, |B| = 1.648084e-07 T | B (Biot-Savart)  = [-9.141925e-08 1.371289e-07 0.000000e+00] T, |B| = 1.648084e-07 T",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "claude",
+      "prompt": "S2",
+      "rep": 2,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "mid",
+      "vectors": [
+        [
+          -9.141924e-08,
+          1.371289e-07,
+          0.0
+        ],
+        [
+          -9.141924e-08,
+          1.371289e-07,
+          0.0
+        ]
+      ],
+      "error": "2.1264871225715547e-07",
+      "file": "code_eval/claude/S2_r2.m",
+      "evidence": "B closed form  = [-9.141924e-08 1.371289e-07 0.000000e+00] T | B numerical    = [-9.141924e-08 1.371289e-07 0.000000e+00] T",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "claude",
+      "prompt": "S2",
+      "rep": 3,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "mid",
+      "vectors": [
+        [
+          -9.141924e-08,
+          1.371289e-07,
+          0.0
+        ],
+        [
+          -9.141924e-08,
+          1.371289e-07,
+          0.0
+        ]
+      ],
+      "error": "2.1264871225715547e-07",
+      "file": "code_eval/claude/S2_r3.m",
+      "evidence": "B closed form  = [-9.141924e-08 1.371289e-07 0.000000e+00] T | B Biot-Savart  = [-9.141924e-08 1.371289e-07 0.000000e+00] T",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "deepseek",
+      "prompt": "Q1.1",
+      "rep": 1,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "q1",
+      "vectors": [
+        [
+          2.446,
+          0.0,
+          0.0
+        ]
+      ],
+      "error": "4.160488163627103e-05",
+      "file": "code_eval/deepseek/Q11_r1.m",
+      "evidence": "Total field E   : [ 2.446e+00,  0.000e+00,  0.000e+00] N/C",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "deepseek",
+      "prompt": "Q1.1",
+      "rep": 2,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "q1",
+      "vectors": [
+        [
+          2.45,
+          0.0,
+          0.0
+        ]
+      ],
+      "error": "0.0015936500572326815",
+      "file": "code_eval/deepseek/Q11_r2.m",
+      "evidence": "E_total      = [2.45, 0.00, 0.00] N/C",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "deepseek",
+      "prompt": "Q1.1",
+      "rep": 3,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "q1",
+      "vectors": [
+        [
+          2.44609,
+          0.0,
+          0.0
+        ]
+      ],
+      "error": "4.811645511841691e-06",
+      "file": "code_eval/deepseek/Q11_r3.m",
+      "evidence": "Total E at P = [2.44609, 0, 0] N/C",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "deepseek",
+      "prompt": "Q1.2",
+      "rep": 1,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "q1",
+      "vectors": [
+        [
+          2.446102,
+          0.0,
+          0.0
+        ]
+      ],
+      "error": "9.411930490623104e-08",
+      "file": "code_eval/deepseek/Q12_r1.m",
+      "evidence": "E_total = [2.446102e+00, 0.000000e+00, 0.000000e+00] N/C",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "deepseek",
+      "prompt": "Q1.2",
+      "rep": 2,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "q1",
+      "vectors": [
+        [
+          2.4461,
+          0.0,
+          0.0
+        ]
+      ],
+      "error": "7.235081646425308e-07",
+      "file": "code_eval/deepseek/Q12_r2.m",
+      "evidence": "Total electric field at P: [2.4461e+00, 0.0000e+00, 0.0000e+00] N/C",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "deepseek",
+      "prompt": "Q1.2",
+      "rep": 3,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "q1",
+      "vectors": [
+        [
+          2.4461,
+          0.0,
+          0.0
+        ]
+      ],
+      "error": "7.235081646425308e-07",
+      "file": "code_eval/deepseek/Q12_r3.m",
+      "evidence": "E_total      = [2.4461e+00, 0.0000e+00, 0.0000e+00] N/C",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "deepseek",
+      "prompt": "Q2.1",
+      "rep": 1,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "end",
+      "vectors": [
+        [
+          -5.610367e-08,
+          8.41555e-08,
+          0.0
+        ]
+      ],
+      "error": "3.030104888170543e-08",
+      "file": "code_eval/deepseek/Q21_r1.m",
+      "evidence": "B = [-5.610367e-08,  8.415550e-08,  0.000000e+00] T",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "deepseek",
+      "prompt": "Q2.1",
+      "rep": 2,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "mid",
+      "vectors": [
+        [
+          -9.141924e-08,
+          1.371289e-07,
+          0.0
+        ]
+      ],
+      "error": "2.1264871225715547e-07",
+      "file": "code_eval/deepseek/Q21_r2.m",
+      "evidence": "B vector       : (-9.141924e-08, 1.371289e-07, 0.000000e+00) T",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "deepseek",
+      "prompt": "Q2.1",
+      "rep": 3,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "mid",
+      "vectors": [
+        [
+          -9.1419e-08,
+          1.3713e-07,
+          0.0
+        ]
+      ],
+      "error": "7.042662911111716e-06",
+      "file": "code_eval/deepseek/Q21_r3.m",
+      "evidence": "labeled Bx/By/Bz component group",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "deepseek",
+      "prompt": "Q2.2",
+      "rep": 1,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "mid",
+      "vectors": [
+        [
+          -9.141925e-08,
+          1.371289e-07,
+          0.0
+        ]
+      ],
+      "error": "2.153839282412576e-07",
+      "file": "code_eval/deepseek/Q22_r1.m",
+      "evidence": "labeled Bx/By/Bz component group",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "deepseek",
+      "prompt": "Q2.2",
+      "rep": 2,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "mid",
+      "vectors": [
+        [
+          -9.142744e-08,
+          1.371412e-07,
+          0.0
+        ]
+      ],
+      "error": "8.986136989815765e-05",
+      "file": "code_eval/deepseek/Q22_r2.m",
+      "evidence": "labeled Bx/By/Bz component group",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "deepseek",
+      "prompt": "Q2.2",
+      "rep": 3,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "mid",
+      "vectors": [
+        [
+          -9.1419e-08,
+          1.3713e-07,
+          0.0
+        ]
+      ],
+      "error": "7.042662911111716e-06",
+      "file": "code_eval/deepseek/Q22_r3.m",
+      "evidence": "labeled Bx/By/Bz component group",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "deepseek",
+      "prompt": "S2",
+      "rep": 1,
+      "stage": "initial",
+      "status": "selfcheck_stop",
+      "geometry": "mid",
+      "vectors": [],
+      "error": "",
+      "file": "code_eval/deepseek/S2_r1.m",
+      "evidence": "Error using S2_r1 (line 48)",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "deepseek",
+      "prompt": "S2",
+      "rep": 2,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "mid",
+      "vectors": [
+        [
+          -9.141924e-08,
+          1.371289e-07,
+          0.0
+        ],
+        [
+          -9.141924e-08,
+          1.371289e-07,
+          0.0
+        ]
+      ],
+      "error": "2.1264871225715547e-07",
+      "file": "code_eval/deepseek/S2_r2.m",
+      "evidence": "Closed-form B_ref = [-9.141924e-08,  1.371289e-07,  0.000000e+00] T | Numerical  B_num = [-9.141924e-08,  1.371289e-07,  0.000000e+00] T",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "deepseek",
+      "prompt": "S2",
+      "rep": 3,
+      "stage": "initial",
+      "status": "reference_agreement",
+      "geometry": "mid",
+      "vectors": [
+        [
+          -9.141924e-08,
+          1.371289e-07,
+          0.0
+        ],
+        [
+          -9.141924e-08,
+          1.371289e-07,
+          0.0
+        ]
+      ],
+      "error": "2.1264871225715547e-07",
+      "file": "code_eval/deepseek/S2_r3.m",
+      "evidence": "B_ref (closed-form)  = [-9.141924e-08,  1.371289e-07,  0.000000e+00] T | B_num (Biot-Savart)  = [-9.141924e-08,  1.371289e-07,  0.000000e+00] T",
+      "callbacks": null,
+      "screens": [],
+      "diary": "results/desktop_checks_log.txt"
+    },
+    {
+      "assistant": "chatgpt",
+      "prompt": "Q3",
+      "rep": 1,
+      "stage": "initial",
+      "status": "initialization_failure",
+      "geometry": "",
+      "vectors": [],
+      "error": "",
+      "file": "code_eval/chatgpt/Q3_r1/GPS_Dynamics_GUI.m",
+      "evidence": "Error using feval\nError: File: GPS_Dynamics_GUI.m Line: 165 Column: 5\nCharacter vector is not terminated properly.\n\nError in run_gui_reviews_again>execute_payload (line 73)\nif isFunction,feval(name);else,run(file);end\n              ^^^^^^^^^^^\nError in run_gui_reviews_again>execute_file (line 70)\nexecute_payload(file,name,~isempty(L)&&startsWith(strtrim(L(1)),'function'));\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nError in run_gui_reviews_again (line 27)\n  execute_file(char(file));drawnow;\n  ^^^^^^^^^^^^^^^^^^^^^^^^",
+      "callbacks": {
+        "init": "0",
+        "start": "NaN",
+        "update": "NaN",
+        "stop": "NaN",
+        "reset": "NaN"
+      },
+      "screens": [],
+      "diary": "results/chatgpt_Q3_r1_rerun_20261008_093529_desktop_log.txt"
+    },
+    {
+      "assistant": "chatgpt",
+      "prompt": "Q3",
+      "rep": 2,
+      "stage": "initial",
+      "status": "initialization_failure",
+      "geometry": "",
+      "vectors": [],
+      "error": "",
+      "file": "code_eval/chatgpt/Q3_r2/gpsDynamicsGUI.m",
+      "evidence": "Error using feval\nError: File: gpsDynamicsGUI.m Line: 223 Column: 13\nCharacter vector is not terminated properly.\n\nError in run_gui_reviews_again>execute_payload (line 73)\nif isFunction,feval(name);else,run(file);end\n              ^^^^^^^^^^^\nError in run_gui_reviews_again>execute_file (line 70)\nexecute_payload(file,name,~isempty(L)&&startsWith(strtrim(L(1)),'function'));\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nError in run_gui_reviews_again (line 27)\n  execute_file(char(file));drawnow;\n  ^^^^^^^^^^^^^^^^^^^^^^^^",
+      "callbacks": {
+        "init": "0",
+        "start": "NaN",
+        "update": "NaN",
+        "stop": "NaN",
+        "reset": "NaN"
+      },
+      "screens": [],
+      "diary": "results/chatgpt_Q3_r2_rerun_20261008_093529_desktop_log.txt"
+    },
+    {
+      "assistant": "chatgpt",
+      "prompt": "Q3",
+      "rep": 3,
+      "stage": "initial",
+      "status": "initialization_failure",
+      "geometry": "",
+      "vectors": [],
+      "error": "",
+      "file": "code_eval/chatgpt/Q3_r3/GPS_Dynamics_GUI.m",
+      "evidence": "Error using feval\nError: File: GPS_Dynamics_GUI.m Line: 83 Column: 12\nCharacter vector is not terminated properly.\n\nError in run_gui_reviews_again>execute_payload (line 73)\nif isFunction,feval(name);else,run(file);end\n              ^^^^^^^^^^^\nError in run_gui_reviews_again>execute_file (line 70)\nexecute_payload(file,name,~isempty(L)&&startsWith(strtrim(L(1)),'function'));\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nError in run_gui_reviews_again (line 27)\n  execute_file(char(file));drawnow;\n  ^^^^^^^^^^^^^^^^^^^^^^^^",
+      "callbacks": {
+        "init": "0",
+        "start": "NaN",
+        "update": "NaN",
+        "stop": "NaN",
+        "reset": "NaN"
+      },
+      "screens": [],
+      "diary": "results/chatgpt_Q3_r3_rerun_20261008_093529_desktop_log.txt"
+    },
+    {
+      "assistant": "claude",
+      "prompt": "Q3",
+      "rep": 1,
+      "stage": "initial",
+      "status": "initialized",
+      "geometry": "",
+      "vectors": [],
+      "error": "",
+      "file": "code_eval/claude/Q3_r1/gps_simulator.m",
+      "evidence": "Observation duration: ___ seconds; callback errors: ___; visible movement: ___ lỗi render equation (latex)  Desktop reviewer separately confirmed ≥3-second observation; r1 has a LaTeX warning.",
+      "callbacks": {
+        "init": "1",
+        "start": "1",
+        "update": "1",
+        "stop": "1",
+        "reset": "1"
+      },
+      "screens": [
+        "results/claude_Q3_r1_init_fig1.png",
+        "results/claude_Q3_r1_rerun_20261008_093529_init_fig1.png"
+      ],
+      "diary": "results/claude_Q3_r1_rerun_20261008_093529_desktop_log.txt"
+    },
+    {
+      "assistant": "claude",
+      "prompt": "Q3",
+      "rep": 2,
+      "stage": "initial",
+      "status": "initialized",
+      "geometry": "",
+      "vectors": [],
+      "error": "",
+      "file": "code_eval/claude/Q3_r2/gps_simulator_gui.m",
+      "evidence": "Observation duration: ___ seconds; callback errors: ___; visible movement: ___ Desktop reviewer separately confirmed ≥3-second observation; r1 has a LaTeX warning.",
+      "callbacks": {
+        "init": "1",
+        "start": "1",
+        "update": "1",
+        "stop": "1",
+        "reset": "1"
+      },
+      "screens": [],
+      "diary": "results/claude_Q3_r2_rerun_20261008_093529_desktop_log.txt"
+    },
+    {
+      "assistant": "claude",
+      "prompt": "Q3",
+      "rep": 3,
+      "stage": "initial",
+      "status": "initialized",
+      "geometry": "",
+      "vectors": [],
+      "error": "",
+      "file": "code_eval/claude/Q3_r3/gps_gui_simulator.m",
+      "evidence": "Observation duration: ___ seconds; callback errors: ___; visible movement: ___ Desktop reviewer separately confirmed ≥3-second observation; r1 has a LaTeX warning.",
+      "callbacks": {
+        "init": "1",
+        "start": "1",
+        "update": "1",
+        "stop": "1",
+        "reset": "1"
+      },
+      "screens": [],
+      "diary": "results/claude_Q3_r3_rerun_20261008_093529_desktop_log.txt"
+    },
+    {
+      "assistant": "deepseek",
+      "prompt": "Q3",
+      "rep": 1,
+      "stage": "initial",
+      "status": "initialized",
+      "geometry": "",
+      "vectors": [],
+      "error": "",
+      "file": "code_eval/deepseek/Q3_r1/GPS_GUI.m",
+      "evidence": "Observation duration: ___ seconds; callback errors: ___; visible movement: ___ Timer and LaTeX errors are documented; Update/Stop remain unresolved.",
+      "callbacks": {
+        "init": "1",
+        "start": "1",
+        "update": "NaN",
+        "stop": "NaN",
+        "reset": "1"
+      },
+      "screens": [
+        "results/deepseek_Q3_r1_after_fig1.png",
+        "results/deepseek_Q3_r1_init_fig1.png",
+        "results/deepseek_Q3_r1_rerun_20261008_093529_init_fig1.png"
+      ],
+      "diary": "results/deepseek_Q3_r1_rerun_20261008_093529_desktop_log.txt"
+    },
+    {
+      "assistant": "deepseek",
+      "prompt": "Q3",
+      "rep": 2,
+      "stage": "initial",
+      "status": "initialization_failure",
+      "geometry": "",
+      "vectors": [],
+      "error": "",
+      "file": "code_eval/deepseek/Q3_r2/GPS_GUI.m",
+      "evidence": "Error using matlab.ui.control.TextArea/set.Value (line 111)\n'Value' must be a character vector, or a N-by-1 array of the following type: cell array of character vectors, string, or categorical.\n\nError in GPS_GUI (line 110)\nfcnArea.Value = functionReferenceText();\n^^^^^^^^^^^^^\nError in run_gui_reviews_again>execute_payload (line 73)\nif isFunction,feval(name);else,run(file);end\n              ^^^^^^^^^^^\nError in run_gui_reviews_again>execute_file (line 70)\nexecute_payload(file,name,~isempty(L)&&startsWith(strtrim(L(1)),'function'));\n^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nError in run_gui_reviews_again (line 27)\n  execute_file(char(file));drawnow;\n  ^^^^^^^^^^^^^^^^^^^^^^^^",
+      "callbacks": {
+        "init": "0",
+        "start": "NaN",
+        "update": "NaN",
+        "stop": "NaN",
+        "reset": "NaN"
+      },
+      "screens": [],
+      "diary": "results/deepseek_Q3_r2_rerun_20261008_093529_desktop_log.txt"
+    },
+    {
+      "assistant": "deepseek",
+      "prompt": "Q3",
+      "rep": 3,
+      "stage": "initial",
+      "status": "initialized",
+      "geometry": "",
+      "vectors": [],
+      "error": "",
+      "file": "code_eval/deepseek/Q3_r3/GPS_Simulation.m",
+      "evidence": "Observation duration: ___ seconds; callback errors: ___; visible movement: ___",
+      "callbacks": {
+        "init": "1",
+        "start": "0",
+        "update": "0",
+        "stop": "0",
+        "reset": "0"
+      },
+      "screens": [
+        "results/deepseek_Q3_r3_after_fig1.png",
+        "results/deepseek_Q3_r3_init_fig1.png",
+        "results/deepseek_Q3_r3_rerun_20261008_093529_init_fig1.png"
+      ],
+      "diary": "results/deepseek_Q3_r3_rerun_20261008_093529_desktop_log.txt"
+    },
+    {
+      "assistant": "chatgpt",
+      "prompt": "Q3",
+      "rep": 1,
+      "stage": "repair",
+      "status": "initialized",
+      "geometry": "",
+      "vectors": [],
+      "error": "",
+      "file": "code_eval/chatgpt/Q3_r1_v2/GPS_Dynamics_GUI.m",
+      "evidence": "reported_update; duration not recorded AI-assisted review diary, source and reviewer-note audit",
+      "callbacks": {
+        "init": "1",
+        "start": "1",
+        "update": "1",
+        "stop": "1",
+        "reset": "1"
+      },
+      "screens": [
+        "results/chatgpt_Q3_r1_v2_init_fig1.png"
+      ],
+      "diary": "results/chatgpt_Q3_r1_v2_desktop_log.txt"
+    },
+    {
+      "assistant": "chatgpt",
+      "prompt": "Q3",
+      "rep": 2,
+      "stage": "repair",
+      "status": "initialized",
+      "geometry": "",
+      "vectors": [],
+      "error": "",
+      "file": "code_eval/chatgpt/Q3_r2_v2/gpsDynamicsGUI.m",
+      "evidence": "unobserved AI-assisted review diary, source and reviewer-note audit",
+      "callbacks": {
+        "init": "1",
+        "start": "NaN",
+        "update": "NaN",
+        "stop": "NaN",
+        "reset": "NaN"
+      },
+      "screens": [
+        "results/chatgpt_Q3_r2_v2_after_fig1.png",
+        "results/chatgpt_Q3_r2_v2_init_fig1.png"
+      ],
+      "diary": "results/chatgpt_Q3_r2_v2_desktop_log.txt"
+    },
+    {
+      "assistant": "chatgpt",
+      "prompt": "Q3",
+      "rep": 3,
+      "stage": "repair",
+      "status": "initialized",
+      "geometry": "",
+      "vectors": [],
+      "error": "",
+      "file": "code_eval/chatgpt/Q3_r3_v2/GPS_Dynamics_GUI.m",
+      "evidence": "Hình ảnh ko thay đổi, chỉ có giá trị cập nhật reviewer reports numeric updates without visible image changes; animation not demonstrated AI-assisted review diary, source and reviewer-note audit",
+      "callbacks": {
+        "init": "1",
+        "start": "1",
+        "update": "1",
+        "stop": "1",
+        "reset": "1"
+      },
+      "screens": [
+        "results/chatgpt_Q3_r3_v2_after_fig1.png",
+        "results/chatgpt_Q3_r3_v2_init_fig1.png"
+      ],
+      "diary": "results/chatgpt_Q3_r3_v2_desktop_log.txt"
+    },
+    {
+      "assistant": "deepseek",
+      "prompt": "Q3",
+      "rep": 2,
+      "stage": "repair",
+      "status": "initialized",
+      "geometry": "",
+      "vectors": [],
+      "error": "",
+      "file": "code_eval/deepseek/Q3_r2_v2/GPS_GUI.m",
+      "evidence": "phương trình hiện mầu xắc không thấy TimerFcn error: GraphicsPlaceholder lacks XData; dynamics failed AI-assisted review diary, source and reviewer-note audit",
+      "callbacks": {
+        "init": "1",
+        "start": "0",
+        "update": "0",
+        "stop": "0",
+        "reset": "0"
+      },
+      "screens": [
+        "results/deepseek_Q3_r2_v2_after_fig1.png",
+        "results/deepseek_Q3_r2_v2_init_fig1.png"
+      ],
+      "diary": "results/deepseek_Q3_r2_v2_desktop_log.txt"
+    },
+    {
+      "assistant": "gemini",
+      "prompt": "Q1.1",
+      "rep": 3,
+      "stage": "initial",
+      "status": "no_code",
+      "geometry": "",
+      "vectors": [],
+      "error": "",
+      "file": "responses_raw/gemini/Q11_r3.json",
+      "evidence": "No evaluable MATLAB code returned. See the preserved response capture.",
+      "callbacks": null,
+      "screens": [],
+      "diary": ""
+    },
+    {
+      "assistant": "gemini",
+      "prompt": "Q1.2",
+      "rep": 1,
+      "stage": "initial",
+      "status": "no_code",
+      "geometry": "",
+      "vectors": [],
+      "error": "",
+      "file": "responses_raw/gemini/Q12_r1.json",
+      "evidence": "No evaluable MATLAB code returned. See the preserved response capture.",
+      "callbacks": null,
+      "screens": [],
+      "diary": ""
+    },
+    {
+      "assistant": "gemini",
+      "prompt": "Q2.1",
+      "rep": 3,
+      "stage": "initial",
+      "status": "no_code",
+      "geometry": "",
+      "vectors": [],
+      "error": "",
+      "file": "responses_raw/gemini/Q21_r3.json",
+      "evidence": "No evaluable MATLAB code returned. See the preserved response capture.",
+      "callbacks": null,
+      "screens": [],
+      "diary": ""
+    },
+    {
+      "assistant": "gemini",
+      "prompt": "Q2.2",
+      "rep": 1,
+      "stage": "initial",
+      "status": "no_code",
+      "geometry": "",
+      "vectors": [],
+      "error": "",
+      "file": "responses_raw/gemini/Q22_r1.json",
+      "evidence": "No evaluable MATLAB code returned. See the preserved response capture.",
+      "callbacks": null,
+      "screens": [],
+      "diary": ""
+    },
+    {
+      "assistant": "gemini",
+      "prompt": "Q2.2",
+      "rep": 2,
+      "stage": "initial",
+      "status": "no_code",
+      "geometry": "",
+      "vectors": [],
+      "error": "",
+      "file": "responses_raw/gemini/Q22_r2.json",
+      "evidence": "No evaluable MATLAB code returned. See the preserved response capture.",
+      "callbacks": null,
+      "screens": [],
+      "diary": ""
+    },
+    {
+      "assistant": "gemini",
+      "prompt": "Q3",
+      "rep": 1,
+      "stage": "initial",
+      "status": "no_code",
+      "geometry": "",
+      "vectors": [],
+      "error": "",
+      "file": "responses_raw/gemini/Q3_r1.json",
+      "evidence": "No evaluable MATLAB code returned. See the preserved response capture.",
+      "callbacks": null,
+      "screens": [],
+      "diary": ""
+    },
+    {
+      "assistant": "gemini",
+      "prompt": "Q3",
+      "rep": 2,
+      "stage": "initial",
+      "status": "no_code",
+      "geometry": "",
+      "vectors": [],
+      "error": "",
+      "file": "responses_raw/gemini/Q3_r2.json",
+      "evidence": "No evaluable MATLAB code returned. See the preserved response capture.",
+      "callbacks": null,
+      "screens": [],
+      "diary": ""
+    },
+    {
+      "assistant": "gemini",
+      "prompt": "Q3",
+      "rep": 3,
+      "stage": "initial",
+      "status": "no_code",
+      "geometry": "",
+      "vectors": [],
+      "error": "",
+      "file": "responses_raw/gemini/Q3_r3.json",
+      "evidence": "No evaluable MATLAB code returned. See the preserved response capture.",
+      "callbacks": null,
+      "screens": [],
+      "diary": ""
+    },
+    {
+      "assistant": "gemini",
+      "prompt": "S2",
+      "rep": 1,
+      "stage": "initial",
+      "status": "no_code",
+      "geometry": "",
+      "vectors": [],
+      "error": "",
+      "file": "responses_raw/gemini/S2_r1.json",
+      "evidence": "No evaluable MATLAB code returned. See the preserved response capture.",
+      "callbacks": null,
+      "screens": [],
+      "diary": ""
+    },
+    {
+      "assistant": "gemini",
+      "prompt": "S2",
+      "rep": 2,
+      "stage": "initial",
+      "status": "no_code",
+      "geometry": "",
+      "vectors": [],
+      "error": "",
+      "file": "responses_raw/gemini/S2_r2.json",
+      "evidence": "No evaluable MATLAB code returned. See the preserved response capture.",
+      "callbacks": null,
+      "screens": [],
+      "diary": ""
+    },
+    {
+      "assistant": "gemini",
+      "prompt": "S2",
+      "rep": 3,
+      "stage": "initial",
+      "status": "no_code",
+      "geometry": "",
+      "vectors": [],
+      "error": "",
+      "file": "responses_raw/gemini/S2_r3.json",
+      "evidence": "No evaluable MATLAB code returned. See the preserved response capture.",
+      "callbacks": null,
+      "screens": [],
+      "diary": ""
+    }
+  ],
+  "coverage": [
+    {
+      "assistant": "chatgpt",
+      "prompt_id": "Q3",
+      "rep": "1",
+      "version": "v1",
+      "rater": "AI-assisted review static source review",
+      "assessment_type": "source presence; not runtime feature validity",
+      "file": "code_eval/chatgpt/Q3_r1/GPS_Dynamics_GUI.m",
+      "C1_equations": "1",
+      "C2_functions": "1",
+      "C3_position_solver": "1",
+      "C4_comments": "1",
+      "evidence": "{\"equation_lines\": [156, 159, 168, 175, 182, 229], \"function_explanation_lines\": [9, 188, 192, 197, 202], \"solver_lines\": [624], \"section_comment_lines\": [3, 5, 8, 16, 17, 18, 26, 46], \"solver_limitation\": \"solver declared; correctness and positioning accuracy unvalidated\"}",
+      "sha256": "7cbc48556ef61d2d7fc531a517c4aa38b848828b437ec9e4884337ebcd998d8e"
+    },
+    {
+      "assistant": "chatgpt",
+      "prompt_id": "Q3",
+      "rep": "2",
+      "version": "v1",
+      "rater": "AI-assisted review static source review",
+      "assessment_type": "source presence; not runtime feature validity",
+      "file": "code_eval/chatgpt/Q3_r2/gpsDynamicsGUI.m",
+      "C1_equations": "1",
+      "C2_functions": "1",
+      "C3_position_solver": "1",
+      "C4_comments": "1",
+      "evidence": "{\"equation_lines\": [226, 233, 242, 250], \"function_explanation_lines\": [8, 258, 262, 266, 284], \"solver_lines\": [585, 598], \"section_comment_lines\": [2, 4, 7, 8, 13, 16, 19, 22], \"solver_limitation\": \"solver declared; correctness and positioning accuracy unvalidated\"}",
+      "sha256": "f4cbd925ed0b8df4a6a935209c4f9938764042e756589a18251984602dba36b8"
+    },
+    {
+      "assistant": "chatgpt",
+      "prompt_id": "Q3",
+      "rep": "3",
+      "version": "v1",
+      "rater": "AI-assisted review static source review",
+      "assessment_type": "source presence; not runtime feature validity",
+      "file": "code_eval/chatgpt/Q3_r3/GPS_Dynamics_GUI.m",
+      "C1_equations": "1",
+      "C2_functions": "1",
+      "C3_position_solver": "1",
+      "C4_comments": "1",
+      "evidence": "{\"equation_lines\": [66, 73, 86, 99], \"function_explanation_lines\": [108, 112, 118], \"solver_lines\": [134, 534, 560, 561], \"section_comment_lines\": [2, 4, 6, 7, 8, 10, 11, 13], \"solver_limitation\": \"solver declared; correctness and positioning accuracy unvalidated\"}",
+      "sha256": "a5d1d99487592f78ada9320511b9190f89a8208f82107f0833b005a387fc8892"
+    },
+    {
+      "assistant": "gemini",
+      "prompt_id": "Q3",
+      "rep": "1",
+      "version": "v1",
+      "rater": "AI-assisted review static source review",
+      "assessment_type": "source presence; not runtime feature validity",
+      "file": "code_eval/gemini/Q3_r1.m",
+      "C1_equations": "",
+      "C2_functions": "",
+      "C3_position_solver": "",
+      "C4_comments": "",
+      "evidence": "No code supplied; not assessed",
+      "sha256": ""
+    },
+    {
+      "assistant": "gemini",
+      "prompt_id": "Q3",
+      "rep": "2",
+      "version": "v1",
+      "rater": "AI-assisted review static source review",
+      "assessment_type": "source presence; not runtime feature validity",
+      "file": "code_eval/gemini/Q3_r2.m",
+      "C1_equations": "",
+      "C2_functions": "",
+      "C3_position_solver": "",
+      "C4_comments": "",
+      "evidence": "No code supplied; not assessed",
+      "sha256": ""
+    },
+    {
+      "assistant": "gemini",
+      "prompt_id": "Q3",
+      "rep": "3",
+      "version": "v1",
+      "rater": "AI-assisted review static source review",
+      "assessment_type": "source presence; not runtime feature validity",
+      "file": "code_eval/gemini/Q3_r3.m",
+      "C1_equations": "",
+      "C2_functions": "",
+      "C3_position_solver": "",
+      "C4_comments": "",
+      "evidence": "No code supplied; not assessed",
+      "sha256": ""
+    },
+    {
+      "assistant": "claude",
+      "prompt_id": "Q3",
+      "rep": "1",
+      "version": "v1",
+      "rater": "AI-assisted review static source review",
+      "assessment_type": "source presence; not runtime feature validity",
+      "file": "code_eval/claude/Q3_r1/gps_simulator.m",
+      "C1_equations": "1",
+      "C2_functions": "1",
+      "C3_position_solver": "1",
+      "C4_comments": "1",
+      "evidence": "{\"equation_lines\": [310, 389], \"function_explanation_lines\": [7, 15, 65, 115, 340], \"solver_lines\": [315], \"section_comment_lines\": [6, 11, 13, 14, 16, 17, 21, 44], \"solver_limitation\": \"solver declared; correctness and positioning accuracy unvalidated\"}",
+      "sha256": "69ef15a1cb9359ab9331049311a895aa5c38e0709edd90e4662c885d6252da65"
+    },
+    {
+      "assistant": "claude",
+      "prompt_id": "Q3",
+      "rep": "2",
+      "version": "v1",
+      "rater": "AI-assisted review static source review",
+      "assessment_type": "source presence; not runtime feature validity",
+      "file": "code_eval/claude/Q3_r2/gps_simulator_gui.m",
+      "C1_equations": "1",
+      "C2_functions": "1",
+      "C3_position_solver": "1",
+      "C4_comments": "1",
+      "evidence": "{\"equation_lines\": [87, 117, 175, 178], \"function_explanation_lines\": [10], \"solver_lines\": [380], \"section_comment_lines\": [2, 4, 7, 9, 16, 52, 61, 66], \"solver_limitation\": \"solver declared; correctness and positioning accuracy unvalidated\"}",
+      "sha256": "ad3f4657e089c5edc70031502ddad9804ff677be1766f7d8c8e125b7585f5758"
+    },
+    {
+      "assistant": "claude",
+      "prompt_id": "Q3",
+      "rep": "3",
+      "version": "v1",
+      "rater": "AI-assisted review static source review",
+      "assessment_type": "source presence; not runtime feature validity",
+      "file": "code_eval/claude/Q3_r3/gps_gui_simulator.m",
+      "C1_equations": "1",
+      "C2_functions": "1",
+      "C3_position_solver": "1",
+      "C4_comments": "1",
+      "evidence": "{\"equation_lines\": [65, 73, 95, 124], \"function_explanation_lines\": [7, 57, 116], \"solver_lines\": [411], \"section_comment_lines\": [2, 4, 6, 16, 35, 49, 62, 65], \"solver_limitation\": \"solver declared; correctness and positioning accuracy unvalidated\"}",
+      "sha256": "1e6ca1a81726323ebf243478a3984794371d58dc6aaaf8ba8f30cd8f889ebd3f"
+    },
+    {
+      "assistant": "deepseek",
+      "prompt_id": "Q3",
+      "rep": "1",
+      "version": "v1",
+      "rater": "AI-assisted review static source review",
+      "assessment_type": "source presence; not runtime feature validity",
+      "file": "code_eval/deepseek/Q3_r1/GPS_GUI.m",
+      "C1_equations": "1",
+      "C2_functions": "1",
+      "C3_position_solver": "0",
+      "C4_comments": "1",
+      "evidence": "{\"equation_lines\": [39, 41, 43, 196], \"function_explanation_lines\": [7, 47], \"solver_lines\": [], \"section_comment_lines\": [3, 6, 9, 12, 13, 19, 25, 30], \"solver_limitation\": \"truth-linearized one-step correction, not iterative joint position-clock solution\"}",
+      "sha256": "961fa59de1af75191fe25dad96393f341aaeff94faa96bad6853c8f819e0b23d"
+    },
+    {
+      "assistant": "deepseek",
+      "prompt_id": "Q3",
+      "rep": "2",
+      "version": "v1",
+      "rater": "AI-assisted review static source review",
+      "assessment_type": "source presence; not runtime feature validity",
+      "file": "code_eval/deepseek/Q3_r2/GPS_GUI.m",
+      "C1_equations": "1",
+      "C2_functions": "1",
+      "C3_position_solver": "1",
+      "C4_comments": "1",
+      "evidence": "{\"equation_lines\": [120, 306, 364, 369], \"function_explanation_lines\": [105, 110, 312, 354, 406], \"solver_lines\": [305], \"section_comment_lines\": [3, 6, 9, 12, 13, 75, 112, 113], \"solver_limitation\": \"solver declared; correctness and positioning accuracy unvalidated\"}",
+      "sha256": "3c2a50219895d502b9a41f06d8ec505dac14e69fde9c3d41452369a6a4ad8122"
+    },
+    {
+      "assistant": "deepseek",
+      "prompt_id": "Q3",
+      "rep": "3",
+      "version": "v1",
+      "rater": "AI-assisted review static source review",
+      "assessment_type": "source presence; not runtime feature validity",
+      "file": "code_eval/deepseek/Q3_r3/GPS_Simulation.m",
+      "C1_equations": "1",
+      "C2_functions": "1",
+      "C3_position_solver": "0",
+      "C4_comments": "1",
+      "evidence": "{\"equation_lines\": [21, 69, 78, 83, 85, 87], \"function_explanation_lines\": [9, 63, 93], \"solver_lines\": [277], \"section_comment_lines\": [3, 5, 8, 12, 18, 20, 21, 27], \"solver_limitation\": \"truth-linearized one-step correction, not iterative joint position-clock solution\"}",
+      "sha256": "4a2d38aab9c5de986f33ad76e0d5ae02ee8e19615dbf48ee83f900e120111c08"
+    }
+  ]
+}

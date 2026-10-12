@@ -1,0 +1,16 @@
+--- raw primary block
++++ code_eval/claude/Q11_r1.m
+@@ -4,10 +4,10 @@
+ %% ---------------- Inputs ----------------
+ k  = 8.9875517923e9;          % Coulomb constant [N*m^2/C^2]
+ 
+-q1 = +2e-9;   r1 = [ 1  0  0];   % charge 1 [C], position [m]
+-q2 = -3e-9;   r2 = [-1  1  0.5]; % charge 2 [C], position [m]
++q1 = 2e-9;   r1 = [-1, 0, 0];   % charge 1 [C], position [m]
++q2 = -2e-9;   r2 = [1, 0, 0]; % charge 2 [C], position [m]
+ 
+-Px = 0.5; Py = 2; Pz = 1.5;      % field point P [m]
++Px = 0; Py = 1; Pz = 2;      % field point P [m]
+ P  = [Px Py Pz];
+ 
+ %% ---------------- Field calculation ----------------

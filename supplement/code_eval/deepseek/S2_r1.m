@@ -1,0 +1,183 @@
+%% em_straight_wire.m
+% Undergraduate EM: magnetic flux density of a finite straight wire
+%
+% Geometry (SI units):
+%   Wire length l = 2 m, current I = 1 A flowing in the +z direction.
+%   Wire midpoint A(0.25, 0.5, 0) m; wire occupies z = -1 to +1 m.
+%   Observation point P(1, 1, 0) m.
+%
+% Two independent solutions:
+%   (a) Closed-form finite-wire formula (Biot-Savart integrated analytically)
+%   (b) Numerical Biot-Savart integration
+%
+% If the relative vector error exceeds 0.1%, the script stops with a message.
+
+clear; clc; close all;
+
+%% ---------------- Problem parameters (SI units) ----------------
+mu0 = 4*pi*1e-7;        % Permeability of free space [H/m]
+I   = 1.0;              % Current [A], flowing in +z
+l   = 2.0;              % Wire length [m]
+A   = [0.25, 0.5, 0.0]; % Wire midpoint [m]
+P   = [1.0,  1.0, 0.0]; % Observation point [m]
+
+% Wire endpoints: centered at A, aligned with z, from z = -l/2 to +l/2
+z1  = A(3) - l/2;       % Start z-coordinate [m]
+z2  = A(3) + l/2;       % End   z-coordinate [m]
+P1  = [A(1), A(2), z1]; % Start point of wire [m]
+P2  = [A(1), A(2), z2]; % End   point of wire [m]
+
+%% ---------------- Closed-form solution ----------------
+B_ref = finiteWireB(P, P1, P2, I, mu0);
+
+%% ---------------- Numerical Biot-Savart integration ----------------
+B_num = numericalBiotSavart(P, P1, P2, I, mu0);
+
+%% ---------------- Print results ----------------
+fprintf('=== Magnetic flux density at P(%.2f, %.2f, %.2f) m ===\n', P);
+fprintf('Closed-form  B_ref = [% .6e, % .6e, % .6e] T\n', B_ref);
+fprintf('Numerical    B_num = [% .6e, % .6e, % .6e] T\n', B_num);
+fprintf('|B_ref| = %.6e T,  |B_num| = %.6e T\n', norm(B_ref), norm(B_num));
+
+%% ---------------- Error check (must be < 0.1 %) ----------------
+vec_err = norm(B_num - B_ref) / norm(B_ref);   % Relative vector error
+fprintf('Relative vector error ||B_num - B_ref|| / ||B_ref|| = %.3e (%.4f %%)\n', ...
+        vec_err, vec_err*100);
+
+if vec_err > 1e-3
+    error('Relative vector error exceeds 0.1%%. Stopping script.');
+end
+
+%% ---------------- Right-hand rule check ----------------
+% Current is along +z.  The vector r = P - A lies in the xy-plane.
+% Right-hand rule: I (+z) cross r gives the direction of B.
+% For r = (0.75, 0.5, 0), (+z) x r = (-r_y, r_x, 0) = (-0.5, 0.75, 0),
+% which has positive x- and y-components near P (for the near segment).
+% Full-wire B should therefore point into the first quadrant in xy.
+r_xy = P(1:2) - A(1:2);          % Transverse offset vector [m]
+expected_dir = [-r_xy(2), r_xy(1)];  % (+z) x r, projected on xy
+expected_dir = expected_dir / norm(expected_dir);
+
+B_xy = B_ref(1:2);
+if norm(B_xy) > 0
+    B_dir = B_xy / norm(B_xy);
+else
+    B_dir = [0, 0];
+end
+
+dot_rh = dot(B_dir, expected_dir);
+fprintf('Right-hand rule check: dot(B_xy_dir, expected_dir) = %+.6f\n', dot_rh);
+
+if dot_rh <= 0
+    error('Right-hand rule check FAILED: B does not point in the expected direction.');
+else
+    fprintf('Right-hand rule check PASSED.\n');
+end
+
+%% ---------------- Plot ----------------
+plotWireAndField(P1, P2, A, P, B_ref);
+
+%% ================= Local functions =================
+
+function B = finiteWireB(Pobs, P1, P2, I, mu0)
+% FINITEWIREB  Closed-form magnetic flux density of a finite straight wire.
+%
+% Biot-Savart for a straight segment from P1 to P2:
+%   B = (mu0*I/(4*pi)) * (R1 x R2) / |R1 x R2|^2 * (R1_hat - R2_hat) . n_hat
+% Equivalent compact form (standard textbook result):
+%   B = (mu0*I/(4*pi*rho)) * (sin(theta2) - sin(theta1)) * phi_hat
+% Here we use the vector form:
+%   B = (mu0*I/(4*pi)) * ( (R1 x R2) / |R1 x R2|^2 ) * ( |R1| - |R2| )? 
+% To avoid ambiguity we use the exact vector formula:
+%
+%   Let R1 = Pobs - P1, R2 = Pobs - P2, and d = P2 - P1 (wire direction).
+%   Then
+%     B = (mu0*I/(4*pi)) * ( (R1 x R2) / |R1 x R2|^2 ) * ( d . R1/|R1| - d . R2/|R2| ) / |d|
+%
+% This is the standard finite-segment Biot-Savart result.
+
+    R1 = Pobs - P1;          % Vector from start of wire to P [m]
+    R2 = Pobs - P2;          % Vector from end   of wire to P [m]
+    d  = P2 - P1;            % Wire direction vector [m]
+
+    crossR = cross(R1, R2);
+    ncross = norm(crossR);
+
+    if ncross < eps
+        B = [0, 0, 0];
+        return;
+    end
+
+    % Projection factors: cosine of angles between wire direction and R1,R2
+    cos1 = dot(d, R1) / (norm(d) * norm(R1));
+    cos2 = dot(d, R2) / (norm(d) * norm(R2));
+
+    % Standard closed form: B = (mu0*I/(4*pi)) * (R1 x R2)/|R1 x R2|^2 * (cos1 - cos2)
+    B = (mu0 * I / (4*pi)) * (crossR / ncross^2) * (cos1 - cos2);
+end
+
+function B = numericalBiotSavart(Pobs, P1, P2, I, mu0)
+% NUMERICALBIOTSAVART  Numerical Biot-Savart integration for a straight wire.
+%
+% Discretize the wire into N segments.  For each segment with midpoint Pm,
+% direction dl, and source-to-observation vector R = Pobs - Pm:
+%
+%   dB = (mu0*I/(4*pi)) * (dl x R) / |R|^3
+%
+% Sum over all segments (midpoint rule).
+
+    N = 200000;              % Number of integration segments
+    B = [0, 0, 0];           % Initialize field [T]
+
+    % Parametrize wire: s in [0,1], point = P1 + s*(P2-P1)
+    ds = 1 / N;
+    for k = 1:N
+        s_mid = (k - 0.5) * ds;              % Midpoint parameter
+        Pm    = P1 + s_mid * (P2 - P1);      % Segment midpoint [m]
+        dl    = (P2 - P1) * ds;              % Segment vector [m]
+        R     = Pobs - Pm;                   % Source-to-observation [m]
+        Rn    = norm(R);
+        if Rn < eps
+            continue;
+        end
+        % dB = (mu0*I/(4*pi)) * (dl x R) / |R|^3
+        B = B + (mu0 * I / (4*pi)) * cross(dl, R) / Rn^3;
+    end
+end
+
+function plotWireAndField(P1, P2, A, P, B)
+% PLOTWIREANDFIELD  Plot the wire, midpoint A, observation point P, and B.
+%
+% The magnetic field vector is drawn at P with quiver3.
+
+    figure('Color', 'w');
+    hold on; grid on; box on;
+
+    % --- Wire ---
+    plot3([P1(1) P2(1)], [P1(2) P2(2)], [P1(3) P2(3)], ...
+          'b-', 'LineWidth', 3);
+
+    % --- Midpoint A ---
+    plot3(A(1), A(2), A(3), 'ko', 'MarkerFaceColor', 'k', 'MarkerSize', 8);
+
+    % --- Observation point P ---
+    plot3(P(1), P(2), P(3), 'rs', 'MarkerFaceColor', 'r', 'MarkerSize', 10);
+
+    % --- B vector at P (scaled for visibility) ---
+    Bscaled = B / max(norm(B), eps) * 0.5;   % Scale to 0.5 m for plotting
+    quiver3(P(1), P(2), P(3), Bscaled(1), Bscaled(2), Bscaled(3), ...
+            0, 'Color', [0 0.6 0], 'LineWidth', 2, 'MaxHeadSize', 0.5);
+
+    % --- Labels and legend ---
+    xlabel('x [m]');
+    ylabel('y [m]');
+    zlabel('z [m]');
+    title('Finite straight wire: geometry and magnetic flux density at P');
+
+    legend({'Wire (I = 1 A, +z)', 'Midpoint A', 'Observation point P', ...
+            'B at P (scaled)'}, 'Location', 'best');
+
+    axis equal;
+    view(45, 30);
+    hold off;
+end

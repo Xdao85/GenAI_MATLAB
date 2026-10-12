@@ -1,0 +1,143 @@
+%% ========================================================================
+%  MAIN SCRIPT: Electric Field due to Two Point Charges in 3D
+%  ------------------------------------------------------------------------
+%  This script computes the electric field vector E at a point P in 3D
+%  due to two point charges q1 and q2 at positions r1 and r2, and then
+%  visualizes the field vector at P using a 3D quiver plot.
+%
+%  Mathematical formulation (Coulomb's Law in vector form):
+%
+%       E(r) = k * q * (r - r_i) / |r - r_i|^3
+%
+%  where:
+%       k  = 1 / (4 * pi * epsilon_0) = 8.9875e9  N·m^2/C^2
+%       q  = charge magnitude (C)
+%       r  = observation point position vector (m)
+%       r_i= charge position vector (m)
+%
+%  Total field: E_total = E1 + E2  (principle of superposition)
+% =========================================================================
+
+clear; clc; close all;
+
+%% -------------------- USER-DEFINED PARAMETERS ---------------------------
+% Observation point P (where E is evaluated)
+P = [0.5, 0.5, 0.5];        % [Px, Py, Pz] in meters
+
+% Charge 1: magnitude (C), position (m)
+q1 = 2e-9;                  % +2 nC
+r1 = [0, 0, 0];             % located at the origin
+
+% Charge 2: magnitude (C), position (m)
+q2 = -1e-9;                 % -1 nC
+r2 = [1, 1, 1];             % located at (1,1,1)
+
+%% -------------------- COMPUTE ELECTRIC FIELD ---------------------------
+E_total = computeElectricField(P, q1, r1, q2, r2);
+
+% Display numerical result
+fprintf('Electric Field at P = (%.2f, %.2f, %.2f):\n', P);
+fprintf('  E_total = [%e, %e, %e] N/C\n', E_total);
+fprintf('  |E_total| = %e N/C\n', norm(E_total));
+
+%% -------------------- VISUALIZE FIELD VECTOR ---------------------------
+plotElectricField3D(P, E_total, r1, r2, q1, q2);
+
+
+%% ========================================================================
+%  FUNCTION: computeElectricField
+%  ------------------------------------------------------------------------
+%  Computes the total electric field at point P due to two point charges.
+%
+%  Inputs:
+%     P  - [Px, Py, Pz] observation point (m)
+%     q1 - charge magnitude 1 (C)
+%     r1 - [x, y, z] position of charge 1 (m)
+%     q2 - charge magnitude 2 (C)
+%     r2 - [x, y, z] position of charge 2 (m)
+%
+%  Output:
+%     E  - [Ex, Ey, Ez] total electric field vector (N/C)
+% =========================================================================
+function E = computeElectricField(P, q1, r1, q2, r2)
+    % Coulomb's constant k = 1/(4*pi*eps0)  [N·m^2/C^2]
+    k = 8.9875517923e9;
+
+    % ---- Field contribution from charge 1 ----
+    % Vector from charge 1 to P
+    R1 = P - r1;
+    % Distance from charge 1 to P
+    d1 = norm(R1);
+    if d1 == 0
+        error('Observation point P coincides with charge 1 location.');
+    end
+    % E1 = k*q1*(P - r1)/|P - r1|^3
+    E1 = k * q1 * R1 / d1^3;
+
+    % ---- Field contribution from charge 2 ----
+    R2 = P - r2;
+    d2 = norm(R2);
+    if d2 == 0
+        error('Observation point P coincides with charge 2 location.');
+    end
+    E2 = k * q2 * R2 / d2^3;
+
+    % ---- Superposition: total field ----
+    E = E1 + E2;
+end
+
+
+%% ========================================================================
+%  FUNCTION: plotElectricField3D
+%  ------------------------------------------------------------------------
+%  Plots the electric field vector at point P and the locations of the
+%  two point charges using a 3D quiver plot with annotations.
+%
+%  Inputs:
+%     P  - observation point [Px, Py, Pz]
+%     E  - electric field vector at P [Ex, Ey, Ez]
+%     r1 - position of charge 1
+%     r2 - position of charge 2
+%     q1 - charge magnitude 1 (used for legend sign)
+%     q2 - charge magnitude 2
+% =========================================================================
+function plotElectricField3D(P, E, r1, r2, q1, q2)
+    figure('Color', 'w');
+    hold on; grid on; axis equal;
+    view(45, 25);
+    xlabel('x (m)'); ylabel('y (m)'); zlabel('z (m)');
+    title('Electric Field Vector at Point P in 3D');
+
+    % ---- Plot charge locations ----
+    plot3(r1(1), r1(2), r1(3), 'ro', ...
+        'MarkerSize', 10, 'MarkerFaceColor', 'r');
+    plot3(r2(1), r2(2), r2(3), 'bs', ...
+        'MarkerSize', 10, 'MarkerFaceColor', 'b');
+
+    % ---- Plot observation point ----
+    plot3(P(1), P(2), P(3), 'k^', ...
+        'MarkerSize', 10, 'MarkerFaceColor', 'k');
+
+    % ---- Plot electric field vector with quiver3 ----
+    % Scale factor chosen only for visibility (field magnitude in N/C is
+    % typically much larger than plot dimensions in meters).
+    scaleFactor = 0.3 * max([norm(P - r1), norm(P - r2)]) / max(norm(E), eps);
+
+    quiver3(P(1), P(2), P(3), ...
+            E(1)*scaleFactor, E(2)*scaleFactor, E(3)*scaleFactor, ...
+            0, 'LineWidth', 2.5, 'Color', [0 0.6 0], ...
+            'MaxHeadSize', 0.6);
+
+    % ---- Legend & annotations ----
+    legend({sprintf('q_1 = %.1f nC', q1*1e9), ...
+            sprintf('q_2 = %.1f nC', q2*1e9), ...
+            'Observation point P', ...
+            'Electric field \bfE'}, ...
+            'Location', 'best');
+
+    text(P(1)+0.05, P(2)+0.05, P(3)+0.05, 'P', 'FontWeight', 'bold');
+    text(r1(1)+0.05, r1(2)+0.05, r1(3)+0.05, 'q_1', 'Color', 'r');
+    text(r2(1)+0.05, r2(2)+0.05, r2(3)+0.05, 'q_2', 'Color', 'b');
+
+    hold off;
+end

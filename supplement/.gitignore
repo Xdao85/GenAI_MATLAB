@@ -1,0 +1,8 @@
+# Local/editor artifacts only; scientific evidence stays tracked
+.DS_Store
+Thumbs.db
+__pycache__/
+*.pyc
+*.asv
+~$*
+.venv/
